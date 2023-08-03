@@ -29,7 +29,7 @@ public:
     virtual void SetEnable(bool _enable) override;
     virtual void ApplyPositionAsHome() override;
     virtual void UpdateAngle() override;
-
+    int32_t getVel(){return cur_vel;}
     static CanBase *can_bus_;
     uint32_t timeout = 3; // s
 
