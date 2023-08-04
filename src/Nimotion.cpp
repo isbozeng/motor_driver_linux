@@ -29,6 +29,15 @@ Nimotion::Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
 
 void Nimotion::SetAngleWithVelocityLimit(float _angle, float _vel)
 {
+
+    if (_angle < angleLimitMin )
+    {
+        _angle = angleLimitMin;
+    }
+    if (_angle > angleLimitMax)
+    {
+        _angle = angleLimitMax;
+    }
     _angle = inverseDirection ? -_angle : _angle;
     int32_t temp_pos = _angle * reduction * 10000.0 / 360.0;
     if (_vel > 900.0) // 单位度/秒
