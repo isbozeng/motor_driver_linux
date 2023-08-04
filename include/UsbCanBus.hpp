@@ -43,6 +43,11 @@ public:
 
     ssize_t Transmit(CanTxMsg *TxMessage, unsigned int len);
     ssize_t Receive(CanRxMsg *RxMessage, uint32_t);
+    static CanBase *getCanBusInstance()
+    {
+        static CanBase *CanBusInstance = new UsbCanBus(0, UsbCanBus::BR1000k);
+        return CanBusInstance;
+    }
 
 protected:
 private:

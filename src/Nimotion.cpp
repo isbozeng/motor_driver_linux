@@ -8,7 +8,7 @@ static const std::string RESET_FORMAT = "\033[0m";
 
 // 201703 2
 
-CanBase *Nimotion::can_bus_ = new UsbCanBus(0, UsbCanBus::BR1000k);
+// CanBase *Nimotion::can_bus_ = new UsbCanBus(0, UsbCanBus::BR1000k);
 
 Nimotion::Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
                    float _angleLimitMin = -180.0, float _angleLimitMax = 180.0)
@@ -16,6 +16,7 @@ Nimotion::Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
 {
     memset(&statusword, 0, sizeof(statusword));
     memset(&controlword, 0, sizeof(controlword));
+    can_bus_ = UsbCanBus::getCanBusInstance();
     can_bus_->CanReceiveRegister(0x180 | nodeID, &Nimotion::recMsgCallback, this);
     can_bus_->CanReceiveRegister(0x280 | nodeID, &Nimotion::recMsgCallback, this);
     can_bus_->CanReceiveRegister(0x380 | nodeID, &Nimotion::recMsgCallback, this);

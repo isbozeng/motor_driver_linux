@@ -176,4 +176,18 @@ public:
     virtual void CanRegisterZeroSpeedFrame(CanTxMsg &TxMessage, uint16_t keep_interval_tick, uint16_t max_interval_tick){};
 };
 
+class CanBusDemo : public CanBase
+{
+public:
+public:
+    CanBusDemo(void){};
+    ~CanBusDemo(void){};
+
+    ssize_t Transmit(CanTxMsg *TxMessage, unsigned int len) { printf("virtual ssize_t Transmit"); return len;};
+    ssize_t Receive(CanRxMsg *RxMessage, uint32_t len) { printf("virtual ssize_t Receive"); return len;}
+
+protected:
+private:
+};
+
 #endif // CAN_H
