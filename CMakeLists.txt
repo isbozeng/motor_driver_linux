@@ -16,6 +16,6 @@ file(GLOB SOURCE_FILES "${PROJECT_SOURCE_DIR}/src/*.cpp")
 
 
 # 添加可执行文件，指定源文件
-add_executable(${PROJECT_NAME} jointTest.cpp ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} moveByStepOfServo.cpp ${SOURCE_FILES})
 
-target_link_libraries(${PROJECT_NAME}  -lpthread  -lcontrolcan ) 
+target_link_libraries(${PROJECT_NAME}  -lpthread  -lcontrolcan -lSCServo) 
