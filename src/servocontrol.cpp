@@ -29,6 +29,7 @@ void ServoMotion::SetEnable(bool _enable) {
   } else if (_enable == false) {
     sm_st->writeByte(nodeID, SMS_STS_TORQUE_ENABLE, 0); //解能
   }
+  isEnable = _enable;
   state = _enable ? FINISH : STOP;
 }
 
@@ -66,7 +67,7 @@ void ServoMotion::UpdateAngle() {
   //更新舵机运动状态
   if (s1.Move == 1) {
     state = ServoMotion::RUNNING;
-  } else if (s1.Move == 0) {
+  } else if (s1.Move == 0 && isEnable) {
     state = ServoMotion::FINISH;
   } else {
   }

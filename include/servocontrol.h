@@ -39,6 +39,7 @@ public:
 private:
   float sixForce;
   float current;
+  bool isEnable = false;
   u8 ACC = 250;
 };
 

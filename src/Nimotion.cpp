@@ -220,13 +220,13 @@ void Nimotion::UpdateAngle()
     {
         if (clear_ack == NULL_CLEAR)
         {
-            can_bus_->SDO_Write(1, 0x2031, 0x01, 1, 2);
+            can_bus_->SDO_Write(nodeID, 0x2031, 0x01, 1, 2);
         }
         else if (clear_ack == HIGHT_CLEAR)
         {
             if (cur_pos != 0)
             {
-                can_bus_->SDO_Write(1, 0x2031, 0x01, 0, 2);
+                can_bus_->SDO_Write(nodeID, 0x2031, 0x01, 0, 2);
             }
             else
             {
