@@ -80,8 +80,8 @@ void Nimotion::Reboot()
 void Nimotion::SetAcceleration(float _val)
 {
     uint32_t acc = _val * reduction * 10000 / 6 / 60;
-    can_bus_->SDO_Write(1, 0x608300, acc);
-    can_bus_->SDO_Write(1, 0x101001, 0x65766173);
+    can_bus_->SDO_Write(nodeID, 0x608300, acc);
+    can_bus_->SDO_Write(nodeID, 0x101001, 0x65766173);
 }
 
 void Nimotion::ApplyPositionAsHome()
@@ -267,16 +267,17 @@ void Nimotion::UpdateAngle()
 
         *((controlword_t *)&msg.Data) = controlword;
         msg.Data[2] = POS_MODE;
-        if (cur_vel != 0) // 断使能
-        {
-            controlword.enableOperation = 0;
-            controlword.quickStop = 1;
-            controlword.enableVol = 1;
-            controlword.switchOn = 1;
-            controlword.operationMode = 0;
-            can_bus_->Transmit(msg);
-        }
-        else if (statusword.enableOperation != 1) // 使能不再使能
+        // if (cur_vel != 0) // 断使能
+        // {
+        //     controlword.enableOperation = 0;
+        //     controlword.quickStop = 1;
+        //     controlword.enableVol = 1;
+        //     controlword.switchOn = 1;
+        //     controlword.operationMode = 0;
+        //     can_bus_->Transmit(msg);
+        // }
+        // else 
+        if (statusword.enableOperation != 1) // 使能不再使能
         {
             controlword.enableOperation = 1;
             controlword.quickStop = 1;

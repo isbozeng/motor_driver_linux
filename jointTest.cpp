@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
     uint32_t step = 0;
     std::random_device rd;
     std::mt19937 gen(rd()); // 使用真随机种子初始化 Mersenne Twister 生成器
-    std::uniform_int_distribution<int> dis(0, 360); // 生成 0 到 360 之间的均匀分布整数
+    std::uniform_int_distribution<int> dis(-180, 180); // 生成 0 到 360 之间的均匀分布整数
     float next_pos = dis(gen);
     // auto last_time = std::chrono::steady_clock::now();
     // auto now_time = std::chrono::steady_clock::now();
@@ -67,22 +67,23 @@ int main(int argc, char *argv[])
                 return 0;
             }
             if (fabs(motor.angle - pos) < 1.0)
-            {           
-                curCnt++;
-                motor.SetAngleWithVelocityLimit(next_pos, vel);	
-                std::cout << GREEN_BOLD << "当前位置:" << motor.angle <<
-                " 目标位置:"<< pos <<
-                " 偏移位置:"<< next_pos <<
-                " 目标位置到达次数:"<< curCnt <<RESET_FORMAT << std::endl;                    
-                next_pos = dis(gen);
+            {
+                next_pos = dis(gen);           
+                motor.SetAngleWithVelocityLimit(next_pos, vel);	                 
+                
             }
             else
             {
+                curCnt++;
+                std::cout << GREEN_BOLD << "当前位置:" << motor.angle <<
+                " 目标位置:"<< pos <<
+                " 偏移位置:"<< next_pos <<
+                " 目标位置到达次数:"<< curCnt <<RESET_FORMAT << std::endl;                   
                 motor.SetAngleWithVelocityLimit(pos, vel);	
             }
 	    };
         motor.UpdateAngle();
-		usleep(100000);
+		usleep(50000);
 	}
     return 0;
 }
