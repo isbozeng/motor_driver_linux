@@ -30,6 +30,9 @@ public:
     bool inverseDirection;
     uint8_t reduction;
     State state = STOP; // getState
+    virtual void SetAngle(float) = 0;
+    virtual float getCurrent()= 0;
+    virtual float getTorque() = 0;
     virtual void SetAngleWithVelocityLimit(float _angle, float _vel) = 0;
     virtual void Reboot() = 0;
     virtual void SetAcceleration(float _val) = 0;

@@ -29,6 +29,9 @@ public:
     virtual void SetEnable(bool _enable) override;
     virtual void ApplyPositionAsHome() override;
     virtual void UpdateAngle() override;
+    virtual void SetAngle(float) override;
+    virtual float getCurrent() override;
+    virtual float getTorque() override;    
     int32_t getVel() { return cur_vel; }
     CanBase *can_bus_ = nullptr;
     uint32_t timeout = 3; // s
@@ -103,6 +106,7 @@ private:
         NULL_MODE = 0,
         POS_MODE,
         VEL_MODE,
+        IP_MODE = 0x07,
     };
     enum SDO_ACK_t
     {
@@ -135,6 +139,8 @@ private:
     bool isEnable = true;
     bool isReset = false;
     bool isNewCmd = false;
+    bool isIPmode = false;
+    bool isIPenable = false;
     NI_MOTION_STATUS_t nimotion_state = START_NODE;
     NI_MOTION_MODE_t nimotion_mode = NULL_MODE;
     SDO_ACK_t sdo_ack = NULL_ACK;

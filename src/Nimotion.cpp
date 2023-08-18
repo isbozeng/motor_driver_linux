@@ -12,7 +12,8 @@ static const std::string RESET_FORMAT = "\033[0m";
 
 Nimotion::Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
                    float _angleLimitMin = -180.0, float _angleLimitMax = 180.0)
-    : CtrlStepMotor(_id, _inverse, _reduction, _angleLimitMin, _angleLimitMax)
+    : CtrlStepMotor(_id, _inverse, _reduction, _angleLimitMin, _angleLimitMax),
+    isIPmode(true)
 {
     memset(&statusword, 0, sizeof(statusword));
     memset(&controlword, 0, sizeof(controlword));
@@ -48,18 +49,27 @@ void Nimotion::SetAngleWithVelocityLimit(float _angle, float _vel)
     // void *stat = &statusword;
     // uint16_t temp = *((uint16_t*)stat);
     // std::cout << GREEN_BOLD << "cmd.pos:" <<(int)temp_pos << " cur_pos:"<<(int)cur_pos<< RESET_FORMAT << std::endl;
-    if (abs(temp_pos - cur_pos) > det_pos)
+    if(mtx.try_lock())
     {
-        // CmdQueue.push(posCtlCmd(temp_pos, temp_vel));
-        pos_cmd = temp_pos;
-        vel_cmd = temp_vel;
-        nimotion_state = SET_CMD;
-        state = RUNNING;
+        if (abs(temp_pos - cur_pos) > det_pos)
+        {
+            // CmdQueue.push(posCtlCmd(temp_pos, temp_vel));
+            if((nimotion_state == MOTION && cur_vel != 0)
+            || nimotion_state == SET_ENABLE)
+            {
+                pos_cmd = temp_pos;
+                vel_cmd = temp_vel;
+                nimotion_state = SET_CMD;
+            }
+            state = RUNNING;
+        }
+        else
+        {
+            pos_cmd = cur_pos;
+        }
+        mtx.unlock();
     }
-    else
-    {
-        pos_cmd = cur_pos;
-    }
+
 }
 
 void Nimotion::Reboot()
@@ -107,140 +117,148 @@ void Nimotion::UpdateAngle()
     msg.IDE = CanBase::CAN_ID_STD;
     msg.RTR = CanBase::CAN_RTR_DATA;       // data frame
     std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
-    // void *dat = &statusword;
-    // std::cout << RED_BOLD << "statusword:0b " << std::bitset<16>(*((uint16_t *)dat)).to_string()
-    //             << " id:" << (int)nodeID
-    //             << " error 0x:" << static_cast<int32_t>(error_code)
-    //             << " mode:" << static_cast<int32_t>(nimotion_mode)
-    //             << " cur_pos:" << cur_pos * 360.0 / 10000.0 / reduction << " pos_cmd:" << pos_cmd * 360.0 / 10000.0 / reduction
-    //             << " cur_vel:" << cur_vel * 6.0 / reduction
-    //             << " vel_cmd:" << vel_cmd * 60.0 * 6 / (10000.0 * reduction)
-    //             << " in_state:" << (int)nimotion_state
-    //             << " out_state:" << (int)state << std::endl;    
-    switchState();
-    // void *data = &statusword;
-    // std::cout << GREEN_BOLD << "statusword:0b " << std::bitset<16>(*((uint16_t *)data)).to_string()
-    //             << " id:" << (int)nodeID
-    //             << " error 0x:" << static_cast<int32_t>(error_code)
-    //             << " mode:" << static_cast<int32_t>(nimotion_mode)
-    //             << " cur_pos:" << cur_pos * 360.0 / 10000.0 / reduction << " pos_cmd:" << pos_cmd * 360.0 / 10000.0 / reduction
-    //             << " cur_vel:" << cur_vel * 6.0 / reduction
-    //             << " vel_cmd:" << vel_cmd * 60.0 * 6 / (10000.0 * reduction)
-    //             << " in_state:" << (int)nimotion_state
-    //             << " out_state:" << (int)state << std::endl;
+    if(mtx.try_lock())
+    {
+        // void *dat = &statusword;
+        // std::cout << RED_BOLD << "statusword:0b " << std::bitset<16>(*((uint16_t *)dat)).to_string()
+        //             << " id:" << (int)nodeID
+        //             << " error 0x:" << static_cast<int32_t>(error_code)
+        //             << " mode:" << static_cast<int32_t>(nimotion_mode)
+        //             << " cur_pos:" << cur_pos * 360.0 / 10000.0 / reduction << " pos_cmd:" << pos_cmd * 360.0 / 10000.0 / reduction
+        //             << " cur_vel:" << cur_vel * 6.0 / reduction
+        //             << " vel_cmd:" << vel_cmd * 60.0 * 6 / (10000.0 * reduction)
+        //             << " in_state:" << (int)nimotion_state
+        //             << " out_state:" << (int)state << std::endl;    
+        switchState();
+        // void *data = &statusword;
+        // std::cout << GREEN_BOLD << "statusword:0b " << std::bitset<16>(*((uint16_t *)data)).to_string()
+        //             << " id:" << (int)nodeID
+        //             << " error 0x:" << static_cast<int32_t>(error_code)
+        //             << " mode:" << static_cast<int32_t>(nimotion_mode)
+        //             << " cur_pos:" << cur_pos * 360.0 / 10000.0 / reduction << " pos_cmd:" << pos_cmd * 360.0 / 10000.0 / reduction
+        //             << " cur_vel:" << cur_vel * 6.0 / reduction
+        //             << " vel_cmd:" << vel_cmd * 60.0 * 6 / (10000.0 * reduction)
+        //             << " in_state:" << (int)nimotion_state
+        //             << " out_state:" << (int)state << std::endl;//
 
-    //     std::cout << GREEN_BOLD << "nimotion_state:" <<(int)nimotion_state <<
-    // " motor.state:"<< (int)state << RESET_FORMAT << std::endl;
-    switch (nimotion_state)
-    {
-    case START_NODE:
-    {
-        if (!isOnline)
+        //     std::cout << GREEN_BOLD << "nimotion_state:" <<(int)nimotion_state <<
+        // " motor.state:"<< (int)state << RESET_FORMAT << std::endl;
+        switch (nimotion_state)
         {
-            msg.StdId = 0x00;
-            msg.DLC = 2;
-            msg.Data[0] = 0x01;
-            msg.Data[1] = 0;         // id;
-            can_bus_->Transmit(msg); //   start node
-            // nimotion_state = READY;
+        case START_NODE:
+        {
+            if (!isOnline)
+            {
+                msg.StdId = 0x00;
+                msg.DLC = 2;
+                msg.Data[0] = 0x01;
+                msg.Data[1] = 0;         // id;
+                can_bus_->Transmit(msg); //   start node
+                // nimotion_state = READY;
+            }
+            std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " START_NODE" << RESET_FORMAT << std::endl;
         }
-        std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " START_NODE" << RESET_FORMAT << std::endl;
-    }
-    break;
-    case READY:
-    {
-        if (statusword.ready != 1)
+        break;
+        case READY:
+        {
+            if (statusword.ready != 1)
+            {
+                msg.StdId = 0x200 | nodeID;
+                msg.DLC = 3;
+                controlword.enableOperation = 0;
+                controlword.quickStop = 1;
+                controlword.enableVol = 1;
+                controlword.switchOn = 0;
+                controlword.operationMode = 0;
+                *((controlword_t *)&msg.Data) = controlword;
+                msg.Data[2] = POS_MODE;
+                if(isIPmode)
+                {
+                    msg.Data[2] = IP_MODE;
+                }
+                can_bus_->Transmit(msg);
+                // nimotion_state = SWITCH_ON;
+            }
+            std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " READY"
+                    << " ev:" << (int32_t)statusword.enableVol << " qs:" << (int32_t)statusword.quickStop << RESET_FORMAT << std::endl;
+        }
+        break;
+        case SWITCH_ON:
         {
             msg.StdId = 0x200 | nodeID;
             msg.DLC = 3;
             controlword.enableOperation = 0;
             controlword.quickStop = 1;
             controlword.enableVol = 1;
-            controlword.switchOn = 0;
+            controlword.switchOn = 1;
             controlword.operationMode = 0;
             *((controlword_t *)&msg.Data) = controlword;
             msg.Data[2] = POS_MODE;
-            can_bus_->Transmit(msg);
-            // nimotion_state = SWITCH_ON;
-        }
-        std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " READY"
-                  << " ev:" << (int32_t)statusword.enableVol << " qs:" << (int32_t)statusword.quickStop << RESET_FORMAT << std::endl;
-    }
-    break;
-    case SWITCH_ON:
-    {
-        msg.StdId = 0x200 | nodeID;
-        msg.DLC = 3;
-        controlword.enableOperation = 0;
-        controlword.quickStop = 1;
-        controlword.enableVol = 1;
-        controlword.switchOn = 1;
-        controlword.operationMode = 0;
-        *((controlword_t *)&msg.Data) = controlword;
-        msg.Data[2] = POS_MODE;
-        can_bus_->Transmit(msg);
-        if (statusword.switchOn == 1 && statusword.enableOperation == 0)
-        {
-            state = STOP;
-        }
-        std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " SWITCH_ON"
-                  << " so:" << (int32_t)statusword.switchOn << RESET_FORMAT << std::endl;
-    }
-    break;
-    case CLEAR_ERROR:
-    {
-        if (error_code != 0)
-        {
-            CanBase::CanTxMsg msg;
-            controlword_t ctrl;
-            memset(&ctrl, 0, sizeof(controlword_t));
-            msg.ExtId = 0x00; // not used at all
-            msg.IDE = CanBase::CAN_ID_STD;
-            msg.RTR = CanBase::CAN_RTR_DATA; // data frame
-            msg.StdId = 0x200 | nodeID;
-            msg.DLC = 3;
-            *((controlword_t *)&msg.Data) = ctrl;
-            msg.Data[2] = POS_MODE;
-            can_bus_->Transmit(msg);
-            if (statusword.ready == 0) // 控制字00生效
+            if(isIPmode)
             {
-                ctrl.operationMode = 1;
-                can_bus_->Transmit(msg);
+                msg.Data[2] = IP_MODE;
             }
-        }
-        else
-        {
-            isReset = false;
-        }
-        std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " CLEAR_ERROR"
-                  << " error_code:" << (int32_t)error_code << RESET_FORMAT << std::endl;
-    }
-    break;
-    case HOMING:
-    {
-        if (clear_ack == NULL_CLEAR)
-        {
-            can_bus_->SDO_Write(nodeID, 0x2031, 0x01, 1, 2);
-        }
-        else if (clear_ack == HIGHT_CLEAR)
-        {
-            if (cur_pos != 0)
+            can_bus_->Transmit(msg);
+            if (statusword.switchOn == 1 && statusword.enableOperation == 0)
             {
-                can_bus_->SDO_Write(nodeID, 0x2031, 0x01, 0, 2);
+                state = STOP;
+            }
+            std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " SWITCH_ON"
+                    << " so:" << (int32_t)statusword.switchOn << RESET_FORMAT << std::endl;
+        }
+        break;
+        case CLEAR_ERROR:
+        {
+            if (error_code != 0)
+            {
+                CanBase::CanTxMsg msg;
+                controlword_t ctrl;
+                memset(&ctrl, 0, sizeof(controlword_t));
+                msg.ExtId = 0x00; // not used at all
+                msg.IDE = CanBase::CAN_ID_STD;
+                msg.RTR = CanBase::CAN_RTR_DATA; // data frame
+                msg.StdId = 0x200 | nodeID;
+                msg.DLC = 3;
+                *((controlword_t *)&msg.Data) = ctrl;
+                msg.Data[2] = POS_MODE;
+                can_bus_->Transmit(msg);
+                if (statusword.ready == 0) // 控制字00生效
+                {
+                    ctrl.operationMode = 1;
+                    can_bus_->Transmit(msg);
+                }
             }
             else
             {
-                clear_ack = NULL_CLEAR;
-                isHome = false;
+                isReset = false;
             }
+            std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " CLEAR_ERROR"
+                    << " error_code:" << (int32_t)error_code << RESET_FORMAT << std::endl;
         }
-        std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " HOMING"
-                  << " clear_ack:" << (int32_t)clear_ack << RESET_FORMAT << std::endl;
-    }
-    break;
-    case SET_MODE:
-    {
-        if (nimotion_mode != POS_MODE)
+        break;
+        case HOMING:
+        {
+            if (clear_ack == NULL_CLEAR)
+            {
+                can_bus_->SDO_Write(nodeID, 0x2031, 0x01, 1, 2);
+            }
+            else if (clear_ack == HIGHT_CLEAR)
+            {
+                if (cur_pos != 0)
+                {
+                    can_bus_->SDO_Write(nodeID, 0x2031, 0x01, 0, 2);
+                }
+                else
+                {
+                    clear_ack = NULL_CLEAR;
+                    isHome = false;
+                }
+            }
+            std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " HOMING"
+                    << " clear_ack:" << (int32_t)clear_ack << RESET_FORMAT << std::endl;
+        }
+        break;
+        case SET_MODE:
         {
             msg.StdId = 0x200 | nodeID;
             msg.DLC = 3;
@@ -249,132 +267,166 @@ void Nimotion::UpdateAngle()
             controlword.enableVol = 1;
             controlword.switchOn = 1;
             *((controlword_t *)&msg.Data) = controlword;
-            msg.Data[2] = POS_MODE;
-            can_bus_->Transmit(msg);
+            if (!isIPmode) 
+            {
+                msg.Data[2] = POS_MODE;
+                if (nimotion_mode != POS_MODE)
+                {
+                    can_bus_->Transmit(msg);
+                }
+            }
+            else
+            {
+                msg.Data[2] = IP_MODE;
+                if (nimotion_mode != IP_MODE)
+                {
+                    can_bus_->Transmit(msg);
+                }         
+            }
+            
+            // else
+            // {
+            //     nimotion_state = SET_CMD;
+            // }
+            std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " SET_MODE"
+                    << " mode:" << (int32_t)nimotion_mode << RESET_FORMAT << std::endl;
         }
-        // else
-        // {
-        //     nimotion_state = SET_CMD;
-        // }
-        std::cout << GREEN_BOLD << "NODE_ID:" << (uint32_t)nodeID << " SET_MODE"
-                  << " mode:" << (int32_t)nimotion_mode << RESET_FORMAT << std::endl;
-    }
-    break;
-    case SET_ENABLE:
-    {
-        msg.StdId = 0x200 | nodeID;
-        msg.DLC = 3;
-
-        *((controlword_t *)&msg.Data) = controlword;
-        msg.Data[2] = POS_MODE;
-        // if (cur_vel != 0) // 断使能
-        // {
-        //     controlword.enableOperation = 0;
-        //     controlword.quickStop = 1;
-        //     controlword.enableVol = 1;
-        //     controlword.switchOn = 1;
-        //     controlword.operationMode = 0;
-        //     can_bus_->Transmit(msg);
-        // }
-        // else 
-        if (statusword.enableOperation != 1) // 使能不再使能
+        break;
+        case SET_ENABLE:
         {
+            msg.StdId = 0x200 | nodeID;
+            msg.DLC = 3;
+
+            *((controlword_t *)&msg.Data) = controlword;
+            // if (cur_vel != 0) // 断使能
+            // {
+            //     controlword.enableOperation = 0;
+            //     controlword.quickStop = 1;
+            //     controlword.enableVol = 1;
+            //     controlword.switchOn = 1;
+            //     controlword.operationMode = 0;
+            //     can_bus_->Transmit(msg);
+            // }
+            // else 
+            if (statusword.enableOperation != 1) // 使能不再使能
+            {
+                controlword.enableOperation = 1;
+                controlword.quickStop = 1;
+                controlword.enableVol = 1;
+                controlword.switchOn = 1;
+                if (isIPmode)
+                {
+                    msg.Data[2] = IP_MODE;
+                    controlword.operationMode = 0;
+                }
+                else
+                {
+                    msg.Data[2] = POS_MODE;
+                    controlword.operationMode = 2;
+                }
+                can_bus_->Transmit(msg);         
+            }
+            else
+            {
+                state = FINISH;
+                if (isIPmode && !isIPenable)
+                {
+                    msg.Data[2] = IP_MODE;
+                    controlword.operationMode = 1;
+                    can_bus_->Transmit(msg);
+                    can_bus_->Transmit(msg);
+                    isIPenable = true;
+                }               
+            }
+        }
+        break;
+        case SET_CMD:
+        {
+            msg.StdId = 0x300 | nodeID;
+            msg.DLC = 8;
+            *((int32_t *)&msg.Data) = pos_cmd;
+            *((int32_t *)&msg.Data[4]) = vel_cmd;
+            can_bus_->Transmit(msg);
+            can_bus_->Transmit(msg);
+            can_bus_->Transmit(msg);
+            // std::cout << GREEN_BOLD << "NODE_ID:" <<(uint32_t)nodeID<<" SET_CMD"<<
+            // " pos_cmd:"<<(int32_t)pos_cmd<<" vel_cmd:"<<(int32_t)vel_cmd <<
+            // " sdo_ack:"<<(int32_t)sdo_ack<<RESET_FORMAT << std::endl;
+
+            nimotion_state = MOTION_ENABLE;
+            isNewCmd = true;
+
+            // if(sdo_ack == NULL_ACK)
+            // {
+            //     can_bus_->SDO_Read(nodeID, 0x607a0010);//read pos cmd
+            // }
+            // else if (sdo_ack == POS_ACK)
+            // {
+            //     can_bus_->SDO_Read(nodeID, 0x60810010);//read speed cmd
+            // }
+            // else if (sdo_ack == VEL_ACK)
+            // {
+            //     sdo_ack = NULL_ACK;
+            //     nimotion_state = MOTION_ENABLE;
+            // }
+        }
+        break;
+        case MOTION_ENABLE:
+        {
+            msg.StdId = 0x200 | nodeID;
+            msg.DLC = 3;
             controlword.enableOperation = 1;
             controlword.quickStop = 1;
             controlword.enableVol = 1;
             controlword.switchOn = 1;
             controlword.operationMode = 2;
-            can_bus_->Transmit(msg);
-        }
-        else
-        {
-            state = FINISH;
-        }
-    }
-    break;
-    case SET_CMD:
-    {
-        msg.StdId = 0x300 | nodeID;
-        msg.DLC = 8;
-        *((int32_t *)&msg.Data) = pos_cmd;
-        *((int32_t *)&msg.Data[4]) = vel_cmd;
-        can_bus_->Transmit(msg);
-        can_bus_->Transmit(msg);
-        can_bus_->Transmit(msg);
-        // std::cout << GREEN_BOLD << "NODE_ID:" <<(uint32_t)nodeID<<" SET_CMD"<<
-        // " pos_cmd:"<<(int32_t)pos_cmd<<" vel_cmd:"<<(int32_t)vel_cmd <<
-        // " sdo_ack:"<<(int32_t)sdo_ack<<RESET_FORMAT << std::endl;
-
-        nimotion_state = MOTION_ENABLE;
-        isNewCmd = true;
-
-        // if(sdo_ack == NULL_ACK)
-        // {
-        //     can_bus_->SDO_Read(nodeID, 0x607a0010);//read pos cmd
-        // }
-        // else if (sdo_ack == POS_ACK)
-        // {
-        //     can_bus_->SDO_Read(nodeID, 0x60810010);//read speed cmd
-        // }
-        // else if (sdo_ack == VEL_ACK)
-        // {
-        //     sdo_ack = NULL_ACK;
-        //     nimotion_state = MOTION_ENABLE;
-        // }
-    }
-    break;
-    case MOTION_ENABLE:
-    {
-        msg.StdId = 0x200 | nodeID;
-        msg.DLC = 3;
-        controlword.enableOperation = 1;
-        controlword.quickStop = 1;
-        controlword.enableVol = 1;
-        controlword.switchOn = 1;
-        controlword.operationMode = 2;
-        *((controlword_t *)&msg.Data) = controlword;
-        msg.Data[2] = POS_MODE;
-        can_bus_->Transmit(msg); // 当前有任务，使能情况下，还需再使能
-        if (statusword.enableOperation == 1 && statusword.operationMode == 0)
-        {
-            nimotion_state = MOTION;
-        }
-        // std::cout << GREEN_BOLD << "NODE_ID:" <<(uint32_t)nodeID<<" MOTION_ENABLE"<<
-        // " switchOn:"<<(int32_t)statusword.switchOn<<" operationMode:"<<
-        // (int32_t)statusword.operationMode <<RESET_FORMAT << std::endl;
-    }
-    break;
-    case MOTION:
-    {
-        if (isNewCmd || (cur_vel == 0 && cur_pos != pos_cmd) /*abs(cur_pos - pos_cmd) > det_pos*/)
-        {
-            msg.StdId = 0x200 | nodeID;
-            msg.DLC = 3;
-            controlword.switchOn = 1;
-            controlword.enableVol = 1;
-            controlword.quickStop = 1;
-            controlword.enableOperation = 1;
-            controlword.operationMode = 3;
             *((controlword_t *)&msg.Data) = controlword;
             msg.Data[2] = POS_MODE;
-            can_bus_->Transmit(msg);
-            isNewCmd = false;
+            can_bus_->Transmit(msg); // 当前有任务，使能情况下，还需再使能
+            if (statusword.enableOperation == 1 && statusword.operationMode == 0)
+            {
+                nimotion_state = MOTION;
+            }
+            // std::cout << GREEN_BOLD << "NODE_ID:" <<(uint32_t)nodeID<<" MOTION_ENABLE"<<
+            // " switchOn:"<<(int32_t)statusword.switchOn<<" operationMode:"<<
+            // (int32_t)statusword.operationMode <<RESET_FORMAT << std::endl;
         }
-        else if (statusword.targetReached == 1 || cur_vel == 0)
+        break;
+        case MOTION:
         {
-            /* code */
-            nimotion_state = DONE;
+            if (isNewCmd || (cur_vel == 0 && cur_pos != pos_cmd) /*abs(cur_pos - pos_cmd) > det_pos*/)
+            {
+                msg.StdId = 0x200 | nodeID;
+                msg.DLC = 3;
+                controlword.switchOn = 1;
+                controlword.enableVol = 1;
+                controlword.quickStop = 1;
+                controlword.enableOperation = 1;
+                controlword.operationMode = 3;
+                *((controlword_t *)&msg.Data) = controlword;
+                msg.Data[2] = POS_MODE;
+                can_bus_->Transmit(msg);
+                isNewCmd = false;
+            }
+            else if (statusword.targetReached == 1 || cur_vel == 0)
+            {
+                /* code */
+                nimotion_state = DONE;
+            }
+            // std::cout << GREEN_BOLD << "NODE_ID:" <<(uint32_t)nodeID<<" MOTION"<<
+            // " cur_vel:"<<(int32_t)cur_vel<<" cur_pos:"<<(int32_t)cur_pos<<" targetReached:"<<
+            // (int32_t)statusword.targetReached <<RESET_FORMAT << std::endl;
         }
-        // std::cout << GREEN_BOLD << "NODE_ID:" <<(uint32_t)nodeID<<" MOTION"<<
-        // " cur_vel:"<<(int32_t)cur_vel<<" cur_pos:"<<(int32_t)cur_pos<<" targetReached:"<<
-        // (int32_t)statusword.targetReached <<RESET_FORMAT << std::endl;
+        break;
+        case DONE:
+        {
+            nimotion_state = SET_ENABLE;
+        }
+        }
+
+        mtx.unlock();
     }
-    break;
-    case DONE:
-    {
-        nimotion_state = SET_ENABLE;
-    }
-    }
+
 }
 
 void Nimotion::switchState()
@@ -452,7 +504,7 @@ void Nimotion::recMsgCallback(CanBase::CanRxMsg msg)
         error_code = *((uint32_t *)&msg.Data[2]);
         nimotion_mode = static_cast<NI_MOTION_MODE_t>(msg.Data[4]);
         last_time = std::chrono::steady_clock::now();
-
+        isOnline = true;
         void *data = &statusword;
         // std::cout << GREEN_BOLD << "statusword:0b " << std::bitset<16>(*((uint16_t *)data)).to_string()
         //           << " id:" << (int)nodeID
@@ -485,7 +537,7 @@ void Nimotion::recMsgCallback(CanBase::CanRxMsg msg)
         // {
         //     pos_cmd = cur_pos;//掉线恢复后不能运动
         // }
-        isOnline = true;
+        // isOnline = true;
         angle = cur_pos * 360.0 / 10000.0 / reduction;
         // std::cout << GREEN_BOLD << "cur_pos:" <<cur_pos<<RESET_FORMAT << std::endl;
     }
@@ -594,3 +646,24 @@ void Nimotion::SetEnable(bool _enable)
     //     can_bus_->Transmit(msg);
     // }
 }
+
+float Nimotion::getCurrent()
+{
+    std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
+    return current*0.01;
+}
+
+float Nimotion::getTorque()
+{
+    std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
+    return sixForce*reduction*0.001;
+}
+
+ void Nimotion::SetAngle(float _angle)
+ {
+    // if (isIPenable)
+    // {
+    //     can_bus_->SDO_Write(nodeID, 0x60c1, 0x01, _angle * reduction * 10000.0 / 360.0, 4);
+    // }
+    SetAngleWithVelocityLimit(_angle, 10);
+ }
