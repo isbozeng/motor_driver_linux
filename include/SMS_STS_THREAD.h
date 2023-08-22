@@ -95,7 +95,7 @@ namespace servo{
 				return;
 			}			
 			std::lock_guard<std::mutex> mylock(itr->second->mtx);
-			itr->second->isEnable = _enable;
+			itr->second->enableCmd = _enable;
 		}
 		void SetAcceleration(int32_t id, uint8_t acc)
 		{
