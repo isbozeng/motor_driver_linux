@@ -1,113 +1,136 @@
 ﻿#include "SMS_STS_THREAD.h"
 #include "unistd.h"
 #include <iostream>
-std::mutex SMS_STS_THREAD::mtx;
-SMS_STS_THREAD::SMS_STS_THREAD() : th(&SMS_STS_THREAD::thread_f, this) {
-  for (int i = 0; i < MAX_NUM; i++) {
-    st[i].id = -1; //构造时，-1表示无电机实例
-  }
-  begin(115200, "/dev/ttyUSB0");
-  th.detach();
-}
-
-SMS_STS_THREAD::SMS_STS_THREAD(u8 End)
-    : SMS_STS(End), th(&SMS_STS_THREAD::thread_f, this) {
-  begin(115200, "/dev/ttyUSB0");
-  th.detach();
-}
-
-SMS_STS_THREAD::SMS_STS_THREAD(u8 End, u8 Level)
-    : SMS_STS(End, Level), th(&SMS_STS_THREAD::thread_f, this) {
-  const char *str = "/dev/ttyUSB0";
-  begin(115200, str);
-  th.detach();
-}
-
-void SMS_STS_THREAD::thread_f() {
-  int Pos = 0;
-  int Speed = 0;
-  // std::cout<<"Thread state start."<<std::endl;
-  while (true) {
-    for (int i = 0; i < MAX_NUM; i++) {
-      if (st[i].id != -1) {
-        std::lock_guard<std::mutex> mylock(mtx);
-        Pos = ReadPos(st[i].id);
-        st[i].Pos_f = (float)(Pos * 0.088 - 180.0);
-        Speed = ReadSpeed(st[i].id);
-        st[i].Speed_f = (float)Speed * (4.392 / 50);
-        st[i].Load = ReadLoad(st[i].id);
-        st[i].Voltage = ReadVoltage(st[i].id);
-        st[i].Temper = ReadTemper(st[i].id);
-        st[i].Move = ReadMove(st[i].id);
-        st[i].Current = ReadCurrent(st[i].id);
-        st[i].T_switch = ReadEnable(st[i].id);
-      }
-    }
-    usleep(50 * 1000);
-  }
-}
-
-    //     //if (FeedBack(st[i].id) != -1) {
-    //     //   Pos = ReadPos(-1); //-1表示缓冲区数据，以下相同
-    //     //   st[i].Pos_f = (float)(Pos * 0.088 - 180.0);
-    //     //   Speed = ReadSpeed(-1);
-    //     //   st[i].Speed_f = (float)Speed * (4.392 / 50);
-    //     //   st[i].Load = ReadLoad(-1);
-    //     //   st[i].Voltage = ReadVoltage(-1);
-    //     //   st[i].Temper = ReadTemper(-1);
-    //     //   st[i].Move = ReadMove(-1);
-    //     //   st[i].Current = ReadCurrent(-1);
-    //     //   st[i].T_switch = ReadEnable(st[i].id);
-    //     //}
-
-float SMS_STS_THREAD::getPos(int id) {
-  int i = 0;
-  std::lock_guard<std::mutex> mylock(mtx);
-  for (i; i < MAX_NUM; i++) {
-    if (st[i].id == id)
-      break;
-  }
-  return st[i].Pos_f;
-}
-
-int SMS_STS_THREAD::getMove(int id) {
-  int i = 0;
-  std::lock_guard<std::mutex> mylock(mtx);
-  for (i; i < MAX_NUM; i++) {
-    if (st[i].id == id)
-      break;
-  }
-  return st[i].Move;
-}
-
-u8 SMS_STS_THREAD::getT_enable(int id) {
-  int i = 0;
-  std::lock_guard<std::mutex> mylock(mtx);
-  for (i; i < MAX_NUM; i++) {
-    if (st[i].id == id)
-      break;
-  }
-  return st[i].T_switch;
-}
-
-float SMS_STS_THREAD::getVel(int id) {
-  int i = 0;
-  std::lock_guard<std::mutex> mylock(mtx);
-  for (i; i < MAX_NUM; i++) {
-    if (st[i].id == id)
-      break;
-  }
-  return st[i].Speed_f;
-}
-
-int SMS_STS_THREAD::ReadEnable(int ID)
+#include <utility> // 导入utility头文件
+namespace servo
 {
-	int _Enable = -1;
-	Err = 0;
-	_Enable = readByte(ID, SMS_STS_TORQUE_ENABLE);
-	if(_Enable==-1){
-		Err = 1;
-	}
-	
-	return _Enable; //0,1
+  SMS_STS_THREAD::SMS_STS_THREAD()
+      : th(&SMS_STS_THREAD::thread_f, this), servoCnt(0)
+  {
+    begin(115200, "/dev/ttyUSB0");
+    th.detach();
+  }
+  SMS_STS_THREAD::~SMS_STS_THREAD()
+  {
+
+  }
+
+
+  void SMS_STS_THREAD::thread_f()
+  {
+    // std::cout<<"Thread state start."<<std::endl;
+    uint32_t servoMoveCnt = 0;
+    while (true)
+    {
+      mapMtx.lock();
+      auto itr = servoInfo.begin();
+      mapMtx.lock();
+      while (itr != servoInfo.end())
+      {
+        if (FeedBack(itr->first) != -1)
+        {
+          std::lock_guard<std::mutex> mylock(itr->second->mtx);
+          itr->second->pos = ReadPos(-1);
+          itr->second->speed = ReadSpeed(-1);
+          itr->second->load = ReadLoad(-1);
+          itr->second->vol = ReadVoltage(-1);
+          itr->second->temper = ReadTemper(-1);
+          itr->second->isMoving = ReadMove(-1);
+          itr->second->current = ReadCurrent(-1);
+          // itr->second->isOnline = true;
+        }
+
+        itr->second->mtx.lock();
+        bool homeCmd = itr->second->homeCmd; // 互斥临时变量
+        itr->second->mtx.unlock();
+
+        if (homeCmd) // 清零
+        {
+          int ret = -1;
+          ret = writeByte(itr->second->id, SMS_STS_TORQUE_ENABLE, 128);
+          ////当前位置设置为2048，中间值,软件记为0，后面收到位置值做处理//写入，返回一个值，1或者0
+          if (ret > 0)
+          {
+            std::lock_guard<std::mutex> mylock(itr->second->mtx);
+            itr->second->homeCmd = false;
+          }
+        }
+        else
+        {
+          int ret = readByte(itr->second->id, SMS_STS_TORQUE_ENABLE); // 读是否使能
+
+          itr->second->mtx.lock();
+          if (ret != -1)
+          {
+            itr->second->isEnable = static_cast<bool>(ret);
+            itr->second->isOnline = true; // 未读到，掉线
+          }
+          else
+          {
+            itr->second->isOnline = false;
+          }
+          bool isOnline = itr->second->isOnline;
+          bool enableCmd = itr->second->enableCmd; // 互斥临时变量
+          bool isEnable = itr->second->isEnable;   // 互斥临时变量
+          int16_t posCmd = itr->second->posCmd;
+          uint16_t velCmd = itr->second->velCmd;
+          uint8_t acc = itr->second->accCmd;
+          itr->second->mtx.unlock();
+
+          if (enableCmd != isEnable)
+          {
+            writeByte(itr->second->id, SMS_STS_TORQUE_ENABLE, enableCmd);
+          }
+          // if (isOnline)
+          // {
+          RegWritePosEx(itr->second->id, posCmd, velCmd, acc);
+          servoMoveCnt++;
+          // }
+        }
+        
+        mapMtx.lock();
+        itr++;
+        mapMtx.unlock();
+      }
+
+    }
+    if (servoMoveCnt == servoCnt.load())
+    {
+      RegWriteAction();
+    }
+    servoMoveCnt = 0;
+    usleep(5 * 1000);
+  }
+
+
+void SMS_STS_THREAD::getServoInfo(int32_t id, servoStatus &info)
+{
+  auto itr = getItr(id);
+  if (itr != servoInfo.end())
+  {
+    return;
+  }
+  if (itr->second->mtx.try_lock())
+  {
+    info.Pos_f = itr->second->pos * 0.088 - 180.0;
+    info.Speed_f = itr->second->speed * (4.392 / 50);
+    info.load = itr->second->load;
+    info.vol = itr->second->vol;
+    info.temper = itr->second->temper;
+    info.isMoving = itr->second->isMoving;
+    info.current = itr->second->current;
+    info.isEnable = itr->second->isEnable;
+    info.isOnline = itr->second->isOnline;
+    itr->second->mtx.unlock();
+  }
+}
+
+void SMS_STS_THREAD::addServo(int32_t id, servoDriveInfo *info)
+{
+  mapMtx.lock();
+  servoInfo[id] = info;
+  mapMtx.unlock();
+  servoCnt.fetch_add(1);
+  std::cout<<"servo id:"<<id<<"init..."<<std::endl;
+}
 }

@@ -1,6 +1,7 @@
 #include "Nimotion.hpp"
 #include <string.h>
 #include <bitset>
+#include<math.h>
 
 static const std::string GREEN_BOLD = "\033[1;32m";
 static const std::string RED_BOLD = "\033[1;31m";
@@ -483,7 +484,7 @@ void Nimotion::switchState()
     {
         nimotion_state = SWITCH_ON;
     }
-    else if (nimotion_mode != POS_MODE) // 电机模式是否位置模式
+    else if (!isIPenable && nimotion_mode != POS_MODE) // 电机模式是否位置模式
     {
         nimotion_state = SET_MODE;
     }
@@ -493,7 +494,7 @@ void Nimotion::switchState()
     }
 }
 
-void Nimotion::recMsgCallback(CanBase::CanRxMsg msg)
+void Nimotion::recMsgCallback(CanBase::CanRxMsg msg) 
 {
     std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
     switch (msg.StdId - nodeID)
@@ -538,7 +539,7 @@ void Nimotion::recMsgCallback(CanBase::CanRxMsg msg)
         //     pos_cmd = cur_pos;//掉线恢复后不能运动
         // }
         // isOnline = true;
-        angle = cur_pos * 360.0 / 10000.0 / reduction;
+        // angle = cur_pos * 360.0 / 10000.0 / reduction;
         // std::cout << GREEN_BOLD << "cur_pos:" <<cur_pos<<RESET_FORMAT << std::endl;
     }
     break;
@@ -661,9 +662,26 @@ float Nimotion::getTorque()
 
  void Nimotion::SetAngle(float _angle)
  {
-    // if (isIPenable)
-    // {
-    //     can_bus_->SDO_Write(nodeID, 0x60c1, 0x01, _angle * reduction * 10000.0 / 360.0, 4);
-    // }
-    SetAngleWithVelocityLimit(_angle, 10);
+    if (isIPenable)
+    {
+        _angle = inverseDirection ? -_angle : _angle;
+        float cur_angle = 720.0;
+        if(mtx.try_lock())
+        {
+            // cur_angle = angle;
+            angle = cur_pos * 360.0 / 10000.0 / reduction;
+            mtx.unlock();
+        }
+        if (fabs(angle - _angle) < 6)
+        {
+            int32_t temp_pos = _angle * reduction * 10000.0 / 360.0;
+            can_bus_->SDO_Write(nodeID, 0x60c1, 0x01, temp_pos, 4);
+        }
+        else
+        {
+            std::cout << RED_BOLD << "nodeid:" << (int)nodeID << " setAngle to max:"<< _angle << RESET_FORMAT << std::endl;
+        }
+
+    }
+    // SetAngleWithVelocityLimit(_angle, 10);
  }

@@ -6,7 +6,7 @@
 #define _GNU_SOURCE
 #endif
 
-CanBase::CanBase(void)
+CanBase::CanBase(void):run_flag(true)
 {
 }
 
@@ -210,7 +210,7 @@ uint8_t CanBase::SDO_Read(uint16_t node_id, int index)
 
 void *CanBase::runThread()
 {
-    printf("CanBase::runThread() tid = %lu\n", syscall(SYS_gettid));
+    // printf("CanBase::runThread() tid = %lu\n", syscall(SYS_gettid));
     // B//LOG(INFO, BLOG_LEVEL_DEFAULT, " CanBase::runThread tid: ", (int)syscall(SYS_gettid));
 
     while (run_flag)

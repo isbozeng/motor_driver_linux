@@ -7,40 +7,27 @@
 #include <mutex>
 
 using namespace std;
+  class ServoMotion : public CtrlStepMotor
+  {
+  public:
 
-class ServoMotion : public CtrlStepMotor {
-public:
-  struct Statu {
-  //读取信息
-  float Pos_f;
-  float Speed_f;
-  int Load;
-  int Voltage;
-  int Temper;
-  int Move;
-  int Current;
-  u8 T_switch;
-};
-  ServoMotion(uint8_t _id, bool _inverse, uint8_t _reduction,
-              float _angleLimitMin, float _angleLimitMax);
-  virtual ~ServoMotion(); //有虚函数的继承，子类的析构函数也标虚函数
-  // virtual void SetAngle(float _angle);
-  virtual void SetAngleWithVelocityLimit(float _angle, float _vel);
-  virtual void SetEnable(bool _enable);
-  virtual void SetAcceleration(float _val);
-  virtual void ApplyPositionAsHome();
-  virtual void Reboot();
-  virtual void UpdateAngle();
-
-  SMS_STS_THREAD *sm_st;
-  struct Statu s1; //保存电机状态参数
+    ServoMotion(uint8_t _id, bool _inverse, uint8_t _reduction,
+                float _angleLimitMin, float _angleLimitMax);
+    virtual ~ServoMotion(); // 有虚函数的继承，子类的析构函数也标虚函数
+    virtual void SetAngle(float _angle) override;
+    virtual void SetAngleWithVelocityLimit(float _angle, float _vel) override;
+    virtual void SetEnable(bool _enable) override;
+    virtual void SetAcceleration(float _val) override;
+    virtual void ApplyPositionAsHome() override;
+    virtual void Reboot() override;
+    virtual void UpdateAngle() override;
+    virtual float getCurrent() override;
+    virtual float getTorque() override;
+    servo::SMS_STS_THREAD *sm_st = nullptr;
+    servo::servoStatus servoInf; // 保存电机状态参数
+    servo::servoDriveInfo servoDrv;//电机驱动数据
+  };  
 
 
-private:
-  float sixForce;
-  float current;
-  bool isEnable = false;
-  u8 ACC = 250;
-};
 
 #endif

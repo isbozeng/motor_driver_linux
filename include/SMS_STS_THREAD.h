@@ -1,68 +1,134 @@
 ﻿#ifndef _SMS_STS_THERAD_H
 #define _SMS_STS_THREAD_H
 
-#include"SMS_STS.h"
-#include"stdint.h"
-#include<thread>
+#include "SMS_STS.h"
+#include "stdint.h"
+#include <thread>
 #include <chrono>
-#include<mutex>
-#include<iostream>
+#include <mutex>
+#include <iostream>
+#include <unordered_map>
+#include <atomic>
+// #define MAX_NUM 4 // 电机最大个数
+// #define SERVO_ID_HASH(x) ((x) + 1)
+namespace servo{
 
-#define MAX_NUM 4  //电机最大个数
-
-class SMS_STS_THREAD: public SMS_STS
-{
-public:
-	
-	struct Status {
-		//u16 Pos;
+	struct servoStatus
+    {
+      // 读取信息
+      float Pos_f;
+      float Speed_f;
+      int load; // 读输出至电机的电压百分比(0~1000)
+      int vol;
+      int temper;
+      int isMoving; // 移动状态
+      int current;
+      bool isEnable;
+      bool isOnline;
+    };
+	struct servoDriveInfo
+	{
 		int32_t id;
-		float Pos_f;
-        float Speed_f;
-        int Load;
-        int Voltage;
-        int Temper;
-        int Move;
-        int Current;
-        u8 T_switch;
+		int pos;
+		int speed;
+		int load; // 读输出至电机的电压百分比(0~1000)
+		int vol;
+		int temper;
+		int isMoving; // 移动状态
+		int current;
+		bool isEnable;
+		bool isOnline;
+
+		int16_t posCmd;
+		uint16_t velCmd;
+		bool moveCmd;
+		bool enableCmd;
+		bool homeCmd;
+		uint8_t accCmd;
+		std::mutex mtx;
 	};
-	static std::mutex mtx;
-	SMS_STS_THREAD();//构造函数中启动线程
-	SMS_STS_THREAD(u8 End);
-	SMS_STS_THREAD(u8 End, u8 Level);
-
-	float getPos(int id);
-	int getMove(int id);
-	u8 getT_enable(int id);
-	float getVel(int id);
-	int ReadEnable(int ID);//读使能
-
-	void setID(int8_t n)
+	class SMS_STS_THREAD : public SMS_STS
 	{
-		int i = 0;
-		std::lock_guard<std::mutex> mylock(mtx);
-		for(i;i<MAX_NUM;i++)
+	public:
+		SMS_STS_THREAD(); // 构造函数中启动线程
+		virtual ~SMS_STS_THREAD();
+		void getServoInfo(int32_t id, servoStatus &info);// 此状态为上层所用状态
+		void addServo(int32_t id, servoDriveInfo *info);//此状态为驱动所用状态	
+
+		std::unordered_map<int32_t, servoDriveInfo*>::iterator getItr(int32_t id)
 		{
-			if(st[i].id == -1)
-			break;
+			// std::lock_guard<std::mutex> mylock(mapMtx);
+			auto itr = servoInfo.end();
+			if (mapMtx.try_lock())
+			{
+				itr = servoInfo.find(id);
+				mapMtx.unlock();
+			}
+			return itr;
+		}	
+		void setPosVel(uint32_t id, int16_t angle, uint16_t vel)
+		{
+			auto itr = getItr(id);
+			if (itr == servoInfo.end())
+			{
+				return;
+			}			
+			if (itr->second->mtx.try_lock())
+			{
+				itr->second->posCmd = angle;
+				itr->second->velCmd = vel;
+				if (!itr->second->moveCmd)
+				{
+					itr->second->moveCmd = true;
+				}
+				itr->second->mtx.unlock();
+			}
 		}
-		st[i].id = n;
-		std::cout<< i <<" id " <<st[i].id<<std::endl;
-	}
+		void setEnable(int32_t id, bool _enable)
+		{
+			auto itr = getItr(id);
+			if (itr == servoInfo.end())
+			{
+				return;
+			}			
+			std::lock_guard<std::mutex> mylock(itr->second->mtx);
+			itr->second->isEnable = _enable;
+		}
+		void SetAcceleration(int32_t id, uint8_t acc)
+		{
+			auto itr = getItr(id);
+			if (itr == servoInfo.end())
+			{
+				return;
+			}			
+			std::lock_guard<std::mutex> mylock(itr->second->mtx);
+			itr->second->accCmd = acc;
+		}
+		void ApplyPositionAsHome(int32_t id)
+		{
+			auto itr = getItr(id);
+			if (itr == servoInfo.end())
+			{
+				return;
+			}
+			std::lock_guard<std::mutex> mylock(itr->second->mtx);
+			itr->second->homeCmd = true;
+		}
+		static SMS_STS_THREAD *getInstance()
+		{
+			static SMS_STS_THREAD *instance = new SMS_STS_THREAD();
+			return instance;
+		}
 
-	static SMS_STS_THREAD *getInstance()
-	{
-		static SMS_STS_THREAD * instance = new SMS_STS_THREAD();
-		return instance;
-	}
+	private:
+		std::thread th;
+		std::unordered_map<int32_t, servoDriveInfo*>servoInfo;
+		std::mutex mapMtx;
+		std::atomic<int32_t> servoCnt;
+		void thread_f();	
+	};
 
-private:
-	std::thread th;
-	Status st[MAX_NUM];
-	void thread_f();
-	
-};
-
+}
 
 
 #endif
