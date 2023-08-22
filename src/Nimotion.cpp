@@ -117,7 +117,7 @@ void Nimotion::UpdateAngle()
     msg.ExtId = 0x00; // not used at all
     msg.IDE = CanBase::CAN_ID_STD;
     msg.RTR = CanBase::CAN_RTR_DATA;       // data frame
-    std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
+    // std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
     if(mtx.try_lock())
     {
         // void *dat = &statusword;
@@ -484,7 +484,7 @@ void Nimotion::switchState()
     {
         nimotion_state = SWITCH_ON;
     }
-    else if (!isIPenable && nimotion_mode != POS_MODE) // 电机模式是否位置模式
+    else if (!isIPmode && nimotion_mode != POS_MODE) // 电机模式是否位置模式
     {
         nimotion_state = SET_MODE;
     }
@@ -668,8 +668,8 @@ float Nimotion::getTorque()
         float cur_angle = 720.0;
         if(mtx.try_lock())
         {
-            // cur_angle = angle;
             angle = cur_pos * 360.0 / 10000.0 / reduction;
+            cur_angle = angle;
             mtx.unlock();
         }
         if (fabs(angle - _angle) < 6)
@@ -679,7 +679,7 @@ float Nimotion::getTorque()
         }
         else
         {
-            std::cout << RED_BOLD << "nodeid:" << (int)nodeID << " setAngle to max:"<< _angle << RESET_FORMAT << std::endl;
+            std::cout << RED_BOLD << "nodeid:" << (int)nodeID << " setAngle to max:"<< _angle<<"cur_angle:"<<cur_angle << RESET_FORMAT << std::endl;
         }
 
     }

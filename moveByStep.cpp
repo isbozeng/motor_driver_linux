@@ -35,7 +35,13 @@ int main(int agrc, char *argv[])
 		m4248.UpdateAngle();
 		m1.UpdateAngle();
 		m2.UpdateAngle();
-		m3.UpdateAngle();		
+		m3.UpdateAngle();
+		// std::cout<<"----"<<std::endl;
+		// std::cout<<(int)m1.state<<std::endl;	
+		// std::cout<<(int)m2.state<<std::endl;
+		// std::cout<<(int)m3.state<<std::endl;
+		// std::cout<<(int)m4260.state<<std::endl;
+		// std::cout<<(int)m4248.state<<std::endl;		
 		usleep(100000);
 	};
 	auto last_time = std::chrono::steady_clock::now();
@@ -46,14 +52,19 @@ int main(int agrc, char *argv[])
 	{
 		auto elapsedTime = now_time - last_time;
 		int32_t delt = std::chrono::duration_cast<std::chrono::milliseconds>(elapsedTime).count();
-		if (delt > 500)
+		if (delt > 1000)
 		{
 			m4260.SetAngle(step);
 			m4248.SetAngle(step);
 			m1.SetAngle(step);
+			// std::cout<<"step:"<<step<<std::endl;
 			m2.SetAngle(step);
 			m3.SetAngle(step);
-			step += 1;
+			if (!isMax)
+			{
+				step += 1;
+			}
+			
 			if(step == 90)
 			{
 				isMax = true;

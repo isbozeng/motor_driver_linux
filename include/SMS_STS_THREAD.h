@@ -68,15 +68,18 @@ namespace servo{
 		}	
 		void setPosVel(uint32_t id, int16_t angle, uint16_t vel)
 		{
+			// std::cout<<"angle:"<<(int)angle<<" vel:"<<(int)vel<<std::endl;
 			auto itr = getItr(id);
 			if (itr == servoInfo.end())
 			{
+				std::cout<<"itr null"<<std::endl;
 				return;
 			}			
 			if (itr->second->mtx.try_lock())
 			{
 				itr->second->posCmd = angle;
 				itr->second->velCmd = vel;
+				// std::cout<<"angle:"<<(int)angle<<" vel:"<<(int)vel<<std::endl;
 				if (!itr->second->moveCmd)
 				{
 					itr->second->moveCmd = true;

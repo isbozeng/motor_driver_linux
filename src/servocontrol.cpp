@@ -6,6 +6,7 @@ ServoMotion::ServoMotion(uint8_t _id, bool _inverse, uint8_t _reduction,
     : CtrlStepMotor(_id, _inverse, _reduction, _angleLimitMin, _angleLimitMax)
 {
   memset(&servoDrv, 0, sizeof(servo::servoDriveInfo));
+  memset(&servoInf, 0, sizeof(servo::servoStatus));
   servoDrv.id = nodeID;
   servoDrv.enableCmd = true;
   servoDrv.accCmd = 250;  
@@ -21,6 +22,7 @@ ServoMotion::~ServoMotion() {}
 void ServoMotion::SetAngleWithVelocityLimit(float _angle, float _vel)
 {
   // 把目标先做单位转换
+  // std::cout<<"angle:"<<_angle<<" vel:"<<_vel<<std::endl;
   u16 Angle_ref = (u16)((_angle + 180) * (4096.0 / 360.0));
   u16 Vel_ref = (u16)(_vel * (50.0 / 4.392));
   sm_st->setPosVel(nodeID, Angle_ref, Vel_ref);
@@ -29,7 +31,8 @@ void ServoMotion::SetAngleWithVelocityLimit(float _angle, float _vel)
 
 void ServoMotion::SetAngle(float _angle) 
 {
-  SetAngleWithVelocityLimit(_angle, 200);
+  // std::cout<<"angle:"<<_angle<<std::endl;
+  SetAngleWithVelocityLimit(_angle, 35);
 }
 
 // 使能or解能
@@ -83,6 +86,8 @@ void ServoMotion::UpdateAngle()
   {
     state = ServoMotion::STOP;
   }
+  // std::cout<<"id:"<<(int)nodeID<<" state:"<<(int)state
+  // <<" isEnable:"<<(int)servoInf.isEnable<<std::endl;
 }
 
 float ServoMotion::getCurrent()
