@@ -7,6 +7,7 @@
 #include <unistd.h>
 #include <vector>
 #include <map>
+#include<mutex>
 
 using namespace std;
 template <typename T>
@@ -119,6 +120,7 @@ private:
     } can_bus_callback_t;
 
     vector<can_bus_callback_t> can_bus_callback_list_;
+    std::mutex mtx;
     pthread_t thread_ = -1;
     bool run_flag = true;
 
@@ -156,6 +158,7 @@ public:
 #pragma GCC diagnostic pop
 
         can_bus_callback.this_p = this_p;
+        std::lock_guard<std::mutex> lock(mtx);
         can_bus_callback_list_.push_back(can_bus_callback);
     };
 

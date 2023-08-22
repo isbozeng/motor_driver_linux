@@ -96,6 +96,7 @@ void CanBase::canReceiveRun(void)
                 }
                 for (int n = 0; n < can_bus_callback_list_.size(); n++)
                 {
+                    std::lock_guard<std::mutex> lock(mtx);
                     if (RxMessage[i].IDE == CAN_ID_STD)
                     {
                         RxMessage[i].ExtId = 0;
