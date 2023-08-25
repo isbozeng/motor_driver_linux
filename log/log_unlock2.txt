@@ -1,0 +1,1945 @@
+open deivce ok!
+Can Init ok!
+serial speed 115200
+servo id:1 init...
+servo id:2 init...
+servo id:3 init...
+[1;32mNODE_ID:1 START_NODE[0m
+[1;32mNODE_ID:2 START_NODE[0m
+[1;32mNODE_ID:1 READY ev:0 qs:1[0m
+[1;32mNODE_ID:2 READY ev:0 qs:1[0m
+[1;32mNODE_ID:1 SWITCH_ON so:0[0m
+[1;32mNODE_ID:2 SWITCH_ON so:0[0m
+**********************
+*angle ms:1692948451648,m1:-0.48,m2:0.136,m3:0.224,s1:0,s2:0
+*vel ms:1692948451648,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0
+**********************
+[1;31mnodeid:1 setAngle to max:0cur_angle:9.9864[0m
+[1;31mnodeid:2 setAngle to max:0cur_angle:19.9908[0m
+Cmdms:1692948451648,m1Cmd:-0.48,m2Cmd:0.136,m3Cmd:0.224,s1Cmd:0,s2Cmd:0,duration:0
+[1;31mnodeid:1 setAngle to max:0.0166667cur_angle:9.9864[0m
+[1;31mnodeid:2 setAngle to max:0.0333333cur_angle:19.9908[0m
+Cmdms:1692948451654,m1Cmd:-0.38,m2Cmd:0.269333,m3Cmd:0.274,s1Cmd:0.0166667,s2Cmd:0.0333333,duration:5
+[1;31mnodeid:1 setAngle to max:0.0333333cur_angle:9.9864[0m
+[1;31mnodeid:2 setAngle to max:0.0666667cur_angle:19.9908[0m
+Cmdms:1692948451659,m1Cmd:-0.28,m2Cmd:0.402667,m3Cmd:0.324,s1Cmd:0.0333333,s2Cmd:0.0666667,duration:10
+[1;31mnodeid:1 setAngle to max:0.05cur_angle:9.9864[0m
+[1;31mnodeid:2 setAngle to max:0.1cur_angle:19.9944[0m
+Cmdms:1692948451664,m1Cmd:-0.18,m2Cmd:0.536,m3Cmd:0.374,s1Cmd:0.05,s2Cmd:0.1,duration:15
+[1;31mnodeid:1 setAngle to max:0.0666667cur_angle:9.9864[0m
+[1;31mnodeid:2 setAngle to max:0.133333cur_angle:19.9944[0m
+Cmdms:1692948451669,m1Cmd:-0.08,m2Cmd:0.669333,m3Cmd:0.424,s1Cmd:0.0666667,s2Cmd:0.133333,duration:20
+[1;31mnodeid:1 setAngle to max:0.0833333cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.166667cur_angle:19.9944[0m
+Cmdms:1692948451674,m1Cmd:0.02,m2Cmd:0.802667,m3Cmd:0.474,s1Cmd:0.0833333,s2Cmd:0.166667,duration:25
+[1;31mnodeid:1 setAngle to max:0.1cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.2cur_angle:19.9944[0m
+Cmdms:1692948451679,m1Cmd:0.12,m2Cmd:0.936,m3Cmd:0.524,s1Cmd:0.1,s2Cmd:0.2,duration:30
+[1;31mnodeid:1 setAngle to max:0.116667cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.233333cur_angle:19.9944[0m
+Cmdms:1692948451684,m1Cmd:0.22,m2Cmd:1.06933,m3Cmd:0.574,s1Cmd:0.116667,s2Cmd:0.233333,duration:35
+[1;31mnodeid:1 setAngle to max:0.136667cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.273333cur_angle:19.9944[0m
+Cmdms:1692948451689,m1Cmd:0.34,m2Cmd:1.22933,m3Cmd:0.634,s1Cmd:0.136667,s2Cmd:0.273333,duration:41
+Anglems:1692948451689,m1:-0.48,m2:0.136,m3:0.224,s1:9.99,s2:19.9944 ,duration:41
+Velms:1692948451689,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:41
+[1;31mnodeid:1 setAngle to max:0.153333cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.306667cur_angle:19.9944[0m
+Cmdms:1692948451695,m1Cmd:0.44,m2Cmd:1.36267,m3Cmd:0.684,s1Cmd:0.153333,s2Cmd:0.306667,duration:46
+[1;31mnodeid:1 setAngle to max:0.17cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.34cur_angle:19.9944[0m
+Cmdms:1692948451700,m1Cmd:0.54,m2Cmd:1.496,m3Cmd:0.734,s1Cmd:0.17,s2Cmd:0.34,duration:51
+[1;31mnodeid:1 setAngle to max:0.186667cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.373333cur_angle:19.9944[0m
+Cmdms:1692948451705,m1Cmd:0.64,m2Cmd:1.62933,m3Cmd:0.784,s1Cmd:0.186667,s2Cmd:0.373333,duration:56
+[1;31mnodeid:1 setAngle to max:0.203333cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.406667cur_angle:19.9944[0m
+Cmdms:1692948451710,m1Cmd:0.74,m2Cmd:1.76267,m3Cmd:0.834,s1Cmd:0.203333,s2Cmd:0.406667,duration:61
+[1;31mnodeid:1 setAngle to max:0.22cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.44cur_angle:19.9962[0m
+Cmdms:1692948451715,m1Cmd:0.84,m2Cmd:1.896,m3Cmd:0.884,s1Cmd:0.22,s2Cmd:0.44,duration:66
+[1;31mnodeid:1 setAngle to max:0.236667cur_angle:9.99[0m
+[1;31mnodeid:2 setAngle to max:0.473333cur_angle:19.9962[0m
+Cmdms:1692948451720,m1Cmd:0.94,m2Cmd:2.02933,m3Cmd:0.934,s1Cmd:0.236667,s2Cmd:0.473333,duration:71
+[1;31mnodeid:1 setAngle to max:0.253333cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.506667cur_angle:19.9962[0m
+Cmdms:1692948451725,m1Cmd:1.04,m2Cmd:2.16267,m3Cmd:0.984,s1Cmd:0.253333,s2Cmd:0.506667,duration:76
+[1;31mnodeid:1 setAngle to max:0.273333cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.546667cur_angle:19.9962[0m
+Cmdms:1692948451730,m1Cmd:1.16,m2Cmd:2.32267,m3Cmd:1.044,s1Cmd:0.273333,s2Cmd:0.546667,duration:82
+[1;31mnodeid:1 setAngle to max:0.29cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.58cur_angle:19.9962[0m
+Cmdms:1692948451736,m1Cmd:1.26,m2Cmd:2.456,m3Cmd:1.094,s1Cmd:0.29,s2Cmd:0.58,duration:87
+Anglems:1692948451736,m1:-0.48,m2:0.136,m3:0.224,s1:9.9918,s2:19.9962 ,duration:87
+Velms:1692948451736,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:87
+[1;31mnodeid:1 setAngle to max:0.306667cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.613333cur_angle:19.9962[0m
+Cmdms:1692948451741,m1Cmd:1.36,m2Cmd:2.58933,m3Cmd:1.144,s1Cmd:0.306667,s2Cmd:0.613333,duration:92
+[1;31mnodeid:1 setAngle to max:0.323333cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.646667cur_angle:19.9962[0m
+Cmdms:1692948451746,m1Cmd:1.46,m2Cmd:2.72267,m3Cmd:1.194,s1Cmd:0.323333,s2Cmd:0.646667,duration:97
+[1;31mnodeid:1 setAngle to max:0.34cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.68cur_angle:19.9962[0m
+Cmdms:1692948451751,m1Cmd:1.56,m2Cmd:2.856,m3Cmd:1.244,s1Cmd:0.34,s2Cmd:0.68,duration:102
+[1;31mnodeid:1 setAngle to max:0.356667cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.713333cur_angle:19.9962[0m
+Cmdms:1692948451756,m1Cmd:1.66,m2Cmd:2.98933,m3Cmd:1.294,s1Cmd:0.356667,s2Cmd:0.713333,duration:107
+[1;31mnodeid:1 setAngle to max:0.373333cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.746667cur_angle:19.998[0m
+Cmdms:1692948451761,m1Cmd:1.76,m2Cmd:3.12267,m3Cmd:1.344,s1Cmd:0.373333,s2Cmd:0.746667,duration:112
+[1;31mnodeid:1 setAngle to max:0.39cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.78cur_angle:19.998[0m
+Cmdms:1692948451766,m1Cmd:1.86,m2Cmd:3.256,m3Cmd:1.394,s1Cmd:0.39,s2Cmd:0.78,duration:117
+[1;31mnodeid:1 setAngle to max:0.41cur_angle:9.9918[0m
+[1;31mnodeid:2 setAngle to max:0.82cur_angle:19.998[0m
+Cmdms:1692948451771,m1Cmd:1.98,m2Cmd:3.416,m3Cmd:1.454,s1Cmd:0.41,s2Cmd:0.82,duration:123
+[1;31mnodeid:1 setAngle to max:0.426667cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:0.853333cur_angle:19.998[0m
+Cmdms:1692948451777,m1Cmd:2.08,m2Cmd:3.54933,m3Cmd:1.504,s1Cmd:0.426667,s2Cmd:0.853333,duration:128
+[1;31mnodeid:1 setAngle to max:0.443333cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:0.886667cur_angle:19.998[0m
+Cmdms:1692948451782,m1Cmd:2.18,m2Cmd:3.68267,m3Cmd:1.554,s1Cmd:0.443333,s2Cmd:0.886667,duration:133
+Anglems:1692948451782,m1:-0.48,m2:0.928,m3:0.312,s1:9.9936,s2:19.998 ,duration:133
+Velms:1692948451782,velM1:0,velM2:30.744,velM3:0,velS1:0,velS2:0 ,duration:133
+[1;31mnodeid:1 setAngle to max:0.46cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:0.92cur_angle:19.998[0m
+Cmdms:1692948451787,m1Cmd:2.28,m2Cmd:3.816,m3Cmd:1.604,s1Cmd:0.46,s2Cmd:0.92,duration:138
+[1;31mnodeid:1 setAngle to max:0.476667cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:0.953333cur_angle:19.998[0m
+Cmdms:1692948451792,m1Cmd:2.38,m2Cmd:3.94933,m3Cmd:1.654,s1Cmd:0.476667,s2Cmd:0.953333,duration:143
+[1;31mnodeid:1 setAngle to max:0.493333cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:0.986667cur_angle:19.998[0m
+Cmdms:1692948451797,m1Cmd:2.48,m2Cmd:4.08267,m3Cmd:1.704,s1Cmd:0.493333,s2Cmd:0.986667,duration:148
+[1;31mnodeid:1 setAngle to max:0.51cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:1.02cur_angle:19.998[0m
+Cmdms:1692948451802,m1Cmd:2.58,m2Cmd:4.216,m3Cmd:1.754,s1Cmd:0.51,s2Cmd:1.02,duration:153
+[1;31mnodeid:1 setAngle to max:0.53cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:1.06cur_angle:19.998[0m
+Cmdms:1692948451807,m1Cmd:2.7,m2Cmd:4.376,m3Cmd:1.814,s1Cmd:0.53,s2Cmd:1.06,duration:159
+[1;31mnodeid:1 setAngle to max:0.546667cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:1.09333cur_angle:19.9998[0m
+Cmdms:1692948451813,m1Cmd:2.8,m2Cmd:4.50933,m3Cmd:1.864,s1Cmd:0.546667,s2Cmd:1.09333,duration:164
+[1;31mnodeid:1 setAngle to max:0.563333cur_angle:9.9936[0m
+[1;31mnodeid:2 setAngle to max:1.12667cur_angle:19.9998[0m
+Cmdms:1692948451818,m1Cmd:2.9,m2Cmd:4.64267,m3Cmd:1.914,s1Cmd:0.563333,s2Cmd:1.12667,duration:169
+[1;31mnodeid:1 setAngle to max:0.58cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.16cur_angle:19.9998[0m
+Cmdms:1692948451823,m1Cmd:3,m2Cmd:4.776,m3Cmd:1.964,s1Cmd:0.58,s2Cmd:1.16,duration:174
+Anglems:1692948451823,m1:-0.304,m2:2.248,m3:0.928,s1:9.9954,s2:19.9998 ,duration:174
+Velms:1692948451823,velM1:4.392,velM2:30.744,velM3:17.568,velS1:0,velS2:0 ,duration:174
+[1;31mnodeid:1 setAngle to max:0.596667cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.19333cur_angle:19.9998[0m
+Cmdms:1692948451828,m1Cmd:3.1,m2Cmd:4.90933,m3Cmd:2.014,s1Cmd:0.596667,s2Cmd:1.19333,duration:179
+[1;31mnodeid:1 setAngle to max:0.613333cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.22667cur_angle:19.9998[0m
+Cmdms:1692948451833,m1Cmd:3.2,m2Cmd:5.04267,m3Cmd:2.064,s1Cmd:0.613333,s2Cmd:1.22667,duration:184
+[1;31mnodeid:1 setAngle to max:0.63cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.26cur_angle:19.9998[0m
+Cmdms:1692948451838,m1Cmd:3.3,m2Cmd:5.176,m3Cmd:2.114,s1Cmd:0.63,s2Cmd:1.26,duration:189
+[1;31mnodeid:1 setAngle to max:0.646667cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.29333cur_angle:19.9998[0m
+Cmdms:1692948451843,m1Cmd:3.4,m2Cmd:5.30933,m3Cmd:2.164,s1Cmd:0.646667,s2Cmd:1.29333,duration:194
+[1;31mnodeid:1 setAngle to max:0.663333cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.32667cur_angle:19.9998[0m
+Cmdms:1692948451848,m1Cmd:3.5,m2Cmd:5.44267,m3Cmd:2.214,s1Cmd:0.663333,s2Cmd:1.32667,duration:199
+[1;31mnodeid:1 setAngle to max:0.683333cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.36667cur_angle:19.9998[0m
+Cmdms:1692948451854,m1Cmd:3.62,m2Cmd:5.60267,m3Cmd:2.274,s1Cmd:0.683333,s2Cmd:1.36667,duration:205
+[1;31mnodeid:1 setAngle to max:0.7cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.4cur_angle:19.9998[0m
+Cmdms:1692948451859,m1Cmd:3.72,m2Cmd:5.736,m3Cmd:2.324,s1Cmd:0.7,s2Cmd:1.4,duration:210
+[1;31mnodeid:1 setAngle to max:0.716667cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.43333cur_angle:19.9998[0m
+Cmdms:1692948451864,m1Cmd:3.82,m2Cmd:5.86933,m3Cmd:2.374,s1Cmd:0.716667,s2Cmd:1.43333,duration:215
+[1;31mnodeid:1 setAngle to max:0.733333cur_angle:9.9954[0m
+[1;31mnodeid:2 setAngle to max:1.46667cur_angle:20.0016[0m
+Cmdms:1692948451869,m1Cmd:3.92,m2Cmd:6.00267,m3Cmd:2.424,s1Cmd:0.733333,s2Cmd:1.46667,duration:220
+Anglems:1692948451869,m1:0.4,m2:3.48,m3:1.368,s1:9.9954,s2:20.0016 ,duration:220
+Velms:1692948451869,velM1:17.568,velM2:26.352,velM3:8.784,velS1:0,velS2:0 ,duration:220
+[1;31mnodeid:1 setAngle to max:0.75cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.5cur_angle:20.0016[0m
+Cmdms:1692948451874,m1Cmd:4.02,m2Cmd:6.136,m3Cmd:2.474,s1Cmd:0.75,s2Cmd:1.5,duration:225
+[1;31mnodeid:1 setAngle to max:0.766667cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.53333cur_angle:20.0016[0m
+Cmdms:1692948451879,m1Cmd:4.12,m2Cmd:6.26933,m3Cmd:2.524,s1Cmd:0.766667,s2Cmd:1.53333,duration:230
+[1;31mnodeid:1 setAngle to max:0.783333cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.56667cur_angle:20.0016[0m
+Cmdms:1692948451884,m1Cmd:4.22,m2Cmd:6.40267,m3Cmd:2.574,s1Cmd:0.783333,s2Cmd:1.56667,duration:235
+[1;31mnodeid:1 setAngle to max:0.803333cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.60667cur_angle:20.0016[0m
+Cmdms:1692948451889,m1Cmd:4.34,m2Cmd:6.56267,m3Cmd:2.634,s1Cmd:0.803333,s2Cmd:1.60667,duration:241
+[1;31mnodeid:1 setAngle to max:0.82cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.64cur_angle:20.0016[0m
+Cmdms:1692948451895,m1Cmd:4.44,m2Cmd:6.696,m3Cmd:2.684,s1Cmd:0.82,s2Cmd:1.64,duration:246
+[1;31mnodeid:1 setAngle to max:0.836667cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.67333cur_angle:20.0016[0m
+Cmdms:1692948451900,m1Cmd:4.54,m2Cmd:6.82933,m3Cmd:2.734,s1Cmd:0.836667,s2Cmd:1.67333,duration:251
+[1;31mnodeid:1 setAngle to max:0.853333cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.70667cur_angle:20.0016[0m
+Cmdms:1692948451905,m1Cmd:4.64,m2Cmd:6.96267,m3Cmd:2.784,s1Cmd:0.853333,s2Cmd:1.70667,duration:256
+[1;31mnodeid:1 setAngle to max:0.87cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.74cur_angle:20.0016[0m
+Cmdms:1692948451910,m1Cmd:4.74,m2Cmd:7.096,m3Cmd:2.834,s1Cmd:0.87,s2Cmd:1.74,duration:261
+[1;31mnodeid:1 setAngle to max:0.886667cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.77333cur_angle:20.0016[0m
+Cmdms:1692948451915,m1Cmd:4.84,m2Cmd:7.22933,m3Cmd:2.884,s1Cmd:0.886667,s2Cmd:1.77333,duration:266
+Anglems:1692948451915,m1:1.544,m2:4.8,m3:1.808,s1:9.9972,s2:20.0016 ,duration:266
+Velms:1692948451915,velM1:26.352,velM2:26.352,velM3:8.784,velS1:0,velS2:0 ,duration:266
+[1;31mnodeid:1 setAngle to max:0.903333cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.80667cur_angle:20.0016[0m
+Cmdms:1692948451920,m1Cmd:4.94,m2Cmd:7.36267,m3Cmd:2.934,s1Cmd:0.903333,s2Cmd:1.80667,duration:271
+[1;31mnodeid:1 setAngle to max:0.92cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.84cur_angle:20.0016[0m
+Cmdms:1692948451925,m1Cmd:5.04,m2Cmd:7.496,m3Cmd:2.984,s1Cmd:0.92,s2Cmd:1.84,duration:276
+[1;31mnodeid:1 setAngle to max:0.94cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.88cur_angle:20.0016[0m
+Cmdms:1692948451931,m1Cmd:5.16,m2Cmd:7.656,m3Cmd:3.044,s1Cmd:0.94,s2Cmd:1.88,duration:282
+[1;31mnodeid:1 setAngle to max:0.956667cur_angle:9.9972[0m
+[1;31mnodeid:2 setAngle to max:1.91333cur_angle:20.0016[0m
+Cmdms:1692948451936,m1Cmd:5.26,m2Cmd:7.78933,m3Cmd:3.094,s1Cmd:0.956667,s2Cmd:1.91333,duration:287
+[1;31mnodeid:1 setAngle to max:0.973333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:1.94667cur_angle:20.0016[0m
+Cmdms:1692948451941,m1Cmd:5.36,m2Cmd:7.92267,m3Cmd:3.144,s1Cmd:0.973333,s2Cmd:1.94667,duration:292
+[1;31mnodeid:1 setAngle to max:0.99cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:1.98cur_angle:20.0016[0m
+Cmdms:1692948451946,m1Cmd:5.46,m2Cmd:8.056,m3Cmd:3.194,s1Cmd:0.99,s2Cmd:1.98,duration:297
+[1;31mnodeid:1 setAngle to max:1.00667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.01333cur_angle:20.0016[0m
+Cmdms:1692948451951,m1Cmd:5.56,m2Cmd:8.18933,m3Cmd:3.244,s1Cmd:1.00667,s2Cmd:2.01333,duration:302
+[1;31mnodeid:1 setAngle to max:1.02333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.04667cur_angle:20.0016[0m
+Cmdms:1692948451956,m1Cmd:5.66,m2Cmd:8.32267,m3Cmd:3.294,s1Cmd:1.02333,s2Cmd:2.04667,duration:307
+Anglems:1692948451956,m1:2.512,m2:5.944,m3:2.248,s1:9.999,s2:20.0016 ,duration:307
+Velms:1692948451956,velM1:17.568,velM2:30.744,velM3:13.176,velS1:0,velS2:0 ,duration:307
+[1;31mnodeid:1 setAngle to max:1.04333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.08667cur_angle:19.9998[0m
+Cmdms:1692948451961,m1Cmd:5.78,m2Cmd:8.48267,m3Cmd:3.354,s1Cmd:1.04333,s2Cmd:2.08667,duration:313
+[1;31mnodeid:1 setAngle to max:1.06cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.12cur_angle:19.9998[0m
+Cmdms:1692948451967,m1Cmd:5.88,m2Cmd:8.616,m3Cmd:3.404,s1Cmd:1.06,s2Cmd:2.12,duration:318
+[1;31mnodeid:1 setAngle to max:1.07667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.15333cur_angle:19.9998[0m
+Cmdms:1692948451972,m1Cmd:5.98,m2Cmd:8.74933,m3Cmd:3.454,s1Cmd:1.07667,s2Cmd:2.15333,duration:323
+[1;31mnodeid:1 setAngle to max:1.09333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.18667cur_angle:19.9998[0m
+Cmdms:1692948451977,m1Cmd:6.08,m2Cmd:8.88267,m3Cmd:3.504,s1Cmd:1.09333,s2Cmd:2.18667,duration:328
+[1;31mnodeid:1 setAngle to max:1.11cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.22cur_angle:19.9998[0m
+Cmdms:1692948451982,m1Cmd:6.18,m2Cmd:9.016,m3Cmd:3.554,s1Cmd:1.11,s2Cmd:2.22,duration:333
+[1;31mnodeid:1 setAngle to max:1.12667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.25333cur_angle:19.9998[0m
+Cmdms:1692948451987,m1Cmd:6.28,m2Cmd:9.14933,m3Cmd:3.604,s1Cmd:1.12667,s2Cmd:2.25333,duration:338
+[1;31mnodeid:1 setAngle to max:1.14333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.28667cur_angle:19.9998[0m
+Cmdms:1692948451992,m1Cmd:6.38,m2Cmd:9.28267,m3Cmd:3.654,s1Cmd:1.14333,s2Cmd:2.28667,duration:343
+[1;31mnodeid:1 setAngle to max:1.16333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.32667cur_angle:19.9998[0m
+Cmdms:1692948451998,m1Cmd:6.5,m2Cmd:9.44267,m3Cmd:3.714,s1Cmd:1.16333,s2Cmd:2.32667,duration:349
+Anglems:1692948451998,m1:3.568,m2:5.944,m3:2.776,s1:9.999,s2:19.9998 ,duration:349
+Velms:1692948451998,velM1:26.352,velM2:30.744,velM3:13.176,velS1:0,velS2:0 ,duration:349
+[1;31mnodeid:1 setAngle to max:1.18cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.36cur_angle:19.9998[0m
+Cmdms:1692948452003,m1Cmd:6.6,m2Cmd:9.576,m3Cmd:3.764,s1Cmd:1.18,s2Cmd:2.36,duration:354
+[1;31mnodeid:1 setAngle to max:1.19667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.39333cur_angle:19.9998[0m
+Cmdms:1692948452008,m1Cmd:6.7,m2Cmd:9.70933,m3Cmd:3.814,s1Cmd:1.19667,s2Cmd:2.39333,duration:359
+[1;31mnodeid:1 setAngle to max:1.21333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.42667cur_angle:20.0016[0m
+Cmdms:1692948452013,m1Cmd:6.8,m2Cmd:9.84267,m3Cmd:3.864,s1Cmd:1.21333,s2Cmd:2.42667,duration:364
+[1;31mnodeid:1 setAngle to max:1.23cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.46cur_angle:20.0016[0m
+Cmdms:1692948452018,m1Cmd:6.9,m2Cmd:9.976,m3Cmd:3.914,s1Cmd:1.23,s2Cmd:2.46,duration:369
+[1;31mnodeid:1 setAngle to max:1.24667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.49333cur_angle:20.0016[0m
+Cmdms:1692948452023,m1Cmd:7,m2Cmd:10.1093,m3Cmd:3.964,s1Cmd:1.24667,s2Cmd:2.49333,duration:374
+[1;31mnodeid:1 setAngle to max:1.26333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.52667cur_angle:20.0016[0m
+Cmdms:1692948452028,m1Cmd:7.1,m2Cmd:10.2427,m3Cmd:4.014,s1Cmd:1.26333,s2Cmd:2.52667,duration:379
+[1;31mnodeid:1 setAngle to max:1.28333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.56667cur_angle:20.0016[0m
+Cmdms:1692948452033,m1Cmd:7.22,m2Cmd:10.4027,m3Cmd:4.074,s1Cmd:1.28333,s2Cmd:2.56667,duration:385
+[1;31mnodeid:1 setAngle to max:1.3cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.6cur_angle:20.0016[0m
+Cmdms:1692948452039,m1Cmd:7.32,m2Cmd:10.536,m3Cmd:4.124,s1Cmd:1.3,s2Cmd:2.6,duration:390
+[1;31mnodeid:1 setAngle to max:1.31667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.63333cur_angle:20.0016[0m
+Cmdms:1692948452044,m1Cmd:7.42,m2Cmd:10.6693,m3Cmd:4.174,s1Cmd:1.31667,s2Cmd:2.63333,duration:395
+Anglems:1692948452044,m1:4.536,m2:7.088,m3:3.216,s1:9.999,s2:20.0016 ,duration:395
+Velms:1692948452044,velM1:21.96,velM2:21.96,velM3:8.784,velS1:0,velS2:0 ,duration:395
+[1;31mnodeid:1 setAngle to max:1.33333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.66667cur_angle:20.0016[0m
+Cmdms:1692948452049,m1Cmd:7.52,m2Cmd:10.8027,m3Cmd:4.224,s1Cmd:1.33333,s2Cmd:2.66667,duration:400
+[1;31mnodeid:1 setAngle to max:1.35cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.7cur_angle:20.0016[0m
+Cmdms:1692948452054,m1Cmd:7.62,m2Cmd:10.936,m3Cmd:4.274,s1Cmd:1.35,s2Cmd:2.7,duration:405
+[1;31mnodeid:1 setAngle to max:1.36667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.73333cur_angle:19.9998[0m
+Cmdms:1692948452059,m1Cmd:7.72,m2Cmd:11.0693,m3Cmd:4.324,s1Cmd:1.36667,s2Cmd:2.73333,duration:410
+[1;31mnodeid:1 setAngle to max:1.38333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.76667cur_angle:19.9998[0m
+Cmdms:1692948452064,m1Cmd:7.82,m2Cmd:11.2027,m3Cmd:4.374,s1Cmd:1.38333,s2Cmd:2.76667,duration:415
+[1;31mnodeid:1 setAngle to max:1.4cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.8cur_angle:19.9998[0m
+Cmdms:1692948452069,m1Cmd:7.92,m2Cmd:11.336,m3Cmd:4.424,s1Cmd:1.4,s2Cmd:2.8,duration:420
+[1;31mnodeid:1 setAngle to max:1.42cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.84cur_angle:19.9998[0m
+Cmdms:1692948452074,m1Cmd:8.04,m2Cmd:11.496,m3Cmd:4.484,s1Cmd:1.42,s2Cmd:2.84,duration:426
+[1;31mnodeid:1 setAngle to max:1.43667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.87333cur_angle:19.9998[0m
+Cmdms:1692948452080,m1Cmd:8.14,m2Cmd:11.6293,m3Cmd:4.534,s1Cmd:1.43667,s2Cmd:2.87333,duration:431
+[1;31mnodeid:1 setAngle to max:1.45333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.90667cur_angle:19.9998[0m
+Cmdms:1692948452085,m1Cmd:8.24,m2Cmd:11.7627,m3Cmd:4.584,s1Cmd:1.45333,s2Cmd:2.90667,duration:436
+Anglems:1692948452085,m1:5.504,m2:8.232,m3:3.656,s1:9.999,s2:19.9998 ,duration:436
+Velms:1692948452085,velM1:26.352,velM2:21.96,velM3:8.784,velS1:0,velS2:0 ,duration:436
+[1;31mnodeid:1 setAngle to max:1.47cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.94cur_angle:19.9998[0m
+Cmdms:1692948452090,m1Cmd:8.34,m2Cmd:11.896,m3Cmd:4.634,s1Cmd:1.47,s2Cmd:2.94,duration:441
+[1;31mnodeid:1 setAngle to max:1.48667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:2.97333cur_angle:19.9998[0m
+Cmdms:1692948452095,m1Cmd:8.44,m2Cmd:12.0293,m3Cmd:4.684,s1Cmd:1.48667,s2Cmd:2.97333,duration:446
+[1;31mnodeid:1 setAngle to max:1.50333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.00667cur_angle:19.9998[0m
+Cmdms:1692948452100,m1Cmd:8.54,m2Cmd:12.1627,m3Cmd:4.734,s1Cmd:1.50333,s2Cmd:3.00667,duration:451
+[1;31mnodeid:1 setAngle to max:1.52333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.04667cur_angle:19.9998[0m
+Cmdms:1692948452105,m1Cmd:8.66,m2Cmd:12.3227,m3Cmd:4.794,s1Cmd:1.52333,s2Cmd:3.04667,duration:457
+[1;31mnodeid:1 setAngle to max:1.54cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.08cur_angle:19.9998[0m
+Cmdms:1692948452111,m1Cmd:8.76,m2Cmd:12.456,m3Cmd:4.844,s1Cmd:1.54,s2Cmd:3.08,duration:462
+[1;31mnodeid:1 setAngle to max:1.55667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.11333cur_angle:19.9998[0m
+Cmdms:1692948452116,m1Cmd:8.86,m2Cmd:12.5893,m3Cmd:4.894,s1Cmd:1.55667,s2Cmd:3.11333,duration:467
+[1;31mnodeid:1 setAngle to max:1.57333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.14667cur_angle:19.9998[0m
+Cmdms:1692948452121,m1Cmd:8.96,m2Cmd:12.7227,m3Cmd:4.944,s1Cmd:1.57333,s2Cmd:3.14667,duration:472
+[1;31mnodeid:1 setAngle to max:1.59cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.18cur_angle:19.9998[0m
+Cmdms:1692948452126,m1Cmd:9.06,m2Cmd:12.856,m3Cmd:4.994,s1Cmd:1.59,s2Cmd:3.18,duration:477
+Anglems:1692948452126,m1:6.296,m2:9.464,m3:4.096,s1:9.999,s2:19.9998 ,duration:477
+Velms:1692948452126,velM1:13.176,velM2:30.744,velM3:13.176,velS1:0,velS2:0 ,duration:477
+[1;31mnodeid:1 setAngle to max:1.60667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.21333cur_angle:19.9998[0m
+Cmdms:1692948452131,m1Cmd:9.16,m2Cmd:12.9893,m3Cmd:5.044,s1Cmd:1.60667,s2Cmd:3.21333,duration:482
+[1;31mnodeid:1 setAngle to max:1.62333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.24667cur_angle:19.9998[0m
+Cmdms:1692948452136,m1Cmd:9.26,m2Cmd:13.1227,m3Cmd:5.094,s1Cmd:1.62333,s2Cmd:3.24667,duration:487
+[1;31mnodeid:1 setAngle to max:1.64cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.28cur_angle:19.9998[0m
+Cmdms:1692948452141,m1Cmd:9.36,m2Cmd:13.256,m3Cmd:5.144,s1Cmd:1.64,s2Cmd:3.28,duration:492
+[1;31mnodeid:1 setAngle to max:1.66cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.32cur_angle:19.9998[0m
+Cmdms:1692948452146,m1Cmd:9.48,m2Cmd:13.416,m3Cmd:5.204,s1Cmd:1.66,s2Cmd:3.32,duration:498
+[1;31mnodeid:1 setAngle to max:1.67667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.35333cur_angle:19.9998[0m
+Cmdms:1692948452152,m1Cmd:9.58,m2Cmd:13.5493,m3Cmd:5.254,s1Cmd:1.67667,s2Cmd:3.35333,duration:503
+[1;31mnodeid:1 setAngle to max:1.69333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.38667cur_angle:19.9998[0m
+Cmdms:1692948452157,m1Cmd:9.68,m2Cmd:13.6827,m3Cmd:5.304,s1Cmd:1.69333,s2Cmd:3.38667,duration:508
+[1;31mnodeid:1 setAngle to max:1.71cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.42cur_angle:19.9998[0m
+Cmdms:1692948452162,m1Cmd:9.78,m2Cmd:13.816,m3Cmd:5.354,s1Cmd:1.71,s2Cmd:3.42,duration:513
+[1;31mnodeid:1 setAngle to max:1.72667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.45333cur_angle:19.9998[0m
+Cmdms:1692948452167,m1Cmd:9.88,m2Cmd:13.9493,m3Cmd:5.404,s1Cmd:1.72667,s2Cmd:3.45333,duration:518
+[1;31mnodeid:1 setAngle to max:1.74333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.48667cur_angle:19.9998[0m
+Cmdms:1692948452172,m1Cmd:9.98,m2Cmd:14.0827,m3Cmd:5.454,s1Cmd:1.74333,s2Cmd:3.48667,duration:523
+Anglems:1692948452172,m1:7.088,m2:10.696,m3:4.536,s1:9.999,s2:19.9998 ,duration:523
+Velms:1692948452172,velM1:17.568,velM2:30.744,velM3:8.784,velS1:0,velS2:0 ,duration:523
+[1;31mnodeid:1 setAngle to max:1.76cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.52cur_angle:19.9998[0m
+Cmdms:1692948452177,m1Cmd:10.08,m2Cmd:14.216,m3Cmd:5.504,s1Cmd:1.76,s2Cmd:3.52,duration:528
+[1;31mnodeid:1 setAngle to max:1.77667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.55333cur_angle:19.9998[0m
+Cmdms:1692948452182,m1Cmd:10.18,m2Cmd:14.3493,m3Cmd:5.554,s1Cmd:1.77667,s2Cmd:3.55333,duration:533
+[1;31mnodeid:1 setAngle to max:1.79667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.59333cur_angle:19.9998[0m
+Cmdms:1692948452187,m1Cmd:10.3,m2Cmd:14.5093,m3Cmd:5.614,s1Cmd:1.79667,s2Cmd:3.59333,duration:539
+[1;31mnodeid:1 setAngle to max:1.81333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.62667cur_angle:19.9998[0m
+Cmdms:1692948452193,m1Cmd:10.4,m2Cmd:14.6427,m3Cmd:5.664,s1Cmd:1.81333,s2Cmd:3.62667,duration:544
+[1;31mnodeid:1 setAngle to max:1.83cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.66cur_angle:19.9998[0m
+Cmdms:1692948452198,m1Cmd:10.5,m2Cmd:14.776,m3Cmd:5.714,s1Cmd:1.83,s2Cmd:3.66,duration:549
+[1;31mnodeid:1 setAngle to max:1.84667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.69333cur_angle:19.9998[0m
+Cmdms:1692948452203,m1Cmd:10.6,m2Cmd:14.9093,m3Cmd:5.764,s1Cmd:1.84667,s2Cmd:3.69333,duration:554
+[1;31mnodeid:1 setAngle to max:1.86333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.72667cur_angle:19.9998[0m
+Cmdms:1692948452208,m1Cmd:10.7,m2Cmd:15.0427,m3Cmd:5.814,s1Cmd:1.86333,s2Cmd:3.72667,duration:559
+[1;31mnodeid:1 setAngle to max:1.88cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.76cur_angle:19.9998[0m
+Cmdms:1692948452213,m1Cmd:10.8,m2Cmd:15.176,m3Cmd:5.864,s1Cmd:1.88,s2Cmd:3.76,duration:564
+[1;31mnodeid:1 setAngle to max:1.89667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.79333cur_angle:19.9998[0m
+Cmdms:1692948452218,m1Cmd:10.9,m2Cmd:15.3093,m3Cmd:5.914,s1Cmd:1.89667,s2Cmd:3.79333,duration:569
+Anglems:1692948452218,m1:8.056,m2:11.84,m3:4.976,s1:9.999,s2:19.9998 ,duration:569
+Velms:1692948452218,velM1:21.96,velM2:26.352,velM3:8.784,velS1:0,velS2:0 ,duration:569
+[1;31mnodeid:1 setAngle to max:1.91333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.82667cur_angle:19.9998[0m
+Cmdms:1692948452223,m1Cmd:11,m2Cmd:15.4427,m3Cmd:5.964,s1Cmd:1.91333,s2Cmd:3.82667,duration:574
+[1;31mnodeid:1 setAngle to max:1.93cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.86cur_angle:19.9998[0m
+Cmdms:1692948452228,m1Cmd:11.1,m2Cmd:15.576,m3Cmd:6.014,s1Cmd:1.93,s2Cmd:3.86,duration:579
+[1;31mnodeid:1 setAngle to max:1.95cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.9cur_angle:19.9998[0m
+Cmdms:1692948452234,m1Cmd:11.22,m2Cmd:15.736,m3Cmd:6.074,s1Cmd:1.95,s2Cmd:3.9,duration:585
+[1;31mnodeid:1 setAngle to max:1.96667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.93333cur_angle:19.9998[0m
+Cmdms:1692948452239,m1Cmd:11.32,m2Cmd:15.8693,m3Cmd:6.124,s1Cmd:1.96667,s2Cmd:3.93333,duration:590
+[1;31mnodeid:1 setAngle to max:1.98333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:3.96667cur_angle:19.9998[0m
+Cmdms:1692948452244,m1Cmd:11.42,m2Cmd:16.0027,m3Cmd:6.174,s1Cmd:1.98333,s2Cmd:3.96667,duration:595
+[1;31mnodeid:1 setAngle to max:2cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4cur_angle:19.9998[0m
+Cmdms:1692948452249,m1Cmd:11.52,m2Cmd:16.136,m3Cmd:6.224,s1Cmd:2,s2Cmd:4,duration:600
+[1;31mnodeid:1 setAngle to max:2.01667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.03333cur_angle:19.9998[0m
+Cmdms:1692948452254,m1Cmd:11.62,m2Cmd:16.2693,m3Cmd:6.274,s1Cmd:2.01667,s2Cmd:4.03333,duration:605
+[1;31mnodeid:1 setAngle to max:2.03333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.06667cur_angle:19.9998[0m
+Cmdms:1692948452259,m1Cmd:11.72,m2Cmd:16.4027,m3Cmd:6.324,s1Cmd:2.03333,s2Cmd:4.06667,duration:610
+[1;31mnodeid:1 setAngle to max:2.05cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.1cur_angle:19.9998[0m
+Cmdms:1692948452264,m1Cmd:11.82,m2Cmd:16.536,m3Cmd:6.374,s1Cmd:2.05,s2Cmd:4.1,duration:615
+Anglems:1692948452264,m1:9.024,m2:12.984,m3:5.504,s1:9.999,s2:19.9998 ,duration:615
+Velms:1692948452264,velM1:21.96,velM2:26.352,velM3:8.784,velS1:0,velS2:0 ,duration:615
+[1;31mnodeid:1 setAngle to max:2.06667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.13333cur_angle:19.9998[0m
+Cmdms:1692948452269,m1Cmd:11.92,m2Cmd:16.6693,m3Cmd:6.424,s1Cmd:2.06667,s2Cmd:4.13333,duration:620
+[1;31mnodeid:1 setAngle to max:2.08667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.17333cur_angle:19.9998[0m
+Cmdms:1692948452274,m1Cmd:12.04,m2Cmd:16.8293,m3Cmd:6.484,s1Cmd:2.08667,s2Cmd:4.17333,duration:626
+[1;31mnodeid:1 setAngle to max:2.10333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.20667cur_angle:19.9998[0m
+Cmdms:1692948452280,m1Cmd:12.14,m2Cmd:16.9627,m3Cmd:6.534,s1Cmd:2.10333,s2Cmd:4.20667,duration:631
+[1;31mnodeid:1 setAngle to max:2.12cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.24cur_angle:19.9998[0m
+Cmdms:1692948452285,m1Cmd:12.24,m2Cmd:17.096,m3Cmd:6.584,s1Cmd:2.12,s2Cmd:4.24,duration:636
+[1;31mnodeid:1 setAngle to max:2.13667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.27333cur_angle:19.9998[0m
+Cmdms:1692948452290,m1Cmd:12.34,m2Cmd:17.2293,m3Cmd:6.634,s1Cmd:2.13667,s2Cmd:4.27333,duration:641
+[1;31mnodeid:1 setAngle to max:2.15333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.30667cur_angle:19.9998[0m
+Cmdms:1692948452295,m1Cmd:12.44,m2Cmd:17.3627,m3Cmd:6.684,s1Cmd:2.15333,s2Cmd:4.30667,duration:646
+[1;31mnodeid:1 setAngle to max:2.17cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.34cur_angle:19.9998[0m
+Cmdms:1692948452300,m1Cmd:12.54,m2Cmd:17.496,m3Cmd:6.734,s1Cmd:2.17,s2Cmd:4.34,duration:651
+[1;31mnodeid:1 setAngle to max:2.19cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.38cur_angle:19.9998[0m
+Cmdms:1692948452305,m1Cmd:12.66,m2Cmd:17.656,m3Cmd:6.794,s1Cmd:2.19,s2Cmd:4.38,duration:657
+Anglems:1692948452305,m1:9.992,m2:14.304,m3:5.856,s1:9.999,s2:19.9998 ,duration:657
+Velms:1692948452305,velM1:21.96,velM2:30.744,velM3:8.784,velS1:0,velS2:0 ,duration:657
+[1;31mnodeid:1 setAngle to max:2.20667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.41333cur_angle:19.9998[0m
+Cmdms:1692948452311,m1Cmd:12.76,m2Cmd:17.7893,m3Cmd:6.844,s1Cmd:2.20667,s2Cmd:4.41333,duration:662
+[1;31mnodeid:1 setAngle to max:2.22333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.44667cur_angle:19.9998[0m
+Cmdms:1692948452316,m1Cmd:12.86,m2Cmd:17.9227,m3Cmd:6.894,s1Cmd:2.22333,s2Cmd:4.44667,duration:667
+[1;31mnodeid:1 setAngle to max:2.24cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.48cur_angle:20.0016[0m
+Cmdms:1692948452321,m1Cmd:12.96,m2Cmd:18.056,m3Cmd:6.944,s1Cmd:2.24,s2Cmd:4.48,duration:672
+[1;31mnodeid:1 setAngle to max:2.25667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.51333cur_angle:20.0016[0m
+Cmdms:1692948452326,m1Cmd:13.06,m2Cmd:18.1893,m3Cmd:6.994,s1Cmd:2.25667,s2Cmd:4.51333,duration:677
+[1;31mnodeid:1 setAngle to max:2.27333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.54667cur_angle:20.0016[0m
+Cmdms:1692948452331,m1Cmd:13.16,m2Cmd:18.3227,m3Cmd:7.044,s1Cmd:2.27333,s2Cmd:4.54667,duration:682
+[1;31mnodeid:1 setAngle to max:2.29cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.58cur_angle:20.0016[0m
+Cmdms:1692948452336,m1Cmd:13.26,m2Cmd:18.456,m3Cmd:7.094,s1Cmd:2.29,s2Cmd:4.58,duration:687
+[1;31mnodeid:1 setAngle to max:2.30667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.61333cur_angle:20.0016[0m
+Cmdms:1692948452341,m1Cmd:13.36,m2Cmd:18.5893,m3Cmd:7.144,s1Cmd:2.30667,s2Cmd:4.61333,duration:692
+[1;31mnodeid:1 setAngle to max:2.32333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.64667cur_angle:20.0016[0m
+Cmdms:1692948452346,m1Cmd:13.46,m2Cmd:18.7227,m3Cmd:7.194,s1Cmd:2.32333,s2Cmd:4.64667,duration:697
+[1;31mnodeid:1 setAngle to max:2.34333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.68667cur_angle:20.0016[0m
+Cmdms:1692948452352,m1Cmd:13.58,m2Cmd:18.8827,m3Cmd:7.254,s1Cmd:2.34333,s2Cmd:4.68667,duration:703
+Anglems:1692948452352,m1:10.872,m2:15.536,m3:6.296,s1:9.999,s2:20.0016 ,duration:703
+Velms:1692948452352,velM1:17.568,velM2:26.352,velM3:13.176,velS1:0,velS2:0 ,duration:703
+[1;31mnodeid:1 setAngle to max:2.36cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.72cur_angle:20.0016[0m
+Cmdms:1692948452357,m1Cmd:13.68,m2Cmd:19.016,m3Cmd:7.304,s1Cmd:2.36,s2Cmd:4.72,duration:708
+[1;31mnodeid:1 setAngle to max:2.37667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.75333cur_angle:20.0016[0m
+Cmdms:1692948452362,m1Cmd:13.78,m2Cmd:19.1493,m3Cmd:7.354,s1Cmd:2.37667,s2Cmd:4.75333,duration:713
+[1;31mnodeid:1 setAngle to max:2.39333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.78667cur_angle:20.0016[0m
+Cmdms:1692948452367,m1Cmd:13.88,m2Cmd:19.2827,m3Cmd:7.404,s1Cmd:2.39333,s2Cmd:4.78667,duration:718
+[1;31mnodeid:1 setAngle to max:2.41cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.82cur_angle:19.9998[0m
+Cmdms:1692948452372,m1Cmd:13.98,m2Cmd:19.416,m3Cmd:7.454,s1Cmd:2.41,s2Cmd:4.82,duration:723
+[1;31mnodeid:1 setAngle to max:2.42667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.85333cur_angle:19.9998[0m
+Cmdms:1692948452377,m1Cmd:14.08,m2Cmd:19.5493,m3Cmd:7.504,s1Cmd:2.42667,s2Cmd:4.85333,duration:728
+[1;31mnodeid:1 setAngle to max:2.44333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.88667cur_angle:19.9998[0m
+Cmdms:1692948452382,m1Cmd:14.18,m2Cmd:19.6827,m3Cmd:7.554,s1Cmd:2.44333,s2Cmd:4.88667,duration:733
+[1;31mnodeid:1 setAngle to max:2.46333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.92667cur_angle:19.9998[0m
+Cmdms:1692948452387,m1Cmd:14.3,m2Cmd:19.8427,m3Cmd:7.614,s1Cmd:2.46333,s2Cmd:4.92667,duration:739
+[1;31mnodeid:1 setAngle to max:2.48cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.96cur_angle:19.9998[0m
+Cmdms:1692948452393,m1Cmd:14.4,m2Cmd:19.976,m3Cmd:7.664,s1Cmd:2.48,s2Cmd:4.96,duration:744
+[1;31mnodeid:1 setAngle to max:2.49667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:4.99333cur_angle:19.9998[0m
+Cmdms:1692948452398,m1Cmd:14.5,m2Cmd:20.1093,m3Cmd:7.714,s1Cmd:2.49667,s2Cmd:4.99333,duration:749
+Anglems:1692948452398,m1:11.664,m2:16.68,m3:6.824,s1:9.999,s2:19.9998 ,duration:749
+Velms:1692948452398,velM1:17.568,velM2:26.352,velM3:13.176,velS1:0,velS2:0 ,duration:749
+[1;31mnodeid:1 setAngle to max:2.51333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.02667cur_angle:19.9998[0m
+Cmdms:1692948452403,m1Cmd:14.6,m2Cmd:20.2427,m3Cmd:7.764,s1Cmd:2.51333,s2Cmd:5.02667,duration:754
+[1;31mnodeid:1 setAngle to max:2.53cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.06cur_angle:19.9998[0m
+Cmdms:1692948452408,m1Cmd:14.7,m2Cmd:20.376,m3Cmd:7.814,s1Cmd:2.53,s2Cmd:5.06,duration:759
+[1;31mnodeid:1 setAngle to max:2.54667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.09333cur_angle:19.9998[0m
+Cmdms:1692948452413,m1Cmd:14.8,m2Cmd:20.5093,m3Cmd:7.864,s1Cmd:2.54667,s2Cmd:5.09333,duration:764
+[1;31mnodeid:1 setAngle to max:2.56333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.12667cur_angle:19.9998[0m
+Cmdms:1692948452418,m1Cmd:14.9,m2Cmd:20.6427,m3Cmd:7.914,s1Cmd:2.56333,s2Cmd:5.12667,duration:769
+[1;31mnodeid:1 setAngle to max:2.58cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.16cur_angle:19.9998[0m
+Cmdms:1692948452423,m1Cmd:15,m2Cmd:20.776,m3Cmd:7.964,s1Cmd:2.58,s2Cmd:5.16,duration:774
+[1;31mnodeid:1 setAngle to max:2.6cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.2cur_angle:19.9998[0m
+Cmdms:1692948452428,m1Cmd:15.12,m2Cmd:20.936,m3Cmd:8.024,s1Cmd:2.6,s2Cmd:5.2,duration:780
+[1;31mnodeid:1 setAngle to max:2.61667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.23333cur_angle:19.9998[0m
+Cmdms:1692948452434,m1Cmd:15.22,m2Cmd:21.0693,m3Cmd:8.074,s1Cmd:2.61667,s2Cmd:5.23333,duration:785
+[1;31mnodeid:1 setAngle to max:2.63333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.26667cur_angle:19.9998[0m
+Cmdms:1692948452439,m1Cmd:15.32,m2Cmd:21.2027,m3Cmd:8.124,s1Cmd:2.63333,s2Cmd:5.26667,duration:790
+[1;31mnodeid:1 setAngle to max:2.65cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.3cur_angle:19.9998[0m
+Cmdms:1692948452444,m1Cmd:15.42,m2Cmd:21.336,m3Cmd:8.174,s1Cmd:2.65,s2Cmd:5.3,duration:795
+Anglems:1692948452444,m1:12.456,m2:18,m3:7.264,s1:9.999,s2:19.9998 ,duration:795
+Velms:1692948452444,velM1:17.568,velM2:26.352,velM3:8.784,velS1:0,velS2:0 ,duration:795
+[1;31mnodeid:1 setAngle to max:2.66667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.33333cur_angle:19.9998[0m
+Cmdms:1692948452449,m1Cmd:15.52,m2Cmd:21.4693,m3Cmd:8.224,s1Cmd:2.66667,s2Cmd:5.33333,duration:800
+[1;31mnodeid:1 setAngle to max:2.68333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.36667cur_angle:19.9998[0m
+Cmdms:1692948452454,m1Cmd:15.62,m2Cmd:21.6027,m3Cmd:8.274,s1Cmd:2.68333,s2Cmd:5.36667,duration:805
+[1;31mnodeid:1 setAngle to max:2.7cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.4cur_angle:19.9998[0m
+Cmdms:1692948452459,m1Cmd:15.72,m2Cmd:21.736,m3Cmd:8.324,s1Cmd:2.7,s2Cmd:5.4,duration:810
+[1;31mnodeid:1 setAngle to max:2.71667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.43333cur_angle:19.9998[0m
+Cmdms:1692948452464,m1Cmd:15.82,m2Cmd:21.8693,m3Cmd:8.374,s1Cmd:2.71667,s2Cmd:5.43333,duration:815
+[1;31mnodeid:1 setAngle to max:2.73333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.46667cur_angle:19.9998[0m
+Cmdms:1692948452469,m1Cmd:15.92,m2Cmd:22.0027,m3Cmd:8.424,s1Cmd:2.73333,s2Cmd:5.46667,duration:820
+[1;31mnodeid:1 setAngle to max:2.75333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.50667cur_angle:19.9998[0m
+Cmdms:1692948452474,m1Cmd:16.04,m2Cmd:22.1627,m3Cmd:8.484,s1Cmd:2.75333,s2Cmd:5.50667,duration:826
+[1;31mnodeid:1 setAngle to max:2.77cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.54cur_angle:19.9998[0m
+Cmdms:1692948452480,m1Cmd:16.14,m2Cmd:22.296,m3Cmd:8.534,s1Cmd:2.77,s2Cmd:5.54,duration:831
+[1;31mnodeid:1 setAngle to max:2.78667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.57333cur_angle:19.9998[0m
+Cmdms:1692948452485,m1Cmd:16.24,m2Cmd:22.4293,m3Cmd:8.584,s1Cmd:2.78667,s2Cmd:5.57333,duration:836
+[1;31mnodeid:1 setAngle to max:2.80333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.60667cur_angle:19.9998[0m
+Cmdms:1692948452490,m1Cmd:16.34,m2Cmd:22.5627,m3Cmd:8.634,s1Cmd:2.80333,s2Cmd:5.60667,duration:841
+Anglems:1692948452490,m1:13.512,m2:19.056,m3:7.704,s1:9.999,s2:19.9998 ,duration:841
+Velms:1692948452490,velM1:21.96,velM2:26.352,velM3:8.784,velS1:0,velS2:0 ,duration:841
+[1;31mnodeid:1 setAngle to max:2.82cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.64cur_angle:19.9998[0m
+Cmdms:1692948452495,m1Cmd:16.44,m2Cmd:22.696,m3Cmd:8.684,s1Cmd:2.82,s2Cmd:5.64,duration:846
+[1;31mnodeid:1 setAngle to max:2.83667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.67333cur_angle:19.9998[0m
+Cmdms:1692948452500,m1Cmd:16.54,m2Cmd:22.8293,m3Cmd:8.734,s1Cmd:2.83667,s2Cmd:5.67333,duration:851
+[1;31mnodeid:1 setAngle to max:2.85333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.70667cur_angle:19.9998[0m
+Cmdms:1692948452505,m1Cmd:16.64,m2Cmd:22.9627,m3Cmd:8.784,s1Cmd:2.85333,s2Cmd:5.70667,duration:856
+[1;31mnodeid:1 setAngle to max:2.87cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.74cur_angle:19.9998[0m
+Cmdms:1692948452510,m1Cmd:16.74,m2Cmd:23.096,m3Cmd:8.834,s1Cmd:2.87,s2Cmd:5.74,duration:861
+[1;31mnodeid:1 setAngle to max:2.89cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.78cur_angle:19.9998[0m
+Cmdms:1692948452515,m1Cmd:16.86,m2Cmd:23.256,m3Cmd:8.894,s1Cmd:2.89,s2Cmd:5.78,duration:867
+[1;31mnodeid:1 setAngle to max:2.90667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.81333cur_angle:19.9998[0m
+Cmdms:1692948452521,m1Cmd:16.96,m2Cmd:23.3893,m3Cmd:8.944,s1Cmd:2.90667,s2Cmd:5.81333,duration:872
+[1;31mnodeid:1 setAngle to max:2.92333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.84667cur_angle:19.9998[0m
+Cmdms:1692948452526,m1Cmd:17.06,m2Cmd:23.5227,m3Cmd:8.994,s1Cmd:2.92333,s2Cmd:5.84667,duration:877
+[1;31mnodeid:1 setAngle to max:2.94cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.88cur_angle:19.9998[0m
+Cmdms:1692948452531,m1Cmd:17.16,m2Cmd:23.656,m3Cmd:9.044,s1Cmd:2.94,s2Cmd:5.88,duration:882
+[1;31mnodeid:1 setAngle to max:2.95667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.91333cur_angle:19.9998[0m
+Cmdms:1692948452536,m1Cmd:17.26,m2Cmd:23.7893,m3Cmd:9.094,s1Cmd:2.95667,s2Cmd:5.91333,duration:887
+Anglems:1692948452536,m1:14.48,m2:20.2,m3:8.144,s1:9.999,s2:19.9998 ,duration:887
+Velms:1692948452536,velM1:21.96,velM2:26.352,velM3:13.176,velS1:0,velS2:0 ,duration:887
+[1;31mnodeid:1 setAngle to max:2.97333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.94667cur_angle:19.9998[0m
+Cmdms:1692948452541,m1Cmd:17.36,m2Cmd:23.9227,m3Cmd:9.144,s1Cmd:2.97333,s2Cmd:5.94667,duration:892
+[1;31mnodeid:1 setAngle to max:2.99cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:5.98cur_angle:19.9998[0m
+Cmdms:1692948452546,m1Cmd:17.46,m2Cmd:24.056,m3Cmd:9.194,s1Cmd:2.99,s2Cmd:5.98,duration:897
+[1;31mnodeid:1 setAngle to max:3.00667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.01333cur_angle:19.9998[0m
+Cmdms:1692948452551,m1Cmd:17.56,m2Cmd:24.1893,m3Cmd:9.244,s1Cmd:3.00667,s2Cmd:6.01333,duration:902
+[1;31mnodeid:1 setAngle to max:3.02333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.04667cur_angle:19.9998[0m
+Cmdms:1692948452556,m1Cmd:17.66,m2Cmd:24.3227,m3Cmd:9.294,s1Cmd:3.02333,s2Cmd:6.04667,duration:907
+[1;31mnodeid:1 setAngle to max:3.04333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.08667cur_angle:19.9998[0m
+Cmdms:1692948452561,m1Cmd:17.78,m2Cmd:24.4827,m3Cmd:9.354,s1Cmd:3.04333,s2Cmd:6.08667,duration:913
+[1;31mnodeid:1 setAngle to max:3.06cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.12cur_angle:19.9998[0m
+Cmdms:1692948452567,m1Cmd:17.88,m2Cmd:24.616,m3Cmd:9.404,s1Cmd:3.06,s2Cmd:6.12,duration:918
+[1;31mnodeid:1 setAngle to max:3.07667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.15333cur_angle:19.9998[0m
+Cmdms:1692948452572,m1Cmd:17.98,m2Cmd:24.7493,m3Cmd:9.454,s1Cmd:3.07667,s2Cmd:6.15333,duration:923
+[1;31mnodeid:1 setAngle to max:3.09333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.18667cur_angle:19.9998[0m
+Cmdms:1692948452577,m1Cmd:18.08,m2Cmd:24.8827,m3Cmd:9.504,s1Cmd:3.09333,s2Cmd:6.18667,duration:928
+[1;31mnodeid:1 setAngle to max:3.11cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.22cur_angle:19.9998[0m
+Cmdms:1692948452582,m1Cmd:18.18,m2Cmd:25.016,m3Cmd:9.554,s1Cmd:3.11,s2Cmd:6.22,duration:933
+Anglems:1692948452582,m1:15.36,m2:21.432,m3:8.584,s1:9.999,s2:19.9998 ,duration:933
+Velms:1692948452582,velM1:21.96,velM2:30.744,velM3:0,velS1:0,velS2:0 ,duration:933
+[1;31mnodeid:1 setAngle to max:3.12667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.25333cur_angle:19.9998[0m
+Cmdms:1692948452587,m1Cmd:18.28,m2Cmd:25.1493,m3Cmd:9.604,s1Cmd:3.12667,s2Cmd:6.25333,duration:938
+[1;31mnodeid:1 setAngle to max:3.14333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.28667cur_angle:19.9998[0m
+Cmdms:1692948452592,m1Cmd:18.38,m2Cmd:25.2827,m3Cmd:9.654,s1Cmd:3.14333,s2Cmd:6.28667,duration:943
+[1;31mnodeid:1 setAngle to max:3.16cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.32cur_angle:19.9998[0m
+Cmdms:1692948452597,m1Cmd:18.48,m2Cmd:25.416,m3Cmd:9.704,s1Cmd:3.16,s2Cmd:6.32,duration:948
+[1;31mnodeid:1 setAngle to max:3.18cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.36cur_angle:19.9998[0m
+Cmdms:1692948452602,m1Cmd:18.6,m2Cmd:25.576,m3Cmd:9.764,s1Cmd:3.18,s2Cmd:6.36,duration:954
+[1;31mnodeid:1 setAngle to max:3.19667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.39333cur_angle:19.9998[0m
+Cmdms:1692948452608,m1Cmd:18.7,m2Cmd:25.7093,m3Cmd:9.814,s1Cmd:3.19667,s2Cmd:6.39333,duration:959
+[1;31mnodeid:1 setAngle to max:3.21333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.42667cur_angle:19.9998[0m
+Cmdms:1692948452613,m1Cmd:18.8,m2Cmd:25.8427,m3Cmd:9.864,s1Cmd:3.21333,s2Cmd:6.42667,duration:964
+[1;31mnodeid:1 setAngle to max:3.23cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.46cur_angle:19.9998[0m
+Cmdms:1692948452618,m1Cmd:18.9,m2Cmd:25.976,m3Cmd:9.914,s1Cmd:3.23,s2Cmd:6.46,duration:969
+[1;31mnodeid:1 setAngle to max:3.24667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.49333cur_angle:19.9998[0m
+Cmdms:1692948452623,m1Cmd:19,m2Cmd:26.1093,m3Cmd:9.964,s1Cmd:3.24667,s2Cmd:6.49333,duration:974
+[1;31mnodeid:1 setAngle to max:3.26333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.52667cur_angle:19.9998[0m
+Cmdms:1692948452628,m1Cmd:19.1,m2Cmd:26.2427,m3Cmd:10.014,s1Cmd:3.26333,s2Cmd:6.52667,duration:979
+Anglems:1692948452628,m1:16.064,m2:22.664,m3:8.936,s1:9.999,s2:19.9998 ,duration:979
+Velms:1692948452628,velM1:13.176,velM2:26.352,velM3:4.392,velS1:0,velS2:0 ,duration:979
+[1;31mnodeid:1 setAngle to max:3.28cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.56cur_angle:19.9998[0m
+Cmdms:1692948452633,m1Cmd:19.2,m2Cmd:26.376,m3Cmd:10.064,s1Cmd:3.28,s2Cmd:6.56,duration:984
+[1;31mnodeid:1 setAngle to max:3.29667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.59333cur_angle:19.9998[0m
+Cmdms:1692948452638,m1Cmd:19.3,m2Cmd:26.5093,m3Cmd:10.114,s1Cmd:3.29667,s2Cmd:6.59333,duration:989
+[1;31mnodeid:1 setAngle to max:3.31667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.63333cur_angle:19.9998[0m
+Cmdms:1692948452643,m1Cmd:19.42,m2Cmd:26.6693,m3Cmd:10.174,s1Cmd:3.31667,s2Cmd:6.63333,duration:995
+[1;31mnodeid:1 setAngle to max:3.33333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.66667cur_angle:19.9998[0m
+Cmdms:1692948452649,m1Cmd:19.52,m2Cmd:26.8027,m3Cmd:10.224,s1Cmd:3.33333,s2Cmd:6.66667,duration:1000
+[1;31mnodeid:1 setAngle to max:3.35cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.7cur_angle:19.9998[0m
+Cmdms:1692948452654,m1Cmd:19.62,m2Cmd:26.936,m3Cmd:10.274,s1Cmd:3.35,s2Cmd:6.7,duration:1005
+[1;31mnodeid:1 setAngle to max:3.36667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.73333cur_angle:19.9998[0m
+Cmdms:1692948452659,m1Cmd:19.72,m2Cmd:27.0693,m3Cmd:10.324,s1Cmd:3.36667,s2Cmd:6.73333,duration:1010
+[1;31mnodeid:1 setAngle to max:3.38333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.76667cur_angle:19.9998[0m
+Cmdms:1692948452664,m1Cmd:19.82,m2Cmd:27.2027,m3Cmd:10.374,s1Cmd:3.38333,s2Cmd:6.76667,duration:1015
+[1;31mnodeid:1 setAngle to max:3.4cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.8cur_angle:19.9998[0m
+Cmdms:1692948452669,m1Cmd:19.92,m2Cmd:27.336,m3Cmd:10.424,s1Cmd:3.4,s2Cmd:6.8,duration:1020
+[1;31mnodeid:1 setAngle to max:3.41667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.83333cur_angle:19.9998[0m
+Cmdms:1692948452674,m1Cmd:20.02,m2Cmd:27.4693,m3Cmd:10.474,s1Cmd:3.41667,s2Cmd:6.83333,duration:1025
+Anglems:1692948452674,m1:16.944,m2:23.808,m3:9.552,s1:9.999,s2:19.9998 ,duration:1025
+Velms:1692948452674,velM1:21.96,velM2:26.352,velM3:13.176,velS1:0,velS2:0 ,duration:1025
+[1;31mnodeid:1 setAngle to max:3.43333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.86667cur_angle:19.9998[0m
+Cmdms:1692948452679,m1Cmd:20.12,m2Cmd:27.6027,m3Cmd:10.524,s1Cmd:3.43333,s2Cmd:6.86667,duration:1030
+[1;31mnodeid:1 setAngle to max:3.45cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.9cur_angle:19.9998[0m
+Cmdms:1692948452684,m1Cmd:20.22,m2Cmd:27.736,m3Cmd:10.574,s1Cmd:3.45,s2Cmd:6.9,duration:1035
+[1;31mnodeid:1 setAngle to max:3.47cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.94cur_angle:19.9998[0m
+Cmdms:1692948452689,m1Cmd:20.34,m2Cmd:27.896,m3Cmd:10.634,s1Cmd:3.47,s2Cmd:6.94,duration:1041
+[1;31mnodeid:1 setAngle to max:3.48667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:6.97333cur_angle:19.9998[0m
+Cmdms:1692948452695,m1Cmd:20.44,m2Cmd:28.0293,m3Cmd:10.684,s1Cmd:3.48667,s2Cmd:6.97333,duration:1046
+[1;31mnodeid:1 setAngle to max:3.50333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.00667cur_angle:19.9998[0m
+Cmdms:1692948452700,m1Cmd:20.54,m2Cmd:28.1627,m3Cmd:10.734,s1Cmd:3.50333,s2Cmd:7.00667,duration:1051
+[1;31mnodeid:1 setAngle to max:3.52cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.04cur_angle:19.9998[0m
+Cmdms:1692948452705,m1Cmd:20.64,m2Cmd:28.296,m3Cmd:10.784,s1Cmd:3.52,s2Cmd:7.04,duration:1056
+[1;31mnodeid:1 setAngle to max:3.53667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.07333cur_angle:19.9998[0m
+Cmdms:1692948452710,m1Cmd:20.74,m2Cmd:28.4293,m3Cmd:10.834,s1Cmd:3.53667,s2Cmd:7.07333,duration:1061
+[1;31mnodeid:1 setAngle to max:3.55333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.10667cur_angle:19.9998[0m
+Cmdms:1692948452715,m1Cmd:20.84,m2Cmd:28.5627,m3Cmd:10.884,s1Cmd:3.55333,s2Cmd:7.10667,duration:1066
+[1;31mnodeid:1 setAngle to max:3.57cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.14cur_angle:19.9998[0m
+Cmdms:1692948452720,m1Cmd:20.94,m2Cmd:28.696,m3Cmd:10.934,s1Cmd:3.57,s2Cmd:7.14,duration:1071
+Anglems:1692948452720,m1:17.912,m2:25.04,m3:9.992,s1:9.999,s2:19.9998 ,duration:1071
+Velms:1692948452720,velM1:21.96,velM2:30.744,velM3:8.784,velS1:0,velS2:0 ,duration:1071
+[1;31mnodeid:1 setAngle to max:3.59cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.18cur_angle:19.9998[0m
+Cmdms:1692948452726,m1Cmd:21.06,m2Cmd:28.856,m3Cmd:10.994,s1Cmd:3.59,s2Cmd:7.18,duration:1077
+[1;31mnodeid:1 setAngle to max:3.60667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.21333cur_angle:19.9998[0m
+Cmdms:1692948452731,m1Cmd:21.16,m2Cmd:28.9893,m3Cmd:11.044,s1Cmd:3.60667,s2Cmd:7.21333,duration:1082
+[1;31mnodeid:1 setAngle to max:3.62333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.24667cur_angle:19.9998[0m
+Cmdms:1692948452736,m1Cmd:21.26,m2Cmd:29.1227,m3Cmd:11.094,s1Cmd:3.62333,s2Cmd:7.24667,duration:1087
+[1;31mnodeid:1 setAngle to max:3.64cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.28cur_angle:19.9998[0m
+Cmdms:1692948452741,m1Cmd:21.36,m2Cmd:29.256,m3Cmd:11.144,s1Cmd:3.64,s2Cmd:7.28,duration:1092
+[1;31mnodeid:1 setAngle to max:3.65667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.31333cur_angle:19.9998[0m
+Cmdms:1692948452746,m1Cmd:21.46,m2Cmd:29.3893,m3Cmd:11.194,s1Cmd:3.65667,s2Cmd:7.31333,duration:1097
+[1;31mnodeid:1 setAngle to max:3.67333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.34667cur_angle:19.9998[0m
+Cmdms:1692948452751,m1Cmd:21.56,m2Cmd:29.5227,m3Cmd:11.244,s1Cmd:3.67333,s2Cmd:7.34667,duration:1102
+[1;31mnodeid:1 setAngle to max:3.69cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.38cur_angle:19.9998[0m
+Cmdms:1692948452756,m1Cmd:21.66,m2Cmd:29.656,m3Cmd:11.294,s1Cmd:3.69,s2Cmd:7.38,duration:1107
+[1;31mnodeid:1 setAngle to max:3.71cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.42cur_angle:19.9998[0m
+Cmdms:1692948452761,m1Cmd:21.78,m2Cmd:29.816,m3Cmd:11.354,s1Cmd:3.71,s2Cmd:7.42,duration:1113
+Anglems:1692948452761,m1:19.056,m2:26.272,m3:10.256,s1:9.999,s2:19.9998 ,duration:1113
+Velms:1692948452761,velM1:26.352,velM2:26.352,velM3:4.392,velS1:0,velS2:0 ,duration:1113
+[1;31mnodeid:1 setAngle to max:3.72667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.45333cur_angle:19.9998[0m
+Cmdms:1692948452767,m1Cmd:21.88,m2Cmd:29.9493,m3Cmd:11.404,s1Cmd:3.72667,s2Cmd:7.45333,duration:1118
+[1;31mnodeid:1 setAngle to max:3.74333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.48667cur_angle:19.9998[0m
+Cmdms:1692948452772,m1Cmd:21.98,m2Cmd:30.0827,m3Cmd:11.454,s1Cmd:3.74333,s2Cmd:7.48667,duration:1123
+[1;31mnodeid:1 setAngle to max:3.76cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.52cur_angle:19.9998[0m
+Cmdms:1692948452777,m1Cmd:22.08,m2Cmd:30.216,m3Cmd:11.504,s1Cmd:3.76,s2Cmd:7.52,duration:1128
+[1;31mnodeid:1 setAngle to max:3.77667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.55333cur_angle:19.9998[0m
+Cmdms:1692948452782,m1Cmd:22.18,m2Cmd:30.3493,m3Cmd:11.554,s1Cmd:3.77667,s2Cmd:7.55333,duration:1133
+[1;31mnodeid:1 setAngle to max:3.79333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.58667cur_angle:19.9998[0m
+Cmdms:1692948452787,m1Cmd:22.28,m2Cmd:30.4827,m3Cmd:11.604,s1Cmd:3.79333,s2Cmd:7.58667,duration:1138
+[1;31mnodeid:1 setAngle to max:3.81cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.62cur_angle:19.9998[0m
+Cmdms:1692948452792,m1Cmd:22.38,m2Cmd:30.616,m3Cmd:11.654,s1Cmd:3.81,s2Cmd:7.62,duration:1143
+[1;31mnodeid:1 setAngle to max:3.82667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.65333cur_angle:19.9998[0m
+Cmdms:1692948452797,m1Cmd:22.48,m2Cmd:30.7493,m3Cmd:11.704,s1Cmd:3.82667,s2Cmd:7.65333,duration:1148
+[1;31mnodeid:1 setAngle to max:3.84667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.69333cur_angle:19.9998[0m
+Cmdms:1692948452802,m1Cmd:22.6,m2Cmd:30.9093,m3Cmd:11.764,s1Cmd:3.84667,s2Cmd:7.69333,duration:1154
+[1;31mnodeid:1 setAngle to max:3.86333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.72667cur_angle:19.9998[0m
+Cmdms:1692948452808,m1Cmd:22.7,m2Cmd:31.0427,m3Cmd:11.814,s1Cmd:3.86333,s2Cmd:7.72667,duration:1159
+Anglems:1692948452808,m1:19.936,m2:27.592,m3:10.96,s1:9.999,s2:19.9998 ,duration:1159
+Velms:1692948452808,velM1:13.176,velM2:30.744,velM3:17.568,velS1:0,velS2:0 ,duration:1159
+[1;31mnodeid:1 setAngle to max:3.88cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.76cur_angle:19.9998[0m
+Cmdms:1692948452813,m1Cmd:22.8,m2Cmd:31.176,m3Cmd:11.864,s1Cmd:3.88,s2Cmd:7.76,duration:1164
+[1;31mnodeid:1 setAngle to max:3.89667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.79333cur_angle:19.9998[0m
+Cmdms:1692948452818,m1Cmd:22.9,m2Cmd:31.3093,m3Cmd:11.914,s1Cmd:3.89667,s2Cmd:7.79333,duration:1169
+[1;31mnodeid:1 setAngle to max:3.91333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.82667cur_angle:19.9998[0m
+Cmdms:1692948452823,m1Cmd:23,m2Cmd:31.4427,m3Cmd:11.964,s1Cmd:3.91333,s2Cmd:7.82667,duration:1174
+[1;31mnodeid:1 setAngle to max:3.93cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.86cur_angle:19.9998[0m
+Cmdms:1692948452828,m1Cmd:23.1,m2Cmd:31.576,m3Cmd:12.014,s1Cmd:3.93,s2Cmd:7.86,duration:1179
+[1;31mnodeid:1 setAngle to max:3.94667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.89333cur_angle:19.9998[0m
+Cmdms:1692948452833,m1Cmd:23.2,m2Cmd:31.7093,m3Cmd:12.064,s1Cmd:3.94667,s2Cmd:7.89333,duration:1184
+[1;31mnodeid:1 setAngle to max:3.96667cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.93333cur_angle:19.9998[0m
+Cmdms:1692948452839,m1Cmd:23.32,m2Cmd:31.8693,m3Cmd:12.124,s1Cmd:3.96667,s2Cmd:7.93333,duration:1190
+[1;31mnodeid:1 setAngle to max:3.98333cur_angle:9.999[0m
+[1;31mnodeid:2 setAngle to max:7.96667cur_angle:19.9998[0m
+Cmdms:1692948452844,m1Cmd:23.42,m2Cmd:32.0027,m3Cmd:12.174,s1Cmd:3.98333,s2Cmd:7.96667,duration:1195
+[1;31mnodeid:2 setAngle to max:8cur_angle:19.9998[0m
+Cmdms:1692948452849,m1Cmd:23.52,m2Cmd:32.136,m3Cmd:12.224,s1Cmd:4,s2Cmd:8,duration:1200
+Anglems:1692948452849,m1:20.904,m2:28.736,m3:11.312,s1:9.999,s2:19.9998 ,duration:1200
+Velms:1692948452849,velM1:17.568,velM2:30.744,velM3:8.784,velS1:0,velS2:0 ,duration:1200
+[1;31mnodeid:2 setAngle to max:8.03333cur_angle:19.9998[0m
+Cmdms:1692948452855,m1Cmd:23.62,m2Cmd:32.2693,m3Cmd:12.274,s1Cmd:4.01667,s2Cmd:8.03333,duration:1205
+[1;31mnodeid:2 setAngle to max:8.07333cur_angle:19.9998[0m
+Cmdms:1692948452860,m1Cmd:23.74,m2Cmd:32.4293,m3Cmd:12.334,s1Cmd:4.03667,s2Cmd:8.07333,duration:1211
+[1;31mnodeid:2 setAngle to max:8.11333cur_angle:19.9998[0m
+Cmdms:1692948452866,m1Cmd:23.86,m2Cmd:32.5893,m3Cmd:12.394,s1Cmd:4.05667,s2Cmd:8.11333,duration:1217
+[1;31mnodeid:2 setAngle to max:8.14667cur_angle:20.0034[0m
+Cmdms:1692948452871,m1Cmd:23.96,m2Cmd:32.7227,m3Cmd:12.444,s1Cmd:4.07333,s2Cmd:8.14667,duration:1222
+[1;31mnodeid:2 setAngle to max:8.18cur_angle:20.0034[0m
+Cmdms:1692948452876,m1Cmd:24.06,m2Cmd:32.856,m3Cmd:12.494,s1Cmd:4.09,s2Cmd:8.18,duration:1227
+[1;31mnodeid:2 setAngle to max:8.21333cur_angle:20.0034[0m
+Cmdms:1692948452881,m1Cmd:24.16,m2Cmd:32.9893,m3Cmd:12.544,s1Cmd:4.10667,s2Cmd:8.21333,duration:1232
+[1;31mnodeid:2 setAngle to max:8.25333cur_angle:20.0034[0m
+Cmdms:1692948452887,m1Cmd:24.28,m2Cmd:33.1493,m3Cmd:12.604,s1Cmd:4.12667,s2Cmd:8.25333,duration:1238
+[1;31mnodeid:2 setAngle to max:8.28667cur_angle:20.0034[0m
+Cmdms:1692948452892,m1Cmd:24.38,m2Cmd:33.2827,m3Cmd:12.654,s1Cmd:4.14333,s2Cmd:8.28667,duration:1243
+Anglems:1692948452892,m1:21.608,m2:29.968,m3:11.752,s1:5.157,s2:20.0034 ,duration:1243
+Velms:1692948452892,velM1:13.176,velM2:26.352,velM3:8.784,velS1:-13.8,velS2:0 ,duration:1243
+[1;31mnodeid:2 setAngle to max:8.32cur_angle:20.0034[0m
+Cmdms:1692948452897,m1Cmd:24.48,m2Cmd:33.416,m3Cmd:12.704,s1Cmd:4.16,s2Cmd:8.32,duration:1248
+[1;31mnodeid:2 setAngle to max:8.35333cur_angle:20.0034[0m
+Cmdms:1692948452903,m1Cmd:24.58,m2Cmd:33.5493,m3Cmd:12.754,s1Cmd:4.17667,s2Cmd:8.35333,duration:1253
+[1;31mnodeid:2 setAngle to max:8.39333cur_angle:20.0034[0m
+Cmdms:1692948452908,m1Cmd:24.7,m2Cmd:33.7093,m3Cmd:12.814,s1Cmd:4.19667,s2Cmd:8.39333,duration:1259
+[1;31mnodeid:2 setAngle to max:8.42667cur_angle:20.0034[0m
+Cmdms:1692948452913,m1Cmd:24.8,m2Cmd:33.8427,m3Cmd:12.864,s1Cmd:4.21333,s2Cmd:8.42667,duration:1264
+[1;31mnodeid:2 setAngle to max:8.46cur_angle:20.0034[0m
+Cmdms:1692948452918,m1Cmd:24.9,m2Cmd:33.976,m3Cmd:12.914,s1Cmd:4.23,s2Cmd:8.46,duration:1269
+[1;31mnodeid:2 setAngle to max:8.5cur_angle:20.0034[0m
+Cmdms:1692948452924,m1Cmd:25.02,m2Cmd:34.136,m3Cmd:12.974,s1Cmd:4.25,s2Cmd:8.5,duration:1275
+[1;31mnodeid:2 setAngle to max:8.53333cur_angle:20.0034[0m
+Cmdms:1692948452929,m1Cmd:25.12,m2Cmd:34.2693,m3Cmd:13.024,s1Cmd:4.26667,s2Cmd:8.53333,duration:1280
+[1;31mnodeid:2 setAngle to max:8.56667cur_angle:20.0034[0m
+Cmdms:1692948452935,m1Cmd:25.22,m2Cmd:34.4027,m3Cmd:13.074,s1Cmd:4.28333,s2Cmd:8.56667,duration:1285
+Anglems:1692948452935,m1:22.488,m2:31.112,m3:11.752,s1:5.157,s2:20.0034 ,duration:1285
+Velms:1692948452935,velM1:21.96,velM2:26.352,velM3:8.784,velS1:-38.7,velS2:0 ,duration:1285
+[1;31mnodeid:2 setAngle to max:8.60667cur_angle:20.0034[0m
+Cmdms:1692948452940,m1Cmd:25.34,m2Cmd:34.5627,m3Cmd:13.134,s1Cmd:4.30333,s2Cmd:8.60667,duration:1291
+[1;31mnodeid:2 setAngle to max:8.64667cur_angle:20.0034[0m
+Cmdms:1692948452946,m1Cmd:25.46,m2Cmd:34.7227,m3Cmd:13.194,s1Cmd:4.32333,s2Cmd:8.64667,duration:1297
+[1;31mnodeid:2 setAngle to max:8.68cur_angle:20.0034[0m
+Cmdms:1692948452951,m1Cmd:25.56,m2Cmd:34.856,m3Cmd:13.244,s1Cmd:4.34,s2Cmd:8.68,duration:1302
+[1;31mnodeid:2 setAngle to max:8.71333cur_angle:20.0034[0m
+Cmdms:1692948452957,m1Cmd:25.66,m2Cmd:34.9893,m3Cmd:13.294,s1Cmd:4.35667,s2Cmd:8.71333,duration:1307
+[1;31mnodeid:2 setAngle to max:8.75333cur_angle:20.0034[0m
+Cmdms:1692948452962,m1Cmd:25.78,m2Cmd:35.1493,m3Cmd:13.354,s1Cmd:4.37667,s2Cmd:8.75333,duration:1313
+[1;31mnodeid:2 setAngle to max:8.79333cur_angle:20.0034[0m
+Cmdms:1692948452968,m1Cmd:25.9,m2Cmd:35.3093,m3Cmd:13.414,s1Cmd:4.39667,s2Cmd:8.79333,duration:1319
+[1;31mnodeid:2 setAngle to max:8.82667cur_angle:20.0016[0m
+Cmdms:1692948452973,m1Cmd:26,m2Cmd:35.4427,m3Cmd:13.464,s1Cmd:4.41333,s2Cmd:8.82667,duration:1324
+[1;31mnodeid:2 setAngle to max:8.86cur_angle:20.0016[0m
+Cmdms:1692948452978,m1Cmd:26.1,m2Cmd:35.576,m3Cmd:13.514,s1Cmd:4.43,s2Cmd:8.86,duration:1329
+Anglems:1692948452978,m1:23.456,m2:32.256,m3:12.28,s1:4.2426,s2:20.0016 ,duration:1329
+Velms:1692948452978,velM1:17.568,velM2:30.744,velM3:8.784,velS1:-38.7,velS2:0 ,duration:1329
+[1;31mnodeid:2 setAngle to max:8.9cur_angle:20.0016[0m
+Cmdms:1692948452984,m1Cmd:26.22,m2Cmd:35.736,m3Cmd:13.574,s1Cmd:4.45,s2Cmd:8.9,duration:1335
+[1;31mnodeid:2 setAngle to max:8.93333cur_angle:20.0016[0m
+Cmdms:1692948452989,m1Cmd:26.32,m2Cmd:35.8693,m3Cmd:13.624,s1Cmd:4.46667,s2Cmd:8.93333,duration:1340
+[1;31mnodeid:2 setAngle to max:8.96667cur_angle:20.0016[0m
+Cmdms:1692948452994,m1Cmd:26.42,m2Cmd:36.0027,m3Cmd:13.674,s1Cmd:4.48333,s2Cmd:8.96667,duration:1345
+[1;31mnodeid:2 setAngle to max:9cur_angle:20.0016[0m
+Cmdms:1692948453000,m1Cmd:26.52,m2Cmd:36.136,m3Cmd:13.724,s1Cmd:4.5,s2Cmd:9,duration:1350
+[1;31mnodeid:2 setAngle to max:9.04667cur_angle:20.0016[0m
+Cmdms:1692948453006,m1Cmd:26.66,m2Cmd:36.3227,m3Cmd:13.794,s1Cmd:4.52333,s2Cmd:9.04667,duration:1357
+[1;31mnodeid:2 setAngle to max:9.08cur_angle:20.0016[0m
+Cmdms:1692948453011,m1Cmd:26.76,m2Cmd:36.456,m3Cmd:13.844,s1Cmd:4.54,s2Cmd:9.08,duration:1362
+[1;31mnodeid:2 setAngle to max:9.11333cur_angle:19.9962[0m
+Cmdms:1692948453016,m1Cmd:26.86,m2Cmd:36.5893,m3Cmd:13.894,s1Cmd:4.55667,s2Cmd:9.11333,duration:1367
+[1;31mnodeid:2 setAngle to max:9.15333cur_angle:19.9962[0m
+Cmdms:1692948453022,m1Cmd:26.98,m2Cmd:36.7493,m3Cmd:13.954,s1Cmd:4.57667,s2Cmd:9.15333,duration:1373
+Anglems:1692948453022,m1:24.424,m2:33.576,m3:12.632,s1:4.275,s2:19.9962 ,duration:1373
+Velms:1692948453022,velM1:21.96,velM2:30.744,velM3:8.784,velS1:-24.3,velS2:0 ,duration:1373
+[1;31mnodeid:2 setAngle to max:9.18667cur_angle:19.9962[0m
+Cmdms:1692948453027,m1Cmd:27.08,m2Cmd:36.8827,m3Cmd:14.004,s1Cmd:4.59333,s2Cmd:9.18667,duration:1378
+[1;31mnodeid:2 setAngle to max:9.22cur_angle:19.9962[0m
+Cmdms:1692948453032,m1Cmd:27.18,m2Cmd:37.016,m3Cmd:14.054,s1Cmd:4.61,s2Cmd:9.22,duration:1383
+[1;31mnodeid:2 setAngle to max:9.26cur_angle:19.9962[0m
+Cmdms:1692948453039,m1Cmd:27.3,m2Cmd:37.176,m3Cmd:14.114,s1Cmd:4.63,s2Cmd:9.26,duration:1389
+[1;31mnodeid:2 setAngle to max:9.3cur_angle:19.9962[0m
+Cmdms:1692948453045,m1Cmd:27.42,m2Cmd:37.336,m3Cmd:14.174,s1Cmd:4.65,s2Cmd:9.3,duration:1395
+[1;31mnodeid:2 setAngle to max:9.34cur_angle:19.9962[0m
+Cmdms:1692948453050,m1Cmd:27.54,m2Cmd:37.496,m3Cmd:14.234,s1Cmd:4.67,s2Cmd:9.34,duration:1401
+[1;31mnodeid:2 setAngle to max:9.38cur_angle:19.9962[0m
+Cmdms:1692948453056,m1Cmd:27.66,m2Cmd:37.656,m3Cmd:14.294,s1Cmd:4.69,s2Cmd:9.38,duration:1407
+[1;31mnodeid:2 setAngle to max:9.41333cur_angle:19.9962[0m
+Cmdms:1692948453061,m1Cmd:27.76,m2Cmd:37.7893,m3Cmd:14.344,s1Cmd:4.70667,s2Cmd:9.41333,duration:1412
+[1;31mnodeid:2 setAngle to max:9.44667cur_angle:19.9962[0m
+Cmdms:1692948453066,m1Cmd:27.86,m2Cmd:37.9227,m3Cmd:14.394,s1Cmd:4.72333,s2Cmd:9.44667,duration:1417
+Anglems:1692948453066,m1:25.304,m2:34.72,m3:13.16,s1:4.5432,s2:19.9962 ,duration:1417
+Velms:1692948453066,velM1:21.96,velM2:26.352,velM3:13.176,velS1:-12.6,velS2:0 ,duration:1417
+[1;31mnodeid:2 setAngle to max:9.48cur_angle:19.9962[0m
+Cmdms:1692948453072,m1Cmd:27.96,m2Cmd:38.056,m3Cmd:14.444,s1Cmd:4.74,s2Cmd:9.48,duration:1422
+[1;31mnodeid:2 setAngle to max:9.52cur_angle:19.9962[0m
+Cmdms:1692948453077,m1Cmd:28.08,m2Cmd:38.216,m3Cmd:14.504,s1Cmd:4.76,s2Cmd:9.52,duration:1428
+[1;31mnodeid:2 setAngle to max:9.55333cur_angle:19.9962[0m
+Cmdms:1692948453082,m1Cmd:28.18,m2Cmd:38.3493,m3Cmd:14.554,s1Cmd:4.77667,s2Cmd:9.55333,duration:1433
+[1;31mnodeid:2 setAngle to max:9.58667cur_angle:19.9962[0m
+Cmdms:1692948453087,m1Cmd:28.28,m2Cmd:38.4827,m3Cmd:14.604,s1Cmd:4.79333,s2Cmd:9.58667,duration:1438
+[1;31mnodeid:2 setAngle to max:9.62cur_angle:19.9962[0m
+Cmdms:1692948453093,m1Cmd:28.38,m2Cmd:38.616,m3Cmd:14.654,s1Cmd:4.81,s2Cmd:9.62,duration:1443
+[1;31mnodeid:2 setAngle to max:9.66cur_angle:19.9962[0m
+Cmdms:1692948453098,m1Cmd:28.5,m2Cmd:38.776,m3Cmd:14.714,s1Cmd:4.83,s2Cmd:9.66,duration:1449
+[1;31mnodeid:2 setAngle to max:9.69333cur_angle:720[0m
+Cmdms:1692948453103,m1Cmd:28.6,m2Cmd:38.9093,m3Cmd:14.764,s1Cmd:4.84667,s2Cmd:9.69333,duration:1454
+[1;31mnodeid:2 setAngle to max:9.72667cur_angle:19.9962[0m
+Cmdms:1692948453110,m1Cmd:28.7,m2Cmd:39.0427,m3Cmd:14.814,s1Cmd:4.86333,s2Cmd:9.72667,duration:1459
+Anglems:1692948453110,m1:26.272,m2:35.864,m3:13.688,s1:4.626,s2:19.9962 ,duration:1459
+Velms:1692948453110,velM1:21.96,velM2:26.352,velM3:13.176,velS1:-6.3,velS2:0 ,duration:1459
+[1;31mnodeid:2 setAngle to max:9.77333cur_angle:19.9962[0m
+Cmdms:1692948453115,m1Cmd:28.84,m2Cmd:39.2293,m3Cmd:14.884,s1Cmd:4.88667,s2Cmd:9.77333,duration:1466
+[1;31mnodeid:2 setAngle to max:9.80667cur_angle:19.998[0m
+Cmdms:1692948453120,m1Cmd:28.94,m2Cmd:39.3627,m3Cmd:14.934,s1Cmd:4.90333,s2Cmd:9.80667,duration:1471
+[1;31mnodeid:2 setAngle to max:9.84cur_angle:19.998[0m
+Cmdms:1692948453126,m1Cmd:29.04,m2Cmd:39.496,m3Cmd:14.984,s1Cmd:4.92,s2Cmd:9.84,duration:1476
+[1;31mnodeid:2 setAngle to max:9.88667cur_angle:19.998[0m
+Cmdms:1692948453132,m1Cmd:29.18,m2Cmd:39.6827,m3Cmd:15.054,s1Cmd:4.94333,s2Cmd:9.88667,duration:1483
+[1;31mnodeid:2 setAngle to max:9.92cur_angle:19.998[0m
+Cmdms:1692948453137,m1Cmd:29.28,m2Cmd:39.816,m3Cmd:15.104,s1Cmd:4.96,s2Cmd:9.92,duration:1488
+[1;31mnodeid:2 setAngle to max:9.95333cur_angle:19.998[0m
+Cmdms:1692948453142,m1Cmd:29.38,m2Cmd:39.9493,m3Cmd:15.154,s1Cmd:4.97667,s2Cmd:9.95333,duration:1493
+[1;31mnodeid:2 setAngle to max:9.98667cur_angle:19.998[0m
+Cmdms:1692948453147,m1Cmd:29.48,m2Cmd:40.0827,m3Cmd:15.204,s1Cmd:4.99333,s2Cmd:9.98667,duration:1498
+[1;31mnodeid:2 setAngle to max:10.0267cur_angle:19.998[0m
+Cmdms:1692948453153,m1Cmd:29.6,m2Cmd:40.2427,m3Cmd:15.264,s1Cmd:5.01333,s2Cmd:10.0267,duration:1504
+Anglems:1692948453153,m1:27.064,m2:37.008,m3:13.952,s1:4.8906,s2:19.998 ,duration:1504
+Velms:1692948453153,velM1:17.568,velM2:30.744,velM3:4.392,velS1:-1.5,velS2:0 ,duration:1504
+[1;31mnodeid:2 setAngle to max:10.06cur_angle:19.998[0m
+Cmdms:1692948453158,m1Cmd:29.7,m2Cmd:40.376,m3Cmd:15.314,s1Cmd:5.03,s2Cmd:10.06,duration:1509
+[1;31mnodeid:2 setAngle to max:10.0933cur_angle:19.998[0m
+Cmdms:1692948453163,m1Cmd:29.8,m2Cmd:40.5093,m3Cmd:15.364,s1Cmd:5.04667,s2Cmd:10.0933,duration:1514
+[1;31mnodeid:2 setAngle to max:10.1333cur_angle:19.998[0m
+Cmdms:1692948453169,m1Cmd:29.92,m2Cmd:40.6693,m3Cmd:15.424,s1Cmd:5.06667,s2Cmd:10.1333,duration:1520
+[1;31mnodeid:2 setAngle to max:10.1667cur_angle:19.998[0m
+Cmdms:1692948453174,m1Cmd:30.02,m2Cmd:40.8027,m3Cmd:15.474,s1Cmd:5.08333,s2Cmd:10.1667,duration:1525
+[1;31mnodeid:2 setAngle to max:10.2cur_angle:19.998[0m
+Cmdms:1692948453179,m1Cmd:30.12,m2Cmd:40.936,m3Cmd:15.524,s1Cmd:5.1,s2Cmd:10.2,duration:1530
+[1;31mnodeid:2 setAngle to max:10.24cur_angle:19.998[0m
+Cmdms:1692948453185,m1Cmd:30.24,m2Cmd:41.096,m3Cmd:15.584,s1Cmd:5.12,s2Cmd:10.24,duration:1536
+[1;31mnodeid:2 setAngle to max:10.2733cur_angle:19.998[0m
+Cmdms:1692948453190,m1Cmd:30.34,m2Cmd:41.2293,m3Cmd:15.634,s1Cmd:5.13667,s2Cmd:10.2733,duration:1541
+[1;31mnodeid:2 setAngle to max:10.3067cur_angle:19.998[0m
+Cmdms:1692948453195,m1Cmd:30.44,m2Cmd:41.3627,m3Cmd:15.684,s1Cmd:5.15333,s2Cmd:10.3067,duration:1546
+Anglems:1692948453195,m1:27.856,m2:38.24,m3:14.48,s1:4.9716,s2:19.998 ,duration:1546
+Velms:1692948453195,velM1:17.568,velM2:26.352,velM3:13.176,velS1:0,velS2:0 ,duration:1546
+[1;31mnodeid:2 setAngle to max:10.34cur_angle:19.998[0m
+Cmdms:1692948453201,m1Cmd:30.54,m2Cmd:41.496,m3Cmd:15.734,s1Cmd:5.17,s2Cmd:10.34,duration:1551
+[1;31mnodeid:2 setAngle to max:10.38cur_angle:19.998[0m
+Cmdms:1692948453206,m1Cmd:30.66,m2Cmd:41.656,m3Cmd:15.794,s1Cmd:5.19,s2Cmd:10.38,duration:1557
+[1;31mnodeid:2 setAngle to max:10.4133cur_angle:19.998[0m
+Cmdms:1692948453211,m1Cmd:30.76,m2Cmd:41.7893,m3Cmd:15.844,s1Cmd:5.20667,s2Cmd:10.4133,duration:1562
+[1;31mnodeid:2 setAngle to max:10.4467cur_angle:19.998[0m
+Cmdms:1692948453216,m1Cmd:30.86,m2Cmd:41.9227,m3Cmd:15.894,s1Cmd:5.22333,s2Cmd:10.4467,duration:1567
+[1;31mnodeid:2 setAngle to max:10.4867cur_angle:19.998[0m
+Cmdms:1692948453222,m1Cmd:30.98,m2Cmd:42.0827,m3Cmd:15.954,s1Cmd:5.24333,s2Cmd:10.4867,duration:1573
+[1;31mnodeid:2 setAngle to max:10.52cur_angle:19.998[0m
+Cmdms:1692948453227,m1Cmd:31.08,m2Cmd:42.216,m3Cmd:16.004,s1Cmd:5.26,s2Cmd:10.52,duration:1578
+[1;31mnodeid:2 setAngle to max:10.5533cur_angle:19.998[0m
+Cmdms:1692948453232,m1Cmd:31.18,m2Cmd:42.3493,m3Cmd:16.054,s1Cmd:5.27667,s2Cmd:10.5533,duration:1583
+[1;31mnodeid:2 setAngle to max:10.5867cur_angle:19.998[0m
+Cmdms:1692948453237,m1Cmd:31.28,m2Cmd:42.4827,m3Cmd:16.104,s1Cmd:5.29333,s2Cmd:10.5867,duration:1588
+Anglems:1692948453238,m1:28.824,m2:39.56,m3:14.832,s1:4.9716,s2:19.998 ,duration:1588
+Velms:1692948453238,velM1:21.96,velM2:30.744,velM3:4.392,velS1:1.8,velS2:0 ,duration:1588
+[1;31mnodeid:2 setAngle to max:10.6267cur_angle:19.998[0m
+Cmdms:1692948453243,m1Cmd:31.4,m2Cmd:42.6427,m3Cmd:16.164,s1Cmd:5.31333,s2Cmd:10.6267,duration:1594
+[1;31mnodeid:2 setAngle to max:10.66cur_angle:19.998[0m
+Cmdms:1692948453248,m1Cmd:31.5,m2Cmd:42.776,m3Cmd:16.214,s1Cmd:5.33,s2Cmd:10.66,duration:1599
+[1;31mnodeid:2 setAngle to max:10.7cur_angle:19.998[0m
+Cmdms:1692948453254,m1Cmd:31.62,m2Cmd:42.936,m3Cmd:16.274,s1Cmd:5.35,s2Cmd:10.7,duration:1605
+[1;31mnodeid:2 setAngle to max:10.7333cur_angle:19.998[0m
+Cmdms:1692948453259,m1Cmd:31.72,m2Cmd:43.0693,m3Cmd:16.324,s1Cmd:5.36667,s2Cmd:10.7333,duration:1610
+[1;31mnodeid:2 setAngle to max:10.7667cur_angle:19.998[0m
+Cmdms:1692948453265,m1Cmd:31.82,m2Cmd:43.2027,m3Cmd:16.374,s1Cmd:5.38333,s2Cmd:10.7667,duration:1615
+[1;31mnodeid:2 setAngle to max:10.8067cur_angle:19.998[0m
+Cmdms:1692948453270,m1Cmd:31.94,m2Cmd:43.3627,m3Cmd:16.434,s1Cmd:5.40333,s2Cmd:10.8067,duration:1621
+[1;31mnodeid:2 setAngle to max:10.8467cur_angle:19.998[0m
+Cmdms:1692948453276,m1Cmd:32.06,m2Cmd:43.5227,m3Cmd:16.494,s1Cmd:5.42333,s2Cmd:10.8467,duration:1627
+[1;31mnodeid:2 setAngle to max:10.88cur_angle:19.998[0m
+Cmdms:1692948453281,m1Cmd:32.16,m2Cmd:43.656,m3Cmd:16.544,s1Cmd:5.44,s2Cmd:10.88,duration:1632
+Anglems:1692948453281,m1:29.792,m2:40.704,m3:15.448,s1:5.247,s2:19.998 ,duration:1632
+Velms:1692948453281,velM1:21.96,velM2:26.352,velM3:8.784,velS1:1.8,velS2:0 ,duration:1632
+[1;31mnodeid:2 setAngle to max:10.9133cur_angle:19.998[0m
+Cmdms:1692948453286,m1Cmd:32.26,m2Cmd:43.7893,m3Cmd:16.594,s1Cmd:5.45667,s2Cmd:10.9133,duration:1637
+[1;31mnodeid:2 setAngle to max:10.9467cur_angle:19.998[0m
+Cmdms:1692948453291,m1Cmd:32.36,m2Cmd:43.9227,m3Cmd:16.644,s1Cmd:5.47333,s2Cmd:10.9467,duration:1642
+[1;31mnodeid:2 setAngle to max:10.9867cur_angle:19.9998[0m
+Cmdms:1692948453297,m1Cmd:32.48,m2Cmd:44.0827,m3Cmd:16.704,s1Cmd:5.49333,s2Cmd:10.9867,duration:1648
+[1;31mnodeid:2 setAngle to max:11.02cur_angle:19.9998[0m
+Cmdms:1692948453302,m1Cmd:32.58,m2Cmd:44.216,m3Cmd:16.754,s1Cmd:5.51,s2Cmd:11.02,duration:1653
+[1;31mnodeid:2 setAngle to max:11.0533cur_angle:19.9998[0m
+Cmdms:1692948453307,m1Cmd:32.68,m2Cmd:44.3493,m3Cmd:16.804,s1Cmd:5.52667,s2Cmd:11.0533,duration:1658
+[1;31mnodeid:2 setAngle to max:11.0933cur_angle:19.9998[0m
+Cmdms:1692948453313,m1Cmd:32.8,m2Cmd:44.5093,m3Cmd:16.864,s1Cmd:5.54667,s2Cmd:11.0933,duration:1664
+[1;31mnodeid:2 setAngle to max:11.1267cur_angle:19.9998[0m
+Cmdms:1692948453318,m1Cmd:32.9,m2Cmd:44.6427,m3Cmd:16.914,s1Cmd:5.56333,s2Cmd:11.1267,duration:1669
+[1;31mnodeid:2 setAngle to max:11.16cur_angle:19.9998[0m
+Cmdms:1692948453323,m1Cmd:33,m2Cmd:44.776,m3Cmd:16.964,s1Cmd:5.58,s2Cmd:11.16,duration:1674
+Anglems:1692948453323,m1:30.76,m2:41.936,m3:15.624,s1:5.3154,s2:19.9998 ,duration:1674
+Velms:1692948453323,velM1:17.568,velM2:26.352,velM3:4.392,velS1:2.1,velS2:0 ,duration:1674
+[1;31mnodeid:2 setAngle to max:11.1933cur_angle:19.9998[0m
+Cmdms:1692948453328,m1Cmd:33.1,m2Cmd:44.9093,m3Cmd:17.014,s1Cmd:5.59667,s2Cmd:11.1933,duration:1679
+[1;31mnodeid:2 setAngle to max:11.2333cur_angle:19.9998[0m
+Cmdms:1692948453334,m1Cmd:33.22,m2Cmd:45.0693,m3Cmd:17.074,s1Cmd:5.61667,s2Cmd:11.2333,duration:1685
+[1;31mnodeid:2 setAngle to max:11.2667cur_angle:19.9998[0m
+Cmdms:1692948453339,m1Cmd:33.32,m2Cmd:45.2027,m3Cmd:17.124,s1Cmd:5.63333,s2Cmd:11.2667,duration:1690
+[1;31mnodeid:2 setAngle to max:11.3cur_angle:19.9998[0m
+Cmdms:1692948453344,m1Cmd:33.42,m2Cmd:45.336,m3Cmd:17.174,s1Cmd:5.65,s2Cmd:11.3,duration:1695
+[1;31mnodeid:2 setAngle to max:11.34cur_angle:19.9998[0m
+Cmdms:1692948453350,m1Cmd:33.54,m2Cmd:45.496,m3Cmd:17.234,s1Cmd:5.67,s2Cmd:11.34,duration:1701
+[1;31mnodeid:2 setAngle to max:11.3733cur_angle:19.9998[0m
+Cmdms:1692948453355,m1Cmd:33.64,m2Cmd:45.6293,m3Cmd:17.284,s1Cmd:5.68667,s2Cmd:11.3733,duration:1706
+[1;31mnodeid:2 setAngle to max:11.4067cur_angle:19.9998[0m
+Cmdms:1692948453360,m1Cmd:33.74,m2Cmd:45.7627,m3Cmd:17.334,s1Cmd:5.70333,s2Cmd:11.4067,duration:1711
+[1;31mnodeid:2 setAngle to max:11.4467cur_angle:19.9998[0m
+Cmdms:1692948453366,m1Cmd:33.86,m2Cmd:45.9227,m3Cmd:17.394,s1Cmd:5.72333,s2Cmd:11.4467,duration:1717
+Anglems:1692948453366,m1:30.76,m2:43.168,m3:16.328,s1:5.5962,s2:19.9998 ,duration:1717
+Velms:1692948453366,velM1:17.568,velM2:30.744,velM3:17.568,velS1:3,velS2:0 ,duration:1717
+[1;31mnodeid:2 setAngle to max:11.48cur_angle:19.9998[0m
+Cmdms:1692948453371,m1Cmd:33.96,m2Cmd:46.056,m3Cmd:17.444,s1Cmd:5.74,s2Cmd:11.48,duration:1722
+[1;31mnodeid:2 setAngle to max:11.5133cur_angle:19.9998[0m
+Cmdms:1692948453376,m1Cmd:34.06,m2Cmd:46.1893,m3Cmd:17.494,s1Cmd:5.75667,s2Cmd:11.5133,duration:1727
+[1;31mnodeid:2 setAngle to max:11.5533cur_angle:19.9998[0m
+Cmdms:1692948453382,m1Cmd:34.18,m2Cmd:46.3493,m3Cmd:17.554,s1Cmd:5.77667,s2Cmd:11.5533,duration:1733
+[1;31mnodeid:2 setAngle to max:11.5867cur_angle:19.9998[0m
+Cmdms:1692948453387,m1Cmd:34.28,m2Cmd:46.4827,m3Cmd:17.604,s1Cmd:5.79333,s2Cmd:11.5867,duration:1738
+[1;31mnodeid:2 setAngle to max:11.62cur_angle:20.0016[0m
+Cmdms:1692948453392,m1Cmd:34.38,m2Cmd:46.616,m3Cmd:17.654,s1Cmd:5.81,s2Cmd:11.62,duration:1743
+[1;31mnodeid:2 setAngle to max:11.6533cur_angle:20.0016[0m
+Cmdms:1692948453397,m1Cmd:34.48,m2Cmd:46.7493,m3Cmd:17.704,s1Cmd:5.82667,s2Cmd:11.6533,duration:1748
+[1;31mnodeid:2 setAngle to max:11.6933cur_angle:20.0016[0m
+Cmdms:1692948453403,m1Cmd:34.6,m2Cmd:46.9093,m3Cmd:17.764,s1Cmd:5.84667,s2Cmd:11.6933,duration:1754
+[1;31mnodeid:2 setAngle to max:11.7267cur_angle:20.0016[0m
+Cmdms:1692948453408,m1Cmd:34.7,m2Cmd:47.0427,m3Cmd:17.814,s1Cmd:5.86333,s2Cmd:11.7267,duration:1759
+Anglems:1692948453408,m1:31.552,m2:44.312,m3:16.768,s1:5.661,s2:20.0016 ,duration:1759
+Velms:1692948453408,velM1:17.568,velM2:21.96,velM3:8.784,velS1:3,velS2:0 ,duration:1759
+[1;31mnodeid:2 setAngle to max:11.76cur_angle:20.0016[0m
+Cmdms:1692948453413,m1Cmd:34.8,m2Cmd:47.176,m3Cmd:17.864,s1Cmd:5.88,s2Cmd:11.76,duration:1764
+[1;31mnodeid:2 setAngle to max:11.7933cur_angle:20.0016[0m
+Cmdms:1692948453418,m1Cmd:34.9,m2Cmd:47.3093,m3Cmd:17.914,s1Cmd:5.89667,s2Cmd:11.7933,duration:1769
+[1;31mnodeid:2 setAngle to max:11.8267cur_angle:20.0016[0m
+Cmdms:1692948453423,m1Cmd:35,m2Cmd:47.4427,m3Cmd:17.964,s1Cmd:5.91333,s2Cmd:11.8267,duration:1774
+[1;31mnodeid:2 setAngle to max:11.8667cur_angle:20.0016[0m
+Cmdms:1692948453429,m1Cmd:35.12,m2Cmd:47.6027,m3Cmd:18.024,s1Cmd:5.93333,s2Cmd:11.8667,duration:1780
+[1;31mnodeid:2 setAngle to max:11.9cur_angle:20.0016[0m
+Cmdms:1692948453434,m1Cmd:35.22,m2Cmd:47.736,m3Cmd:18.074,s1Cmd:5.95,s2Cmd:11.9,duration:1785
+[1;31mnodeid:2 setAngle to max:11.9333cur_angle:20.0016[0m
+Cmdms:1692948453439,m1Cmd:35.32,m2Cmd:47.8693,m3Cmd:18.124,s1Cmd:5.96667,s2Cmd:11.9333,duration:1790
+[1;31mnodeid:2 setAngle to max:11.9667cur_angle:19.9998[0m
+Cmdms:1692948453444,m1Cmd:35.42,m2Cmd:48.0027,m3Cmd:18.174,s1Cmd:5.98333,s2Cmd:11.9667,duration:1795
+[1;31mnodeid:2 setAngle to max:12.0067cur_angle:19.9998[0m
+Cmdms:1692948453450,m1Cmd:35.54,m2Cmd:48.1627,m3Cmd:18.234,s1Cmd:6.00333,s2Cmd:12.0067,duration:1801
+Anglems:1692948453450,m1:32.52,m2:45.544,m3:17.208,s1:5.9472,s2:19.9998 ,duration:1801
+Velms:1692948453450,velM1:17.568,velM2:30.744,velM3:8.784,velS1:3,velS2:0 ,duration:1801
+[1;31mnodeid:2 setAngle to max:12.04cur_angle:19.9998[0m
+Cmdms:1692948453455,m1Cmd:35.64,m2Cmd:48.296,m3Cmd:18.284,s1Cmd:6.02,s2Cmd:12.04,duration:1806
+[1;31mnodeid:2 setAngle to max:12.0733cur_angle:19.9998[0m
+Cmdms:1692948453460,m1Cmd:35.74,m2Cmd:48.4293,m3Cmd:18.334,s1Cmd:6.03667,s2Cmd:12.0733,duration:1811
+[1;31mnodeid:2 setAngle to max:12.1067cur_angle:19.9998[0m
+Cmdms:1692948453466,m1Cmd:35.84,m2Cmd:48.5627,m3Cmd:18.384,s1Cmd:6.05333,s2Cmd:12.1067,duration:1816
+[1;31mnodeid:2 setAngle to max:12.1533cur_angle:19.9998[0m
+Cmdms:1692948453472,m1Cmd:35.98,m2Cmd:48.7493,m3Cmd:18.454,s1Cmd:6.07667,s2Cmd:12.1533,duration:1823
+[1;31mnodeid:2 setAngle to max:12.1867cur_angle:19.9998[0m
+Cmdms:1692948453477,m1Cmd:36.08,m2Cmd:48.8827,m3Cmd:18.504,s1Cmd:6.09333,s2Cmd:12.1867,duration:1828
+[1;31mnodeid:2 setAngle to max:12.22cur_angle:19.9998[0m
+Cmdms:1692948453482,m1Cmd:36.18,m2Cmd:49.016,m3Cmd:18.554,s1Cmd:6.11,s2Cmd:12.22,duration:1833
+[1;31mnodeid:2 setAngle to max:12.26cur_angle:19.9998[0m
+Cmdms:1692948453487,m1Cmd:36.3,m2Cmd:49.176,m3Cmd:18.614,s1Cmd:6.13,s2Cmd:12.26,duration:1839
+[1;31mnodeid:2 setAngle to max:12.2933cur_angle:19.9998[0m
+Cmdms:1692948453493,m1Cmd:36.4,m2Cmd:49.3093,m3Cmd:18.664,s1Cmd:6.14667,s2Cmd:12.2933,duration:1844
+Anglems:1692948453493,m1:33.312,m2:46.688,m3:17.648,s1:5.9472,s2:19.9998 ,duration:1844
+Velms:1692948453493,velM1:17.568,velM2:30.744,velM3:8.784,velS1:3.3,velS2:0 ,duration:1844
+[1;31mnodeid:2 setAngle to max:12.3267cur_angle:19.9998[0m
+Cmdms:1692948453498,m1Cmd:36.5,m2Cmd:49.4427,m3Cmd:18.714,s1Cmd:6.16333,s2Cmd:12.3267,duration:1849
+[1;31mnodeid:2 setAngle to max:12.36cur_angle:19.9998[0m
+Cmdms:1692948453503,m1Cmd:36.6,m2Cmd:49.576,m3Cmd:18.764,s1Cmd:6.18,s2Cmd:12.36,duration:1854
+[1;31mnodeid:2 setAngle to max:12.4cur_angle:19.9998[0m
+Cmdms:1692948453509,m1Cmd:36.72,m2Cmd:49.736,m3Cmd:18.824,s1Cmd:6.2,s2Cmd:12.4,duration:1860
+[1;31mnodeid:2 setAngle to max:12.4333cur_angle:19.9998[0m
+Cmdms:1692948453514,m1Cmd:36.82,m2Cmd:49.8693,m3Cmd:18.874,s1Cmd:6.21667,s2Cmd:12.4333,duration:1865
+[1;31mnodeid:2 setAngle to max:12.4667cur_angle:19.9998[0m
+Cmdms:1692948453519,m1Cmd:36.92,m2Cmd:50.0027,m3Cmd:18.924,s1Cmd:6.23333,s2Cmd:12.4667,duration:1870
+[1;31mnodeid:2 setAngle to max:12.5cur_angle:19.9998[0m
+Cmdms:1692948453525,m1Cmd:37.02,m2Cmd:50.136,m3Cmd:18.974,s1Cmd:6.25,s2Cmd:12.5,duration:1875
+[1;31mnodeid:2 setAngle to max:12.54cur_angle:19.9998[0m
+Cmdms:1692948453530,m1Cmd:37.14,m2Cmd:50.296,m3Cmd:19.034,s1Cmd:6.27,s2Cmd:12.54,duration:1881
+[1;31mnodeid:2 setAngle to max:12.5733cur_angle:19.9998[0m
+Cmdms:1692948453535,m1Cmd:37.24,m2Cmd:50.4293,m3Cmd:19.084,s1Cmd:6.28667,s2Cmd:12.5733,duration:1886
+Anglems:1692948453535,m1:34.28,m2:47.92,m3:18.176,s1:6.0174,s2:19.9998 ,duration:1886
+Velms:1692948453535,velM1:17.568,velM2:26.352,velM3:13.176,velS1:3.3,velS2:0 ,duration:1886
+[1;31mnodeid:2 setAngle to max:12.6067cur_angle:19.9998[0m
+Cmdms:1692948453540,m1Cmd:37.34,m2Cmd:50.5627,m3Cmd:19.134,s1Cmd:6.30333,s2Cmd:12.6067,duration:1891
+[1;31mnodeid:2 setAngle to max:12.6467cur_angle:19.9998[0m
+Cmdms:1692948453546,m1Cmd:37.46,m2Cmd:50.7227,m3Cmd:19.194,s1Cmd:6.32333,s2Cmd:12.6467,duration:1897
+[1;31mnodeid:2 setAngle to max:12.68cur_angle:19.9998[0m
+Cmdms:1692948453551,m1Cmd:37.56,m2Cmd:50.856,m3Cmd:19.244,s1Cmd:6.34,s2Cmd:12.68,duration:1902
+[1;31mnodeid:2 setAngle to max:12.7133cur_angle:19.9998[0m
+Cmdms:1692948453556,m1Cmd:37.66,m2Cmd:50.9893,m3Cmd:19.294,s1Cmd:6.35667,s2Cmd:12.7133,duration:1907
+[1;31mnodeid:2 setAngle to max:12.7467cur_angle:19.9998[0m
+Cmdms:1692948453561,m1Cmd:37.76,m2Cmd:51.1227,m3Cmd:19.344,s1Cmd:6.37333,s2Cmd:12.7467,duration:1912
+[1;31mnodeid:2 setAngle to max:12.7867cur_angle:19.9998[0m
+Cmdms:1692948453567,m1Cmd:37.88,m2Cmd:51.2827,m3Cmd:19.404,s1Cmd:6.39333,s2Cmd:12.7867,duration:1918
+[1;31mnodeid:2 setAngle to max:12.82cur_angle:19.9998[0m
+Cmdms:1692948453572,m1Cmd:37.98,m2Cmd:51.416,m3Cmd:19.454,s1Cmd:6.41,s2Cmd:12.82,duration:1923
+[1;31mnodeid:2 setAngle to max:12.8533cur_angle:19.9998[0m
+Cmdms:1692948453577,m1Cmd:38.08,m2Cmd:51.5493,m3Cmd:19.504,s1Cmd:6.42667,s2Cmd:12.8533,duration:1928
+Anglems:1692948453577,m1:35.16,m2:47.92,m3:18.528,s1:6.2658,s2:19.9998 ,duration:1928
+Velms:1692948453577,velM1:17.568,velM2:26.352,velM3:8.784,velS1:3,velS2:0 ,duration:1928
+[1;31mnodeid:2 setAngle to max:12.8933cur_angle:19.9998[0m
+Cmdms:1692948453584,m1Cmd:38.2,m2Cmd:51.7093,m3Cmd:19.564,s1Cmd:6.44667,s2Cmd:12.8933,duration:1934
+[1;31mnodeid:2 setAngle to max:12.9333cur_angle:19.9998[0m
+Cmdms:1692948453590,m1Cmd:38.32,m2Cmd:51.8693,m3Cmd:19.624,s1Cmd:6.46667,s2Cmd:12.9333,duration:1940
+[1;31mnodeid:2 setAngle to max:12.9733cur_angle:20.0016[0m
+Cmdms:1692948453595,m1Cmd:38.44,m2Cmd:52.0293,m3Cmd:19.684,s1Cmd:6.48667,s2Cmd:12.9733,duration:1946
+[1;31mnodeid:2 setAngle to max:13.0067cur_angle:20.0016[0m
+Cmdms:1692948453601,m1Cmd:38.54,m2Cmd:52.1627,m3Cmd:19.734,s1Cmd:6.50333,s2Cmd:13.0067,duration:1951
+[1;31mnodeid:2 setAngle to max:13.0467cur_angle:20.0016[0m
+Cmdms:1692948453606,m1Cmd:38.66,m2Cmd:52.3227,m3Cmd:19.794,s1Cmd:6.52333,s2Cmd:13.0467,duration:1957
+[1;31mnodeid:2 setAngle to max:13.08cur_angle:20.0016[0m
+Cmdms:1692948453612,m1Cmd:38.76,m2Cmd:52.456,m3Cmd:19.844,s1Cmd:6.54,s2Cmd:13.08,duration:1962
+[1;31mnodeid:2 setAngle to max:13.12cur_angle:20.0016[0m
+Cmdms:1692948453619,m1Cmd:38.88,m2Cmd:52.616,m3Cmd:19.904,s1Cmd:6.56,s2Cmd:13.12,duration:1968
+[1;31mnodeid:2 setAngle to max:13.1667cur_angle:20.0016[0m
+Cmdms:1692948453624,m1Cmd:39.02,m2Cmd:52.8027,m3Cmd:19.974,s1Cmd:6.58333,s2Cmd:13.1667,duration:1975
+Anglems:1692948453624,m1:36.128,m2:49.064,m3:18.968,s1:6.3702,s2:20.0016 ,duration:1975
+Velms:1692948453624,velM1:21.96,velM2:21.96,velM3:8.784,velS1:3.6,velS2:0 ,duration:1975
+[1;31mnodeid:2 setAngle to max:13.2cur_angle:20.0016[0m
+Cmdms:1692948453629,m1Cmd:39.12,m2Cmd:52.936,m3Cmd:20.024,s1Cmd:6.6,s2Cmd:13.2,duration:1980
+[1;31mnodeid:2 setAngle to max:13.2333cur_angle:20.0016[0m
+Cmdms:1692948453634,m1Cmd:39.22,m2Cmd:53.0693,m3Cmd:20.074,s1Cmd:6.61667,s2Cmd:13.2333,duration:1985
+[1;31mnodeid:2 setAngle to max:13.2733cur_angle:20.0016[0m
+Cmdms:1692948453640,m1Cmd:39.34,m2Cmd:53.2293,m3Cmd:20.134,s1Cmd:6.63667,s2Cmd:13.2733,duration:1991
+[1;31mnodeid:2 setAngle to max:13.3067cur_angle:19.998[0m
+Cmdms:1692948453645,m1Cmd:39.44,m2Cmd:53.3627,m3Cmd:20.184,s1Cmd:6.65333,s2Cmd:13.3067,duration:1996
+[1;31mnodeid:2 setAngle to max:13.34cur_angle:19.998[0m
+Cmdms:1692948453650,m1Cmd:39.54,m2Cmd:53.496,m3Cmd:20.234,s1Cmd:6.67,s2Cmd:13.34,duration:2001
+[1;31mnodeid:2 setAngle to max:13.3733cur_angle:19.998[0m
+Cmdms:1692948453655,m1Cmd:39.64,m2Cmd:53.6293,m3Cmd:20.284,s1Cmd:6.68667,s2Cmd:13.3733,duration:2006
+[1;31mnodeid:2 setAngle to max:13.4133cur_angle:19.998[0m
+Cmdms:1692948453661,m1Cmd:39.76,m2Cmd:53.7893,m3Cmd:20.344,s1Cmd:6.70667,s2Cmd:13.4133,duration:2012
+[1;31mnodeid:2 setAngle to max:13.4467cur_angle:19.998[0m
+Cmdms:1692948453666,m1Cmd:39.86,m2Cmd:53.9227,m3Cmd:20.394,s1Cmd:6.72333,s2Cmd:13.4467,duration:2017
+Anglems:1692948453666,m1:37.008,m2:50.384,m3:19.408,s1:6.57,s2:19.998 ,duration:2017
+Velms:1692948453666,velM1:21.96,velM2:30.744,velM3:13.176,velS1:2.7,velS2:0 ,duration:2017
+[1;31mnodeid:2 setAngle to max:13.48cur_angle:19.998[0m
+Cmdms:1692948453671,m1Cmd:39.96,m2Cmd:54.056,m3Cmd:20.444,s1Cmd:6.74,s2Cmd:13.48,duration:2022
+[1;31mnodeid:2 setAngle to max:13.52cur_angle:19.998[0m
+Cmdms:1692948453678,m1Cmd:40.08,m2Cmd:54.216,m3Cmd:20.504,s1Cmd:6.76,s2Cmd:13.52,duration:2028
+[1;31mnodeid:2 setAngle to max:13.56cur_angle:19.998[0m
+Cmdms:1692948453683,m1Cmd:40.2,m2Cmd:54.376,m3Cmd:20.564,s1Cmd:6.78,s2Cmd:13.56,duration:2034
+[1;31mnodeid:2 setAngle to max:13.5933cur_angle:19.9998[0m
+Cmdms:1692948453688,m1Cmd:40.3,m2Cmd:54.5093,m3Cmd:20.614,s1Cmd:6.79667,s2Cmd:13.5933,duration:2039
+[1;31mnodeid:2 setAngle to max:13.6267cur_angle:19.9998[0m
+Cmdms:1692948453693,m1Cmd:40.4,m2Cmd:54.6427,m3Cmd:20.664,s1Cmd:6.81333,s2Cmd:13.6267,duration:2044
+[1;31mnodeid:2 setAngle to max:13.6667cur_angle:19.9998[0m
+Cmdms:1692948453699,m1Cmd:40.52,m2Cmd:54.8027,m3Cmd:20.724,s1Cmd:6.83333,s2Cmd:13.6667,duration:2050
+[1;31mnodeid:2 setAngle to max:13.7cur_angle:19.9998[0m
+Cmdms:1692948453704,m1Cmd:40.62,m2Cmd:54.936,m3Cmd:20.774,s1Cmd:6.85,s2Cmd:13.7,duration:2055
+[1;31mnodeid:2 setAngle to max:13.7333cur_angle:19.9998[0m
+Cmdms:1692948453709,m1Cmd:40.72,m2Cmd:55.0693,m3Cmd:20.824,s1Cmd:6.86667,s2Cmd:13.7333,duration:2060
+Anglems:1692948453709,m1:37.888,m2:51.528,m3:19.76,s1:6.7194,s2:19.9998 ,duration:2060
+Velms:1692948453709,velM1:17.568,velM2:26.352,velM3:8.784,velS1:3.6,velS2:0 ,duration:2060
+[1;31mnodeid:2 setAngle to max:13.7733cur_angle:19.9998[0m
+Cmdms:1692948453715,m1Cmd:40.84,m2Cmd:55.2293,m3Cmd:20.884,s1Cmd:6.88667,s2Cmd:13.7733,duration:2066
+[1;31mnodeid:2 setAngle to max:13.8067cur_angle:19.9998[0m
+Cmdms:1692948453720,m1Cmd:40.94,m2Cmd:55.3627,m3Cmd:20.934,s1Cmd:6.90333,s2Cmd:13.8067,duration:2071
+[1;31mnodeid:2 setAngle to max:13.84cur_angle:19.9998[0m
+Cmdms:1692948453725,m1Cmd:41.04,m2Cmd:55.496,m3Cmd:20.984,s1Cmd:6.92,s2Cmd:13.84,duration:2076
+[1;31mnodeid:2 setAngle to max:13.8733cur_angle:19.9998[0m
+Cmdms:1692948453731,m1Cmd:41.14,m2Cmd:55.6293,m3Cmd:21.034,s1Cmd:6.93667,s2Cmd:13.8733,duration:2081
+[1;31mnodeid:2 setAngle to max:13.9133cur_angle:19.9998[0m
+Cmdms:1692948453736,m1Cmd:41.26,m2Cmd:55.7893,m3Cmd:21.094,s1Cmd:6.95667,s2Cmd:13.9133,duration:2087
+[1;31mnodeid:2 setAngle to max:13.9467cur_angle:19.9998[0m
+Cmdms:1692948453741,m1Cmd:41.36,m2Cmd:55.9227,m3Cmd:21.144,s1Cmd:6.97333,s2Cmd:13.9467,duration:2092
+[1;31mnodeid:2 setAngle to max:13.98cur_angle:19.9998[0m
+Cmdms:1692948453746,m1Cmd:41.46,m2Cmd:56.056,m3Cmd:21.194,s1Cmd:6.99,s2Cmd:13.98,duration:2097
+Cmdms:1692948453752,m1Cmd:41.58,m2Cmd:56.216,m3Cmd:21.254,s1Cmd:7.01,s2Cmd:14.02,duration:2103
+Anglems:1692948453752,m1:38.68,m2:52.76,m3:20.376,s1:6.849,s2:19.9998 ,duration:2103
+Velms:1692948453752,velM1:17.568,velM2:26.352,velM3:13.176,velS1:2.7,velS2:0 ,duration:2103
+Cmdms:1692948453757,m1Cmd:41.68,m2Cmd:56.3493,m3Cmd:21.304,s1Cmd:7.02667,s2Cmd:14.0533,duration:2108
+Cmdms:1692948453763,m1Cmd:41.8,m2Cmd:56.5093,m3Cmd:21.364,s1Cmd:7.04667,s2Cmd:14.0933,duration:2114
+Cmdms:1692948453768,m1Cmd:41.9,m2Cmd:56.6427,m3Cmd:21.414,s1Cmd:7.06333,s2Cmd:14.1267,duration:2119
+Cmdms:1692948453773,m1Cmd:42,m2Cmd:56.776,m3Cmd:21.464,s1Cmd:7.08,s2Cmd:14.16,duration:2124
+Cmdms:1692948453779,m1Cmd:42.12,m2Cmd:56.936,m3Cmd:21.524,s1Cmd:7.1,s2Cmd:14.2,duration:2130
+Cmdms:1692948453784,m1Cmd:42.22,m2Cmd:57.0693,m3Cmd:21.574,s1Cmd:7.11667,s2Cmd:14.2333,duration:2135
+Cmdms:1692948453790,m1Cmd:42.34,m2Cmd:57.2293,m3Cmd:21.634,s1Cmd:7.13667,s2Cmd:14.2733,duration:2141
+Cmdms:1692948453795,m1Cmd:42.44,m2Cmd:57.3627,m3Cmd:21.684,s1Cmd:7.15333,s2Cmd:14.3067,duration:2146
+Anglems:1692948453795,m1:39.56,m2:53.904,m3:20.816,s1:6.849,s2:15.7176 ,duration:2146
+Velms:1692948453795,velM1:21.96,velM2:30.744,velM3:8.784,velS1:3.9,velS2:-0.3 ,duration:2146
+Cmdms:1692948453801,m1Cmd:42.54,m2Cmd:57.496,m3Cmd:21.734,s1Cmd:7.17,s2Cmd:14.34,duration:2151
+Cmdms:1692948453806,m1Cmd:42.66,m2Cmd:57.656,m3Cmd:21.794,s1Cmd:7.19,s2Cmd:14.38,duration:2157
+Cmdms:1692948453811,m1Cmd:42.76,m2Cmd:57.7893,m3Cmd:21.844,s1Cmd:7.20667,s2Cmd:14.4133,duration:2162
+Cmdms:1692948453817,m1Cmd:42.88,m2Cmd:57.9493,m3Cmd:21.904,s1Cmd:7.22667,s2Cmd:14.4533,duration:2168
+Cmdms:1692948453823,m1Cmd:42.98,m2Cmd:58.0827,m3Cmd:21.954,s1Cmd:7.24333,s2Cmd:14.4867,duration:2173
+Cmdms:1692948453828,m1Cmd:43.1,m2Cmd:58.2427,m3Cmd:22.014,s1Cmd:7.26333,s2Cmd:14.5267,duration:2179
+Cmdms:1692948453833,m1Cmd:43.2,m2Cmd:58.376,m3Cmd:22.064,s1Cmd:7.28,s2Cmd:14.56,duration:2184
+Cmdms:1692948453839,m1Cmd:43.32,m2Cmd:58.536,m3Cmd:22.124,s1Cmd:7.3,s2Cmd:14.6,duration:2190
+Anglems:1692948453839,m1:40.616,m2:55.224,m3:21.256,s1:7.0668,s2:15.7176 ,duration:2190
+Velms:1692948453839,velM1:26.352,velM2:30.744,velM3:13.176,velS1:3.9,velS2:-32.1 ,duration:2190
+Cmdms:1692948453844,m1Cmd:43.42,m2Cmd:58.6693,m3Cmd:22.174,s1Cmd:7.31667,s2Cmd:14.6333,duration:2195
+Cmdms:1692948453850,m1Cmd:43.52,m2Cmd:58.8027,m3Cmd:22.224,s1Cmd:7.33333,s2Cmd:14.6667,duration:2200
+Cmdms:1692948453855,m1Cmd:43.64,m2Cmd:58.9627,m3Cmd:22.284,s1Cmd:7.35333,s2Cmd:14.7067,duration:2206
+Cmdms:1692948453860,m1Cmd:43.74,m2Cmd:59.096,m3Cmd:22.334,s1Cmd:7.37,s2Cmd:14.74,duration:2211
+Cmdms:1692948453866,m1Cmd:43.86,m2Cmd:59.256,m3Cmd:22.394,s1Cmd:7.39,s2Cmd:14.78,duration:2217
+Cmdms:1692948453871,m1Cmd:43.96,m2Cmd:59.3893,m3Cmd:22.444,s1Cmd:7.40667,s2Cmd:14.8133,duration:2222
+Cmdms:1692948453878,m1Cmd:44.08,m2Cmd:59.5493,m3Cmd:22.504,s1Cmd:7.42667,s2Cmd:14.8533,duration:2228
+Cmdms:1692948453883,m1Cmd:44.2,m2Cmd:59.7093,m3Cmd:22.564,s1Cmd:7.44667,s2Cmd:14.8933,duration:2234
+Anglems:1692948453883,m1:41.584,m2:56.368,m3:21.696,s1:7.1622,s2:15.1434 ,duration:2234
+Velms:1692948453883,velM1:17.568,velM2:26.352,velM3:8.784,velS1:3,velS2:-26.4 ,duration:2234
+Cmdms:1692948453889,m1Cmd:44.3,m2Cmd:59.8427,m3Cmd:22.614,s1Cmd:7.46333,s2Cmd:14.9267,duration:2239
+Cmdms:1692948453894,m1Cmd:44.42,m2Cmd:60.0027,m3Cmd:22.674,s1Cmd:7.48333,s2Cmd:14.9667,duration:2245
+Cmdms:1692948453899,m1Cmd:44.52,m2Cmd:60.136,m3Cmd:22.724,s1Cmd:7.5,s2Cmd:15,duration:2250
+Cmdms:1692948453905,m1Cmd:44.64,m2Cmd:60.296,m3Cmd:22.784,s1Cmd:7.52,s2Cmd:15.04,duration:2256
+Cmdms:1692948453910,m1Cmd:44.74,m2Cmd:60.4293,m3Cmd:22.834,s1Cmd:7.53667,s2Cmd:15.0733,duration:2261
+Cmdms:1692948453915,m1Cmd:44.84,m2Cmd:60.5627,m3Cmd:22.884,s1Cmd:7.55333,s2Cmd:15.1067,duration:2266
+Cmdms:1692948453921,m1Cmd:44.96,m2Cmd:60.7227,m3Cmd:22.944,s1Cmd:7.57333,s2Cmd:15.1467,duration:2272
+Cmdms:1692948453926,m1Cmd:45.06,m2Cmd:60.856,m3Cmd:22.994,s1Cmd:7.59,s2Cmd:15.18,duration:2277
+Anglems:1692948453926,m1:42.376,m2:57.512,m3:21.696,s1:7.4214,s2:14.7366 ,duration:2277
+Velms:1692948453926,velM1:17.568,velM2:26.352,velM3:8.784,velS1:3.9,velS2:-15 ,duration:2277
+Cmdms:1692948453931,m1Cmd:45.16,m2Cmd:60.9893,m3Cmd:23.044,s1Cmd:7.60667,s2Cmd:15.2133,duration:2282
+Cmdms:1692948453937,m1Cmd:45.28,m2Cmd:61.1493,m3Cmd:23.104,s1Cmd:7.62667,s2Cmd:15.2533,duration:2288
+Cmdms:1692948453942,m1Cmd:45.38,m2Cmd:61.2827,m3Cmd:23.154,s1Cmd:7.64333,s2Cmd:15.2867,duration:2293
+Cmdms:1692948453948,m1Cmd:45.48,m2Cmd:61.416,m3Cmd:23.204,s1Cmd:7.66,s2Cmd:15.32,duration:2298
+Cmdms:1692948453953,m1Cmd:45.6,m2Cmd:61.576,m3Cmd:23.264,s1Cmd:7.68,s2Cmd:15.36,duration:2304
+Cmdms:1692948453958,m1Cmd:45.7,m2Cmd:61.7093,m3Cmd:23.314,s1Cmd:7.69667,s2Cmd:15.3933,duration:2309
+Cmdms:1692948453964,m1Cmd:45.8,m2Cmd:61.8427,m3Cmd:23.364,s1Cmd:7.71333,s2Cmd:15.4267,duration:2314
+Cmdms:1692948453969,m1Cmd:45.92,m2Cmd:62.0027,m3Cmd:23.424,s1Cmd:7.73333,s2Cmd:15.4667,duration:2320
+Anglems:1692948453969,m1:43.168,m2:58.832,m3:22.136,s1:7.4952,s2:14.9166 ,duration:2320
+Velms:1692948453969,velM1:13.176,velM2:30.744,velM3:8.784,velS1:3,velS2:-6.3 ,duration:2320
+Cmdms:1692948453974,m1Cmd:46.02,m2Cmd:62.136,m3Cmd:23.474,s1Cmd:7.75,s2Cmd:15.5,duration:2325
+Cmdms:1692948453980,m1Cmd:46.14,m2Cmd:62.296,m3Cmd:23.534,s1Cmd:7.77,s2Cmd:15.54,duration:2331
+Cmdms:1692948453985,m1Cmd:46.24,m2Cmd:62.4293,m3Cmd:23.584,s1Cmd:7.78667,s2Cmd:15.5733,duration:2336
+Cmdms:1692948453991,m1Cmd:46.36,m2Cmd:62.5893,m3Cmd:23.644,s1Cmd:7.80667,s2Cmd:15.6133,duration:2342
+Cmdms:1692948453996,m1Cmd:46.46,m2Cmd:62.7227,m3Cmd:23.694,s1Cmd:7.82333,s2Cmd:15.6467,duration:2347
+Cmdms:1692948454002,m1Cmd:46.58,m2Cmd:62.8827,m3Cmd:23.754,s1Cmd:7.84333,s2Cmd:15.6867,duration:2353
+Cmdms:1692948454007,m1Cmd:46.68,m2Cmd:63.016,m3Cmd:23.804,s1Cmd:7.86,s2Cmd:15.72,duration:2358
+Cmdms:1692948454013,m1Cmd:46.78,m2Cmd:63.1493,m3Cmd:23.854,s1Cmd:7.87667,s2Cmd:15.7533,duration:2363
+Anglems:1692948454013,m1:44.136,m2:60.152,m3:22.576,s1:7.7742,s2:15.2622 ,duration:2363
+Velms:1692948454013,velM1:21.96,velM2:30.744,velM3:8.784,velS1:3.9,velS2:-6.3 ,duration:2363
+Cmdms:1692948454018,m1Cmd:46.9,m2Cmd:63.3093,m3Cmd:23.914,s1Cmd:7.89667,s2Cmd:15.7933,duration:2369
+Cmdms:1692948454023,m1Cmd:47,m2Cmd:63.4427,m3Cmd:23.964,s1Cmd:7.91333,s2Cmd:15.8267,duration:2374
+Cmdms:1692948454029,m1Cmd:47.12,m2Cmd:63.6027,m3Cmd:24.024,s1Cmd:7.93333,s2Cmd:15.8667,duration:2380
+Cmdms:1692948454034,m1Cmd:47.22,m2Cmd:63.736,m3Cmd:24.074,s1Cmd:7.95,s2Cmd:15.9,duration:2385
+Cmdms:1692948454039,m1Cmd:47.32,m2Cmd:63.8693,m3Cmd:24.124,s1Cmd:7.96667,s2Cmd:15.9333,duration:2390
+Cmdms:1692948454045,m1Cmd:47.44,m2Cmd:64.0293,m3Cmd:24.184,s1Cmd:7.98667,s2Cmd:15.9733,duration:2396
+Cmdms:1692948454050,m1Cmd:47.54,m2Cmd:64.1627,m3Cmd:24.234,s1Cmd:8.00333,s2Cmd:16.0067,duration:2401
+Cmdms:1692948454056,m1Cmd:47.66,m2Cmd:64.3227,m3Cmd:24.294,s1Cmd:8.02333,s2Cmd:16.0467,duration:2407
+Anglems:1692948454056,m1:45.016,m2:61.208,m3:23.104,s1:7.8444,s2:15.6204 ,duration:2407
+Velms:1692948454056,velM1:13.176,velM2:26.352,velM3:13.176,velS1:3.3,velS2:-0.9 ,duration:2407
+Cmdms:1692948454061,m1Cmd:47.76,m2Cmd:64.456,m3Cmd:24.344,s1Cmd:8.04,s2Cmd:16.08,duration:2412
+Cmdms:1692948454067,m1Cmd:47.88,m2Cmd:64.616,m3Cmd:24.404,s1Cmd:8.06,s2Cmd:16.12,duration:2418
+Cmdms:1692948454072,m1Cmd:47.98,m2Cmd:64.7493,m3Cmd:24.454,s1Cmd:8.07667,s2Cmd:16.1533,duration:2423
+Cmdms:1692948454078,m1Cmd:48.08,m2Cmd:64.8827,m3Cmd:24.504,s1Cmd:8.09333,s2Cmd:16.1867,duration:2428
+Cmdms:1692948454084,m1Cmd:48.2,m2Cmd:65.0427,m3Cmd:24.564,s1Cmd:8.11333,s2Cmd:16.2267,duration:2434
+Cmdms:1692948454090,m1Cmd:48.32,m2Cmd:65.2027,m3Cmd:24.624,s1Cmd:8.13333,s2Cmd:16.2667,duration:2440
+Cmdms:1692948454095,m1Cmd:48.44,m2Cmd:65.3627,m3Cmd:24.684,s1Cmd:8.15333,s2Cmd:16.3067,duration:2446
+Cmdms:1692948454101,m1Cmd:48.54,m2Cmd:65.496,m3Cmd:24.734,s1Cmd:8.17,s2Cmd:16.34,duration:2451
+Anglems:1692948454101,m1:45.896,m2:62.352,m3:23.544,s1:8.1252,s2:15.975 ,duration:2451
+Velms:1692948454101,velM1:17.568,velM2:26.352,velM3:8.784,velS1:3.6,velS2:2.1 ,duration:2451
+Cmdms:1692948454106,m1Cmd:48.66,m2Cmd:65.656,m3Cmd:24.794,s1Cmd:8.19,s2Cmd:16.38,duration:2457
+Cmdms:1692948454111,m1Cmd:48.76,m2Cmd:65.7893,m3Cmd:24.844,s1Cmd:8.20667,s2Cmd:16.4133,duration:2462
+Cmdms:1692948454117,m1Cmd:48.88,m2Cmd:65.9493,m3Cmd:24.904,s1Cmd:8.22667,s2Cmd:16.4533,duration:2468
+Cmdms:1692948454123,m1Cmd:48.98,m2Cmd:66.0827,m3Cmd:24.954,s1Cmd:8.24333,s2Cmd:16.4867,duration:2473
+Cmdms:1692948454128,m1Cmd:49.1,m2Cmd:66.2427,m3Cmd:25.014,s1Cmd:8.26333,s2Cmd:16.5267,duration:2479
+Cmdms:1692948454133,m1Cmd:49.2,m2Cmd:66.376,m3Cmd:25.064,s1Cmd:8.28,s2Cmd:16.56,duration:2484
+Cmdms:1692948454139,m1Cmd:49.32,m2Cmd:66.536,m3Cmd:25.124,s1Cmd:8.3,s2Cmd:16.6,duration:2490
+Cmdms:1692948454144,m1Cmd:49.42,m2Cmd:66.6693,m3Cmd:25.174,s1Cmd:8.31667,s2Cmd:16.6333,duration:2495
+Anglems:1692948454144,m1:46.776,m2:63.672,m3:23.984,s1:8.1252,s2:16.326 ,duration:2495
+Velms:1692948454144,velM1:21.96,velM2:35.136,velM3:4.392,velS1:3.3,velS2:3.6 ,duration:2495
+Cmdms:1692948454150,m1Cmd:49.54,m2Cmd:66.8293,m3Cmd:25.234,s1Cmd:8.33667,s2Cmd:16.6733,duration:2501
+Cmdms:1692948454155,m1Cmd:49.64,m2Cmd:66.9627,m3Cmd:25.284,s1Cmd:8.35333,s2Cmd:16.7067,duration:2506
+Cmdms:1692948454161,m1Cmd:49.74,m2Cmd:67.096,m3Cmd:25.334,s1Cmd:8.37,s2Cmd:16.74,duration:2511
+Cmdms:1692948454166,m1Cmd:49.86,m2Cmd:67.256,m3Cmd:25.394,s1Cmd:8.39,s2Cmd:16.78,duration:2517
+Cmdms:1692948454172,m1Cmd:49.96,m2Cmd:67.3893,m3Cmd:25.444,s1Cmd:8.40667,s2Cmd:16.8133,duration:2522
+Cmdms:1692948454178,m1Cmd:50.1,m2Cmd:67.576,m3Cmd:25.514,s1Cmd:8.43,s2Cmd:16.86,duration:2529
+Cmdms:1692948454183,m1Cmd:50.2,m2Cmd:67.7093,m3Cmd:25.564,s1Cmd:8.44667,s2Cmd:16.8933,duration:2534
+Cmdms:1692948454189,m1Cmd:50.3,m2Cmd:67.8427,m3Cmd:25.614,s1Cmd:8.46333,s2Cmd:16.9267,duration:2539
+Anglems:1692948454189,m1:47.832,m2:64.816,m3:24.424,s1:8.1864,s2:16.686 ,duration:2539
+Velms:1692948454189,velM1:21.96,velM2:30.744,velM3:13.176,velS1:3,velS2:4.5 ,duration:2539
+Cmdms:1692948454195,m1Cmd:50.42,m2Cmd:68.0027,m3Cmd:25.674,s1Cmd:8.48333,s2Cmd:16.9667,duration:2545
+Cmdms:1692948454201,m1Cmd:50.54,m2Cmd:68.1627,m3Cmd:25.734,s1Cmd:8.50333,s2Cmd:17.0067,duration:2551
+Cmdms:1692948454206,m1Cmd:50.66,m2Cmd:68.3227,m3Cmd:25.794,s1Cmd:8.52333,s2Cmd:17.0467,duration:2557
+Cmdms:1692948454212,m1Cmd:50.78,m2Cmd:68.4827,m3Cmd:25.854,s1Cmd:8.54333,s2Cmd:17.0867,duration:2563
+Cmdms:1692948454217,m1Cmd:50.88,m2Cmd:68.616,m3Cmd:25.904,s1Cmd:8.56,s2Cmd:17.12,duration:2568
+Cmdms:1692948454223,m1Cmd:50.98,m2Cmd:68.7493,m3Cmd:25.954,s1Cmd:8.57667,s2Cmd:17.1533,duration:2573
+Cmdms:1692948454229,m1Cmd:51.12,m2Cmd:68.936,m3Cmd:26.024,s1Cmd:8.6,s2Cmd:17.2,duration:2580
+Cmdms:1692948454234,m1Cmd:51.22,m2Cmd:69.0693,m3Cmd:26.074,s1Cmd:8.61667,s2Cmd:17.2333,duration:2585
+Anglems:1692948454234,m1:48.712,m2:65.96,m3:24.864,s1:8.4582,s2:16.686 ,duration:2585
+Velms:1692948454234,velM1:17.568,velM2:26.352,velM3:8.784,velS1:3,velS2:5.1 ,duration:2585
+Cmdms:1692948454240,m1Cmd:51.34,m2Cmd:69.2293,m3Cmd:26.134,s1Cmd:8.63667,s2Cmd:17.2733,duration:2591
+Cmdms:1692948454245,m1Cmd:51.44,m2Cmd:69.3627,m3Cmd:26.184,s1Cmd:8.65333,s2Cmd:17.3067,duration:2596
+Cmdms:1692948454250,m1Cmd:51.54,m2Cmd:69.496,m3Cmd:26.234,s1Cmd:8.67,s2Cmd:17.34,duration:2601
+Cmdms:1692948454256,m1Cmd:51.66,m2Cmd:69.656,m3Cmd:26.294,s1Cmd:8.69,s2Cmd:17.38,duration:2607
+Cmdms:1692948454261,m1Cmd:51.76,m2Cmd:69.7893,m3Cmd:26.344,s1Cmd:8.70667,s2Cmd:17.4133,duration:2612
+Cmdms:1692948454266,m1Cmd:51.86,m2Cmd:69.9227,m3Cmd:26.394,s1Cmd:8.72333,s2Cmd:17.4467,duration:2617
+Cmdms:1692948454272,m1Cmd:51.98,m2Cmd:70.0827,m3Cmd:26.454,s1Cmd:8.74333,s2Cmd:17.4867,duration:2623
+Cmdms:1692948454277,m1Cmd:52.08,m2Cmd:70.216,m3Cmd:26.504,s1Cmd:8.76,s2Cmd:17.52,duration:2628
+Anglems:1692948454277,m1:49.504,m2:67.192,m3:25.304,s1:8.5428,s2:17.046 ,duration:2628
+Velms:1692948454277,velM1:17.568,velM2:30.744,velM3:8.784,velS1:3.6,velS2:5.7 ,duration:2628
+Cmdms:1692948454283,m1Cmd:52.2,m2Cmd:70.376,m3Cmd:26.564,s1Cmd:8.78,s2Cmd:17.56,duration:2634
+Cmdms:1692948454288,m1Cmd:52.3,m2Cmd:70.5093,m3Cmd:26.614,s1Cmd:8.79667,s2Cmd:17.5933,duration:2639
+Cmdms:1692948454293,m1Cmd:52.4,m2Cmd:70.6427,m3Cmd:26.664,s1Cmd:8.81333,s2Cmd:17.6267,duration:2644
+Cmdms:1692948454299,m1Cmd:52.52,m2Cmd:70.8027,m3Cmd:26.724,s1Cmd:8.83333,s2Cmd:17.6667,duration:2650
+Cmdms:1692948454304,m1Cmd:52.62,m2Cmd:70.936,m3Cmd:26.774,s1Cmd:8.85,s2Cmd:17.7,duration:2655
+Cmdms:1692948454310,m1Cmd:52.72,m2Cmd:71.0693,m3Cmd:26.824,s1Cmd:8.86667,s2Cmd:17.7333,duration:2660
+Cmdms:1692948454315,m1Cmd:52.84,m2Cmd:71.2293,m3Cmd:26.884,s1Cmd:8.88667,s2Cmd:17.7733,duration:2666
+Cmdms:1692948454320,m1Cmd:52.94,m2Cmd:71.3627,m3Cmd:26.934,s1Cmd:8.90333,s2Cmd:17.8067,duration:2671
+Anglems:1692948454320,m1:50.296,m2:68.512,m3:25.744,s1:8.7678,s2:17.397 ,duration:2671
+Velms:1692948454320,velM1:21.96,velM2:30.744,velM3:4.392,velS1:3,velS2:5.7 ,duration:2671
+Cmdms:1692948454326,m1Cmd:53.06,m2Cmd:71.5227,m3Cmd:26.994,s1Cmd:8.92333,s2Cmd:17.8467,duration:2677
+Cmdms:1692948454331,m1Cmd:53.16,m2Cmd:71.656,m3Cmd:27.044,s1Cmd:8.94,s2Cmd:17.88,duration:2682
+Cmdms:1692948454337,m1Cmd:53.26,m2Cmd:71.7893,m3Cmd:27.094,s1Cmd:8.95667,s2Cmd:17.9133,duration:2687
+Cmdms:1692948454343,m1Cmd:53.38,m2Cmd:71.9493,m3Cmd:27.154,s1Cmd:8.97667,s2Cmd:17.9533,duration:2693
+Cmdms:1692948454350,m1Cmd:53.5,m2Cmd:72.1093,m3Cmd:27.214,s1Cmd:8.99667,s2Cmd:17.9933,duration:2699
+Cmdms:1692948454356,m1Cmd:53.64,m2Cmd:72.296,m3Cmd:27.284,s1Cmd:9.02,s2Cmd:18.04,duration:2706
+Cmdms:1692948454363,m1Cmd:53.76,m2Cmd:72.456,m3Cmd:27.344,s1Cmd:9.04,s2Cmd:18.08,duration:2712
+Cmdms:1692948454368,m1Cmd:53.9,m2Cmd:72.6427,m3Cmd:27.414,s1Cmd:9.06333,s2Cmd:18.1267,duration:2719
+Anglems:1692948454368,m1:51.088,m2:69.656,m3:26.184,s1:8.8992,s2:17.7804 ,duration:2719
+Velms:1692948454368,velM1:17.568,velM2:26.352,velM3:13.176,velS1:3.6,velS2:6 ,duration:2719
+Cmdms:1692948454374,m1Cmd:54,m2Cmd:72.776,m3Cmd:27.464,s1Cmd:9.08,s2Cmd:18.16,duration:2724
+Cmdms:1692948454380,m1Cmd:54.12,m2Cmd:72.936,m3Cmd:27.524,s1Cmd:9.1,s2Cmd:18.2,duration:2730
+Cmdms:1692948454385,m1Cmd:54.24,m2Cmd:73.096,m3Cmd:27.584,s1Cmd:9.12,s2Cmd:18.24,duration:2736
+Cmdms:1692948454391,m1Cmd:54.36,m2Cmd:73.256,m3Cmd:27.644,s1Cmd:9.14,s2Cmd:18.28,duration:2742
+Cmdms:1692948454396,m1Cmd:54.46,m2Cmd:73.3893,m3Cmd:27.694,s1Cmd:9.15667,s2Cmd:18.3133,duration:2747
+Cmdms:1692948454401,m1Cmd:54.56,m2Cmd:73.5227,m3Cmd:27.744,s1Cmd:9.17333,s2Cmd:18.3467,duration:2752
+Cmdms:1692948454407,m1Cmd:54.68,m2Cmd:73.6827,m3Cmd:27.804,s1Cmd:9.19333,s2Cmd:18.3867,duration:2758
+Cmdms:1692948454412,m1Cmd:54.78,m2Cmd:73.816,m3Cmd:27.854,s1Cmd:9.21,s2Cmd:18.42,duration:2763
+Anglems:1692948454412,m1:52.144,m2:70.888,m3:26.712,s1:9.0504,s2:18.126 ,duration:2763
+Velms:1692948454412,velM1:26.352,velM2:26.352,velM3:8.784,velS1:2.7,velS2:6.3 ,duration:2763
+Cmdms:1692948454418,m1Cmd:54.88,m2Cmd:73.9493,m3Cmd:27.904,s1Cmd:9.22667,s2Cmd:18.4533,duration:2768
+Cmdms:1692948454424,m1Cmd:55,m2Cmd:74.1093,m3Cmd:27.964,s1Cmd:9.24667,s2Cmd:18.4933,duration:2774
+Cmdms:1692948454429,m1Cmd:55.12,m2Cmd:74.2693,m3Cmd:28.024,s1Cmd:9.26667,s2Cmd:18.5333,duration:2780
+Cmdms:1692948454435,m1Cmd:55.24,m2Cmd:74.4293,m3Cmd:28.084,s1Cmd:9.28667,s2Cmd:18.5733,duration:2786
+Cmdms:1692948454440,m1Cmd:55.34,m2Cmd:74.5627,m3Cmd:28.134,s1Cmd:9.30333,s2Cmd:18.6067,duration:2791
+Cmdms:1692948454446,m1Cmd:55.46,m2Cmd:74.7227,m3Cmd:28.194,s1Cmd:9.32333,s2Cmd:18.6467,duration:2797
+Cmdms:1692948454452,m1Cmd:55.56,m2Cmd:74.856,m3Cmd:28.244,s1Cmd:9.34,s2Cmd:18.68,duration:2802
+Cmdms:1692948454459,m1Cmd:55.7,m2Cmd:75.0427,m3Cmd:28.314,s1Cmd:9.36333,s2Cmd:18.7267,duration:2809
+Anglems:1692948454459,m1:52.936,m2:72.032,m3:27.24,s1:9.252,s2:18.4248 ,duration:2809
+Velms:1692948454459,velM1:13.176,velM2:26.352,velM3:13.176,velS1:3.9,velS2:6.6 ,duration:2809
+Cmdms:1692948454464,m1Cmd:55.82,m2Cmd:75.2027,m3Cmd:28.374,s1Cmd:9.38333,s2Cmd:18.7667,duration:2815
+Cmdms:1692948454469,m1Cmd:55.92,m2Cmd:75.336,m3Cmd:28.424,s1Cmd:9.4,s2Cmd:18.8,duration:2820
+Cmdms:1692948454475,m1Cmd:56.04,m2Cmd:75.496,m3Cmd:28.484,s1Cmd:9.42,s2Cmd:18.84,duration:2826
+Cmdms:1692948454480,m1Cmd:56.14,m2Cmd:75.6293,m3Cmd:28.534,s1Cmd:9.43667,s2Cmd:18.8733,duration:2831
+Cmdms:1692948454486,m1Cmd:56.26,m2Cmd:75.7893,m3Cmd:28.594,s1Cmd:9.45667,s2Cmd:18.9133,duration:2837
+Cmdms:1692948454491,m1Cmd:56.36,m2Cmd:75.9227,m3Cmd:28.644,s1Cmd:9.47333,s2Cmd:18.9467,duration:2842
+Cmdms:1692948454497,m1Cmd:56.46,m2Cmd:76.056,m3Cmd:28.694,s1Cmd:9.49,s2Cmd:18.98,duration:2847
+Cmdms:1692948454502,m1Cmd:56.58,m2Cmd:76.216,m3Cmd:28.754,s1Cmd:9.51,s2Cmd:19.02,duration:2853
+Anglems:1692948454502,m1:53.816,m2:73.264,m3:27.592,s1:9.252,s2:18.702 ,duration:2853
+Velms:1692948454502,velM1:21.96,velM2:30.744,velM3:8.784,velS1:3,velS2:6.9 ,duration:2853
+Cmdms:1692948454507,m1Cmd:56.68,m2Cmd:76.3493,m3Cmd:28.804,s1Cmd:9.52667,s2Cmd:19.0533,duration:2858
+Cmdms:1692948454513,m1Cmd:56.8,m2Cmd:76.5093,m3Cmd:28.864,s1Cmd:9.54667,s2Cmd:19.0933,duration:2864
+Cmdms:1692948454518,m1Cmd:56.9,m2Cmd:76.6427,m3Cmd:28.914,s1Cmd:9.56333,s2Cmd:19.1267,duration:2869
+Cmdms:1692948454523,m1Cmd:57,m2Cmd:76.776,m3Cmd:28.964,s1Cmd:9.58,s2Cmd:19.16,duration:2874
+Cmdms:1692948454529,m1Cmd:57.12,m2Cmd:76.936,m3Cmd:29.024,s1Cmd:9.6,s2Cmd:19.2,duration:2880
+Cmdms:1692948454534,m1Cmd:57.22,m2Cmd:77.0693,m3Cmd:29.074,s1Cmd:9.61667,s2Cmd:19.2333,duration:2885
+Cmdms:1692948454539,m1Cmd:57.32,m2Cmd:77.2027,m3Cmd:29.124,s1Cmd:9.63333,s2Cmd:19.2667,duration:2890
+Cmdms:1692948454545,m1Cmd:57.44,m2Cmd:77.3627,m3Cmd:29.184,s1Cmd:9.65333,s2Cmd:19.3067,duration:2896
+Anglems:1692948454545,m1:54.696,m2:74.496,m3:28.032,s1:9.3546,s2:18.981 ,duration:2896
+Velms:1692948454545,velM1:17.568,velM2:30.744,velM3:13.176,velS1:3,velS2:7.2 ,duration:2896
+Cmdms:1692948454550,m1Cmd:57.54,m2Cmd:77.496,m3Cmd:29.234,s1Cmd:9.67,s2Cmd:19.34,duration:2901
+Cmdms:1692948454555,m1Cmd:57.64,m2Cmd:77.6293,m3Cmd:29.284,s1Cmd:9.68667,s2Cmd:19.3733,duration:2906
+Cmdms:1692948454561,m1Cmd:57.76,m2Cmd:77.7893,m3Cmd:29.344,s1Cmd:9.70667,s2Cmd:19.4133,duration:2912
+Cmdms:1692948454566,m1Cmd:57.86,m2Cmd:77.9227,m3Cmd:29.394,s1Cmd:9.72333,s2Cmd:19.4467,duration:2917
+Cmdms:1692948454572,m1Cmd:57.98,m2Cmd:78.0827,m3Cmd:29.454,s1Cmd:9.74333,s2Cmd:19.4867,duration:2923
+Cmdms:1692948454577,m1Cmd:58.08,m2Cmd:78.216,m3Cmd:29.504,s1Cmd:9.76,s2Cmd:19.52,duration:2928
+Cmdms:1692948454582,m1Cmd:58.18,m2Cmd:78.3493,m3Cmd:29.554,s1Cmd:9.77667,s2Cmd:19.5533,duration:2933
+Cmdms:1692948454588,m1Cmd:58.3,m2Cmd:78.5093,m3Cmd:29.614,s1Cmd:9.79667,s2Cmd:19.5933,duration:2939
+Anglems:1692948454588,m1:55.752,m2:75.728,m3:28.56,s1:9.5904,s2:18.981 ,duration:2939
+Velms:1692948454588,velM1:26.352,velM2:21.96,velM3:8.784,velS1:3.9,velS2:7.2 ,duration:2939
+Cmdms:1692948454593,m1Cmd:58.4,m2Cmd:78.6427,m3Cmd:29.664,s1Cmd:9.81333,s2Cmd:19.6267,duration:2944
+Cmdms:1692948454598,m1Cmd:58.5,m2Cmd:78.776,m3Cmd:29.714,s1Cmd:9.83,s2Cmd:19.66,duration:2949
+Cmdms:1692948454605,m1Cmd:58.62,m2Cmd:78.936,m3Cmd:29.774,s1Cmd:9.85,s2Cmd:19.7,duration:2955
+Cmdms:1692948454610,m1Cmd:58.74,m2Cmd:79.096,m3Cmd:29.834,s1Cmd:9.87,s2Cmd:19.74,duration:2961
+Cmdms:1692948454616,m1Cmd:58.86,m2Cmd:79.256,m3Cmd:29.894,s1Cmd:9.89,s2Cmd:19.78,duration:2967
+Cmdms:1692948454621,m1Cmd:58.96,m2Cmd:79.3893,m3Cmd:29.944,s1Cmd:9.90667,s2Cmd:19.8133,duration:2972
+Cmdms:1692948454626,m1Cmd:59.06,m2Cmd:79.5227,m3Cmd:29.994,s1Cmd:9.92333,s2Cmd:19.8467,duration:2977
+Cmdms:1692948454632,m1Cmd:59.18,m2Cmd:79.6827,m3Cmd:30.054,s1Cmd:9.94333,s2Cmd:19.8867,duration:2983
+Anglems:1692948454632,m1:55.752,m2:76.872,m3:29,s1:9.6786,s2:19.2798 ,duration:2983
+Velms:1692948454632,velM1:26.352,velM2:26.352,velM3:8.784,velS1:3,velS2:7.2 ,duration:2983
+Cmdms:1692948454637,m1Cmd:59.28,m2Cmd:79.816,m3Cmd:30.104,s1Cmd:9.96,s2Cmd:19.92,duration:2988
+Cmdms:1692948454642,m1Cmd:59.38,m2Cmd:79.9493,m3Cmd:30.154,s1Cmd:9.97667,s2Cmd:19.9533,duration:2993
+Cmdms:1692948454648,m1Cmd:59.5,m2Cmd:80.1093,m3Cmd:30.214,s1Cmd:9.99667,s2Cmd:19.9933,duration:2999
+Cmdms:1692948454653,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3004
+Cmdms:1692948454659,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3010
+Cmdms:1692948454664,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3015
+Cmdms:1692948454669,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3020
+Cmdms:1692948454675,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3026
+Anglems:1692948454675,m1:56.72,m2:78.104,m3:29.352,s1:9.9468,s2:19.6146 ,duration:3026
+Velms:1692948454675,velM1:17.568,velM2:26.352,velM3:13.176,velS1:3.9,velS2:7.2 ,duration:3026
+Cmdms:1692948454680,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3031
+Cmdms:1692948454686,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3037
+Cmdms:1692948454691,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3042
+Cmdms:1692948454697,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3048
+Cmdms:1692948454702,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3053
+Cmdms:1692948454708,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3059
+Cmdms:1692948454713,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3064
+Cmdms:1692948454719,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3070
+Anglems:1692948454719,m1:57.6,m2:79.336,m3:29.88,s1:9.9774,s2:19.917 ,duration:3070
+Velms:1692948454719,velM1:17.568,velM2:30.744,velM3:13.176,velS1:3,velS2:4.8 ,duration:3070
+Cmdms:1692948454724,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3075
+Cmdms:1692948454729,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3080
+Cmdms:1692948454735,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3086
+Cmdms:1692948454740,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3091
+Cmdms:1692948454747,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3097
+Cmdms:1692948454752,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3103
+Cmdms:1692948454758,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3109
+Cmdms:1692948454763,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3114
+Anglems:1692948454763,m1:58.392,m2:80.216,m3:30.32,s1:9.9864,s2:19.962 ,duration:3114
+Velms:1692948454763,velM1:13.176,velM2:13.176,velM3:13.176,velS1:1.8,velS2:4.8 ,duration:3114
+Cmdms:1692948454769,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3119
+Cmdms:1692948454774,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3125
+Cmdms:1692948454780,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3130
+Cmdms:1692948454785,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3136
+Cmdms:1692948454791,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3141
+Cmdms:1692948454796,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3147
+Cmdms:1692948454802,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3152
+Cmdms:1692948454807,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3158
+Anglems:1692948454807,m1:58.744,m2:80.304,m3:30.408,s1:9.9936,s2:20.0178 ,duration:3158
+Velms:1692948454807,velM1:4.392,velM2:0,velM3:0,velS1:1.2,velS2:3.3 ,duration:3158
+Cmdms:1692948454812,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3163
+Cmdms:1692948454818,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3169
+Cmdms:1692948454823,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3174
+Cmdms:1692948454829,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3179
+Cmdms:1692948454835,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3185
+Cmdms:1692948454840,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3191
+Cmdms:1692948454846,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3197
+Cmdms:1692948454851,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3202
+Anglems:1692948454851,m1:58.832,m2:80.304,m3:30.408,s1:9.9936,s2:20.0142 ,duration:3202
+Velms:1692948454851,velM1:4.392,velM2:0,velM3:0,velS1:0.6,velS2:2.1 ,duration:3202
+Cmdms:1692948454857,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3208
+Cmdms:1692948454862,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3213
+Cmdms:1692948454867,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3218
+Cmdms:1692948454873,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3224
+Cmdms:1692948454879,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3229
+Cmdms:1692948454884,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3235
+Cmdms:1692948454889,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3240
+Cmdms:1692948454895,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3246
+Anglems:1692948454895,m1:58.832,m2:80.304,m3:30.408,s1:9.9954,s2:20.0088 ,duration:3246
+Velms:1692948454895,velM1:0,velM2:0,velM3:0,velS1:0.6,velS2:1.2 ,duration:3246
+Cmdms:1692948454900,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3251
+Cmdms:1692948454905,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3256
+Cmdms:1692948454911,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3262
+Cmdms:1692948454916,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3267
+Cmdms:1692948454922,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3272
+Cmdms:1692948454928,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3278
+Cmdms:1692948454934,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3285
+Cmdms:1692948454939,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3290
+Anglems:1692948454939,m1:58.832,m2:80.304,m3:30.408,s1:9.9972,s2:20.0088 ,duration:3290
+Velms:1692948454939,velM1:0,velM2:0,velM3:0,velS1:0.3,velS2:0.6 ,duration:3290
+Cmdms:1692948454944,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3295
+Cmdms:1692948454950,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3301
+Cmdms:1692948454955,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3306
+Cmdms:1692948454961,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3312
+Cmdms:1692948454966,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3317
+Cmdms:1692948454971,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3322
+Cmdms:1692948454977,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3328
+Cmdms:1692948454982,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3333
+Anglems:1692948454982,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:20.0034 ,duration:3333
+Velms:1692948454982,velM1:0,velM2:0,velM3:0,velS1:0.3,velS2:0.3 ,duration:3333
+Cmdms:1692948454987,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3338
+Cmdms:1692948454993,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3344
+Cmdms:1692948454998,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3349
+Cmdms:1692948455003,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3354
+Cmdms:1692948455009,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3360
+Cmdms:1692948455014,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3365
+Cmdms:1692948455020,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3370
+Cmdms:1692948455025,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3376
+Anglems:1692948455025,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:20.0016 ,duration:3376
+Velms:1692948455025,velM1:0,velM2:0,velM3:0,velS1:0.3,velS2:0.3 ,duration:3376
+Cmdms:1692948455031,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3381
+Cmdms:1692948455036,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3387
+Cmdms:1692948455041,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3392
+Cmdms:1692948455047,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3398
+Cmdms:1692948455052,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3403
+Cmdms:1692948455058,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3409
+Cmdms:1692948455063,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3414
+Cmdms:1692948455069,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3419
+Anglems:1692948455069,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3419
+Velms:1692948455069,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3419
+Cmdms:1692948455074,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3425
+Cmdms:1692948455079,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3430
+Cmdms:1692948455085,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3435
+Cmdms:1692948455090,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3441
+Cmdms:1692948455095,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3446
+Cmdms:1692948455101,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3451
+Cmdms:1692948455106,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3457
+Cmdms:1692948455111,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3462
+Anglems:1692948455111,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.998 ,duration:3462
+Velms:1692948455111,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3462
+Cmdms:1692948455117,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3468
+Cmdms:1692948455122,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3473
+Cmdms:1692948455128,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3478
+Cmdms:1692948455133,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3484
+Cmdms:1692948455138,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3489
+Cmdms:1692948455144,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3495
+Cmdms:1692948455149,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3500
+Cmdms:1692948455155,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3505
+Anglems:1692948455155,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.998 ,duration:3505
+Velms:1692948455155,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3505
+Cmdms:1692948455160,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3511
+Cmdms:1692948455166,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3516
+Cmdms:1692948455172,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3523
+Cmdms:1692948455177,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3528
+Cmdms:1692948455183,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3533
+Cmdms:1692948455188,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3539
+Cmdms:1692948455193,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3544
+Cmdms:1692948455199,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3550
+Anglems:1692948455199,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3550
+Velms:1692948455199,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3550
+Cmdms:1692948455204,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3555
+Cmdms:1692948455210,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3560
+Cmdms:1692948455215,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3566
+Cmdms:1692948455220,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3571
+Cmdms:1692948455226,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3577
+Cmdms:1692948455231,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3582
+Cmdms:1692948455236,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3587
+Cmdms:1692948455242,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3593
+Anglems:1692948455242,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3593
+Velms:1692948455242,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3593
+Cmdms:1692948455247,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3598
+Cmdms:1692948455252,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3603
+Cmdms:1692948455258,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3609
+Cmdms:1692948455263,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3614
+Cmdms:1692948455269,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3619
+Cmdms:1692948455274,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3625
+Cmdms:1692948455280,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3630
+Cmdms:1692948455287,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3637
+Anglems:1692948455287,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3637
+Velms:1692948455287,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3637
+Cmdms:1692948455292,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3643
+Cmdms:1692948455298,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3648
+Cmdms:1692948455303,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3654
+Cmdms:1692948455309,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3659
+Cmdms:1692948455314,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3665
+Cmdms:1692948455320,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3670
+Cmdms:1692948455326,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3676
+Cmdms:1692948455331,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3682
+Anglems:1692948455331,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3682
+Velms:1692948455331,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3682
+Cmdms:1692948455336,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3687
+Cmdms:1692948455342,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3693
+Cmdms:1692948455347,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3698
+Cmdms:1692948455353,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3703
+Cmdms:1692948455358,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3709
+Cmdms:1692948455363,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3714
+Cmdms:1692948455369,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3720
+Cmdms:1692948455374,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3725
+Anglems:1692948455374,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3725
+Velms:1692948455374,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3725
+Cmdms:1692948455380,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3731
+Cmdms:1692948455386,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3736
+Cmdms:1692948455392,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3742
+Cmdms:1692948455398,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3749
+Cmdms:1692948455403,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3754
+Cmdms:1692948455409,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3759
+Cmdms:1692948455415,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3765
+Cmdms:1692948455421,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3771
+Anglems:1692948455421,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3771
+Velms:1692948455421,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3771
+Cmdms:1692948455428,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3778
+Cmdms:1692948455433,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3784
+Cmdms:1692948455439,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3790
+Cmdms:1692948455444,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3795
+Cmdms:1692948455450,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3801
+Cmdms:1692948455455,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3806
+Cmdms:1692948455460,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3811
+Cmdms:1692948455466,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3817
+Anglems:1692948455466,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3817
+Velms:1692948455466,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3817
+Cmdms:1692948455471,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3822
+Cmdms:1692948455476,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3827
+Cmdms:1692948455482,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3833
+Cmdms:1692948455487,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3838
+Cmdms:1692948455492,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3843
+Cmdms:1692948455498,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3849
+Cmdms:1692948455503,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3854
+Cmdms:1692948455508,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3859
+Anglems:1692948455508,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3859
+Velms:1692948455508,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3859
+Cmdms:1692948455514,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3865
+Cmdms:1692948455519,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3870
+Cmdms:1692948455525,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3876
+Cmdms:1692948455530,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3881
+Cmdms:1692948455535,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3886
+Cmdms:1692948455541,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3892
+Cmdms:1692948455546,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3897
+Cmdms:1692948455552,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3903
+Anglems:1692948455552,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3903
+Velms:1692948455552,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3903
+Cmdms:1692948455557,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3908
+Cmdms:1692948455562,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3913
+Cmdms:1692948455568,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3918
+Cmdms:1692948455573,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3924
+Cmdms:1692948455578,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3929
+Cmdms:1692948455584,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3934
+Cmdms:1692948455589,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3940
+Cmdms:1692948455594,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3945
+Anglems:1692948455594,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3945
+Velms:1692948455594,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3945
+Cmdms:1692948455600,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3951
+Cmdms:1692948455605,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3956
+Cmdms:1692948455611,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3961
+Cmdms:1692948455617,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3968
+Cmdms:1692948455622,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3973
+Cmdms:1692948455628,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3978
+Cmdms:1692948455633,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3984
+Cmdms:1692948455639,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3989
+Anglems:1692948455639,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:3989
+Velms:1692948455639,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:3989
+Cmdms:1692948455644,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:3995
+Cmdms:1692948455650,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4000
+Cmdms:1692948455655,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4006
+Cmdms:1692948455660,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4011
+Cmdms:1692948455666,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4017
+Cmdms:1692948455671,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4022
+Cmdms:1692948455677,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4027
+Cmdms:1692948455683,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4034
+Anglems:1692948455683,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4034
+Velms:1692948455683,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4034
+Cmdms:1692948455688,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4039
+Cmdms:1692948455694,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4044
+Cmdms:1692948455699,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4050
+Cmdms:1692948455704,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4055
+Cmdms:1692948455710,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4061
+Cmdms:1692948455716,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4066
+Cmdms:1692948455722,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4072
+Cmdms:1692948455727,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4078
+Anglems:1692948455727,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4078
+Velms:1692948455727,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4078
+Cmdms:1692948455733,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4084
+Cmdms:1692948455738,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4089
+Cmdms:1692948455744,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4095
+Cmdms:1692948455749,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4100
+Cmdms:1692948455755,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4105
+Cmdms:1692948455760,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4111
+Cmdms:1692948455765,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4116
+Cmdms:1692948455771,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4122
+Anglems:1692948455771,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4122
+Velms:1692948455771,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4122
+Cmdms:1692948455776,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4127
+Cmdms:1692948455782,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4132
+Cmdms:1692948455788,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4138
+Cmdms:1692948455795,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4144
+Cmdms:1692948455800,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4151
+Cmdms:1692948455806,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4156
+Cmdms:1692948455811,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4162
+Cmdms:1692948455817,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4167
+Anglems:1692948455817,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4167
+Velms:1692948455817,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4167
+Cmdms:1692948455822,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4173
+Cmdms:1692948455827,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4178
+Cmdms:1692948455833,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4184
+Cmdms:1692948455838,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4189
+Cmdms:1692948455844,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4194
+Cmdms:1692948455849,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4200
+Cmdms:1692948455856,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4205
+Cmdms:1692948455861,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4212
+Anglems:1692948455861,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4212
+Velms:1692948455861,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4212
+Cmdms:1692948455866,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4217
+Cmdms:1692948455872,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4223
+Cmdms:1692948455877,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4228
+Cmdms:1692948455883,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4233
+Cmdms:1692948455888,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4239
+Cmdms:1692948455893,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4244
+Cmdms:1692948455899,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4250
+Cmdms:1692948455904,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4255
+Anglems:1692948455904,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4255
+Velms:1692948455904,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4255
+Cmdms:1692948455910,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4261
+Cmdms:1692948455915,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4266
+Cmdms:1692948455921,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4272
+Cmdms:1692948455926,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4277
+Cmdms:1692948455932,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4282
+Cmdms:1692948455938,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4288
+Cmdms:1692948455943,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4294
+Cmdms:1692948455950,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4300
+Anglems:1692948455950,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4300
+Velms:1692948455950,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4300
+Cmdms:1692948455955,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4306
+Cmdms:1692948455961,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4312
+Cmdms:1692948455966,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4317
+Cmdms:1692948455973,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4322
+Cmdms:1692948455978,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4329
+Cmdms:1692948455984,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4334
+Cmdms:1692948455989,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4340
+Cmdms:1692948455994,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4345
+Anglems:1692948455994,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4345
+Velms:1692948455994,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4345
+Cmdms:1692948456000,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4351
+Cmdms:1692948456005,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4356
+Cmdms:1692948456011,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4362
+Cmdms:1692948456017,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4367
+Cmdms:1692948456023,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4374
+Cmdms:1692948456028,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4379
+Cmdms:1692948456034,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4385
+Cmdms:1692948456039,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4390
+Anglems:1692948456040,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4390
+Velms:1692948456040,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4390
+Cmdms:1692948456045,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4396
+Cmdms:1692948456050,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4401
+Cmdms:1692948456056,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4407
+Cmdms:1692948456061,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4412
+Cmdms:1692948456067,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4418
+Cmdms:1692948456072,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4423
+Cmdms:1692948456078,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4429
+Cmdms:1692948456084,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4434
+Anglems:1692948456084,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4434
+Velms:1692948456084,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4434
+Cmdms:1692948456090,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4441
+Cmdms:1692948456095,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4446
+Cmdms:1692948456102,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4452
+Cmdms:1692948456107,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4458
+Cmdms:1692948456113,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4463
+Cmdms:1692948456118,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4469
+Cmdms:1692948456124,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4474
+Cmdms:1692948456129,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4480
+Anglems:1692948456129,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4480
+Velms:1692948456129,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4480
+Cmdms:1692948456135,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4485
+Cmdms:1692948456140,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4491
+Cmdms:1692948456145,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4496
+Cmdms:1692948456151,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4502
+Cmdms:1692948456157,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4507
+Cmdms:1692948456162,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4513
+Cmdms:1692948456167,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4518
+Cmdms:1692948456174,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4524
+Anglems:1692948456174,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4524
+Velms:1692948456174,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4524
+Cmdms:1692948456180,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4530
+Cmdms:1692948456186,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4537
+Cmdms:1692948456191,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4542
+Cmdms:1692948456197,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4547
+Cmdms:1692948456203,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4553
+Cmdms:1692948456208,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4559
+Cmdms:1692948456214,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4565
+Cmdms:1692948456220,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4570
+Anglems:1692948456220,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4570
+Velms:1692948456220,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4570
+Cmdms:1692948456226,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4576
+Cmdms:1692948456231,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4582
+Cmdms:1692948456237,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4587
+Cmdms:1692948456242,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4593
+Cmdms:1692948456247,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4598
+Cmdms:1692948456253,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4604
+Cmdms:1692948456258,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4609
+Cmdms:1692948456264,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4614
+Anglems:1692948456264,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4614
+Velms:1692948456264,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4614
+Cmdms:1692948456269,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4620
+Cmdms:1692948456274,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4625
+Cmdms:1692948456280,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4631
+Cmdms:1692948456286,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4636
+Cmdms:1692948456292,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4643
+Cmdms:1692948456297,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4648
+Cmdms:1692948456303,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4653
+Cmdms:1692948456309,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4659
+Anglems:1692948456309,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4659
+Velms:1692948456309,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4659
+Cmdms:1692948456314,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4665
+Cmdms:1692948456320,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4671
+Cmdms:1692948456325,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4676
+Cmdms:1692948456331,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4682
+Cmdms:1692948456336,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4687
+Cmdms:1692948456342,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4692
+Cmdms:1692948456347,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4698
+Cmdms:1692948456352,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4703
+Anglems:1692948456352,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4703
+Velms:1692948456352,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4703
+Cmdms:1692948456358,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4709
+Cmdms:1692948456363,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4714
+Cmdms:1692948456369,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4720
+Cmdms:1692948456374,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4725
+Cmdms:1692948456380,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4730
+Cmdms:1692948456385,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4736
+Cmdms:1692948456390,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4741
+Cmdms:1692948456396,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4747
+Anglems:1692948456396,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4747
+Velms:1692948456396,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4747
+Cmdms:1692948456401,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4752
+Cmdms:1692948456407,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4758
+Cmdms:1692948456412,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4763
+Cmdms:1692948456418,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4768
+Cmdms:1692948456423,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4774
+Cmdms:1692948456429,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4779
+Cmdms:1692948456436,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4785
+Cmdms:1692948456443,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4792
+Anglems:1692948456443,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4792
+Velms:1692948456443,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4792
+Cmdms:1692948456448,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4799
+Cmdms:1692948456453,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4804
+Cmdms:1692948456459,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4810
+Cmdms:1692948456464,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4815
+Cmdms:1692948456470,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4820
+Cmdms:1692948456475,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4826
+Cmdms:1692948456480,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4831
+Cmdms:1692948456487,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4837
+Anglems:1692948456487,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4837
+Velms:1692948456487,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4837
+Cmdms:1692948456493,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4843
+Cmdms:1692948456499,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4850
+Cmdms:1692948456504,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4855
+Cmdms:1692948456510,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4860
+Cmdms:1692948456516,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4866
+Cmdms:1692948456521,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4872
+Cmdms:1692948456527,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4878
+Cmdms:1692948456532,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4883
+Anglems:1692948456532,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4883
+Velms:1692948456532,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4883
+Cmdms:1692948456538,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4889
+Cmdms:1692948456543,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4894
+Cmdms:1692948456549,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4900
+Cmdms:1692948456554,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4905
+Cmdms:1692948456559,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4910
+Cmdms:1692948456565,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4916
+Cmdms:1692948456570,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4921
+Cmdms:1692948456576,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4926
+Anglems:1692948456576,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4926
+Velms:1692948456576,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4926
+Cmdms:1692948456581,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4932
+Cmdms:1692948456586,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4937
+Cmdms:1692948456592,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4943
+Cmdms:1692948456597,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4948
+Cmdms:1692948456603,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4954
+Cmdms:1692948456608,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4959
+Cmdms:1692948456613,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4964
+Cmdms:1692948456619,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4970
+Anglems:1692948456619,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:4970
+Velms:1692948456619,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:4970
+Cmdms:1692948456625,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4975
+Cmdms:1692948456631,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4981
+Cmdms:1692948456638,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4987
+Cmdms:1692948456643,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4994
+Cmdms:1692948456648,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:4999
+Cmdms:1692948456654,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5005
+Cmdms:1692948456660,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5010
+Cmdms:1692948456666,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5017
+Anglems:1692948456666,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5017
+Velms:1692948456666,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5017
+Cmdms:1692948456671,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5022
+Cmdms:1692948456676,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5027
+Cmdms:1692948456682,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5033
+Cmdms:1692948456687,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5038
+Cmdms:1692948456693,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5043
+Cmdms:1692948456698,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5049
+Cmdms:1692948456703,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5054
+Cmdms:1692948456709,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5060
+Anglems:1692948456709,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5060
+Velms:1692948456709,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5060
+Cmdms:1692948456714,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5065
+Cmdms:1692948456721,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5071
+Cmdms:1692948456726,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5077
+Cmdms:1692948456731,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5082
+Cmdms:1692948456738,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5088
+Cmdms:1692948456744,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5094
+Cmdms:1692948456751,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5100
+Cmdms:1692948456756,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5107
+Anglems:1692948456756,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5107
+Velms:1692948456756,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5107
+Cmdms:1692948456762,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5112
+Cmdms:1692948456767,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5118
+Cmdms:1692948456773,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5124
+Cmdms:1692948456778,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5129
+Cmdms:1692948456784,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5134
+Cmdms:1692948456789,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5140
+Cmdms:1692948456794,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5145
+Cmdms:1692948456800,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5151
+Anglems:1692948456800,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5151
+Velms:1692948456800,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5151
+Cmdms:1692948456805,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5156
+Cmdms:1692948456811,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5161
+Cmdms:1692948456817,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5167
+Cmdms:1692948456822,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5173
+Cmdms:1692948456828,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5179
+Cmdms:1692948456833,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5184
+Cmdms:1692948456839,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5190
+Cmdms:1692948456844,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5195
+Anglems:1692948456844,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5195
+Velms:1692948456844,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5195
+Cmdms:1692948456850,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5201
+Cmdms:1692948456855,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5206
+Cmdms:1692948456861,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5212
+Cmdms:1692948456866,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5217
+Cmdms:1692948456871,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5222
+Cmdms:1692948456878,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5228
+Cmdms:1692948456883,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5234
+Cmdms:1692948456889,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5239
+Anglems:1692948456889,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5239
+Velms:1692948456889,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5239
+Cmdms:1692948456894,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5245
+Cmdms:1692948456899,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5250
+Cmdms:1692948456905,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5256
+Cmdms:1692948456910,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5261
+Cmdms:1692948456916,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5267
+Cmdms:1692948456921,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5272
+Cmdms:1692948456927,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5277
+Cmdms:1692948456932,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5283
+Anglems:1692948456932,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5283
+Velms:1692948456932,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5283
+Cmdms:1692948456937,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5288
+Cmdms:1692948456943,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5294
+Cmdms:1692948456948,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5299
+Cmdms:1692948456954,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5304
+Cmdms:1692948456959,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5310
+Cmdms:1692948456965,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5316
+Cmdms:1692948456970,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5321
+Cmdms:1692948456976,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5327
+Anglems:1692948456976,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5327
+Velms:1692948456976,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5327
+Cmdms:1692948456981,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5332
+Cmdms:1692948456987,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5338
+Cmdms:1692948456992,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5343
+Cmdms:1692948456998,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5348
+Cmdms:1692948457005,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5355
+Cmdms:1692948457010,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5361
+Cmdms:1692948457016,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5366
+Cmdms:1692948457022,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5372
+Anglems:1692948457022,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5372
+Velms:1692948457022,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5372
+Cmdms:1692948457027,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5378
+Cmdms:1692948457033,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5383
+Cmdms:1692948457038,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5389
+Cmdms:1692948457043,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5394
+Cmdms:1692948457049,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5400
+Cmdms:1692948457054,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5405
+Cmdms:1692948457059,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5410
+Cmdms:1692948457065,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5416
+Anglems:1692948457065,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5416
+Velms:1692948457065,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5416
+Cmdms:1692948457070,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5421
+Cmdms:1692948457076,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5426
+Cmdms:1692948457081,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5432
+Cmdms:1692948457086,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5437
+Cmdms:1692948457092,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5443
+Cmdms:1692948457097,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5448
+Cmdms:1692948457104,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5453
+Cmdms:1692948457109,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5460
+Anglems:1692948457109,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5460
+Velms:1692948457109,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5460
+Cmdms:1692948457115,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5465
+Cmdms:1692948457120,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5471
+Cmdms:1692948457125,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5476
+Cmdms:1692948457131,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5482
+Cmdms:1692948457136,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5487
+Cmdms:1692948457142,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5493
+Cmdms:1692948457147,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5498
+Cmdms:1692948457152,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5503
+Anglems:1692948457152,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5503
+Velms:1692948457152,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5503
+Cmdms:1692948457158,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5509
+Cmdms:1692948457163,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5514
+Cmdms:1692948457169,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5520
+Cmdms:1692948457175,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5525
+Cmdms:1692948457180,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5531
+Cmdms:1692948457185,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5536
+Cmdms:1692948457191,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5542
+Cmdms:1692948457196,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5547
+Anglems:1692948457196,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5547
+Velms:1692948457196,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5547
+Cmdms:1692948457202,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5553
+Cmdms:1692948457207,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5558
+Cmdms:1692948457213,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5564
+Cmdms:1692948457218,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5569
+Cmdms:1692948457224,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5574
+Cmdms:1692948457229,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5580
+Cmdms:1692948457235,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5586
+Cmdms:1692948457240,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5591
+Anglems:1692948457240,m1:58.832,m2:80.304,m3:30.408,s1:9.999,s2:19.9998 ,duration:5591
+Velms:1692948457240,velM1:0,velM2:0,velM3:0,velS1:0,velS2:0 ,duration:5591
+Cmdms:1692948457246,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5597
+Cmdms:1692948457251,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5602
+Cmdms:1692948457257,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5608
+Cmdms:1692948457262,m1Cmd:59.52,m2Cmd:80.136,m3Cmd:30.224,s1Cmd:10,s2Cmd:20,duration:5613
