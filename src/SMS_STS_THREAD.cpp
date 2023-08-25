@@ -75,7 +75,7 @@ namespace servo
           else
           {
             itr->second->isOnline = false;
-            std::cout << RED_BOLD << "nodeid:" << (int)itr->second->id<< " read error!"<<std::endl;
+            std::cout << RED_BOLD << "servo nodeid:" << (int)itr->second->id<< " read error!"<<std::endl;
           }
           bool isOnline = itr->second->isOnline;
           bool enableCmd = itr->second->enableCmd; // 互斥临时变量
@@ -94,7 +94,7 @@ namespace servo
           // {
           if (moveCmd)
           {
-            RegWritePosEx(itr->second->id, posCmd, velCmd, acc);
+            RegWritePosEx(itr->second->id, posCmd, 0, 0);
           }
             
           
@@ -127,7 +127,7 @@ void SMS_STS_THREAD::getServoInfo(int32_t id, servoStatus &info)
   auto itr = getItr(id);
   if (itr == servoInfo.end())
   {
-    std::cout << RED_BOLD << "nodeid:" << (int)id << " not exit!"<<std::endl;
+    std::cout << RED_BOLD << "servo nodeid:" << (int)id << " not exit!\033[0m"<<std::endl;
     return;
   }
   

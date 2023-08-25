@@ -39,6 +39,7 @@ public:
     virtual void SetEnable(bool _enable) = 0;
     virtual void ApplyPositionAsHome() = 0;
     virtual void UpdateAngle() = 0;
+    virtual float getVel() = 0;
 };
 
 #endif // DUMMY_CORE_FW_CTRL_STEP_HPP

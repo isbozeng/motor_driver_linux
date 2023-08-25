@@ -72,6 +72,7 @@ void ServoMotion::UpdateAngle()
   sm_st->getServoInfo(nodeID, servoInf);
 
   angle = servoInf.Pos_f;
+  cur_vel = servoInf.Speed_f;
 
   // 更新舵机运动状态
   if (servoInf.isMoving == 1)
@@ -98,4 +99,9 @@ float ServoMotion::getCurrent()
 float ServoMotion::getTorque()
 {
   return 0.0;
+}
+
+float ServoMotion::getVel()
+{
+  return cur_vel;
 }

@@ -23,9 +23,11 @@ using namespace std;
     virtual void UpdateAngle() override;
     virtual float getCurrent() override;
     virtual float getTorque() override;
+    virtual float getVel() override;    
     servo::SMS_STS_THREAD *sm_st = nullptr;
     servo::servoStatus servoInf; // 保存电机状态参数
     servo::servoDriveInfo servoDrv;//电机驱动数据
+    float cur_vel = 0.0;
   };  
 
 

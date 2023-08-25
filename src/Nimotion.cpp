@@ -11,10 +11,11 @@ static const std::string RESET_FORMAT = "\033[0m";
 
 // CanBase *Nimotion::can_bus_ = new UsbCanBus(0, UsbCanBus::BR1000k);
 
-Nimotion::Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
-                   float _angleLimitMin = -180.0, float _angleLimitMax = 180.0)
+Nimotion::Nimotion(uint8_t _id, bool _inverse, uint8_t _reduction,
+                   float _angleLimitMin, float _angleLimitMax,
+                   bool ipmode)
     : CtrlStepMotor(_id, _inverse, _reduction, _angleLimitMin, _angleLimitMax),
-    isIPmode(true)
+    isIPmode(ipmode)
 {
     memset(&statusword, 0, sizeof(statusword));
     memset(&controlword, 0, sizeof(controlword));
@@ -32,14 +33,14 @@ Nimotion::Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
 void Nimotion::SetAngleWithVelocityLimit(float _angle, float _vel)
 {
 
-    if (_angle < angleLimitMin )
-    {
-        _angle = angleLimitMin;
-    }
-    if (_angle > angleLimitMax)
-    {
-        _angle = angleLimitMax;
-    }
+    // if (_angle < angleLimitMin )
+    // {
+    //     _angle = angleLimitMin;
+    // }
+    // if (_angle > angleLimitMax)
+    // {
+    //     _angle = angleLimitMax;
+    // }
     _angle = inverseDirection ? -_angle : _angle;
     int32_t temp_pos = _angle * reduction * 10000.0 / 360.0;
     if (_vel > 900.0) // 单位度/秒
@@ -451,7 +452,7 @@ void Nimotion::switchState()
         {
             nimotion_state = SWITCH_ON; // disable motor
         }
-        std::cout << RED_BOLD << "nodeid:" << (int)nodeID << "error:0x" << std::hex << (uint32_t)error_code << RESET_FORMAT << std::endl;
+        std::cout << RED_BOLD << "nodeid:" << (int)nodeID << " error:0x" /*<< std::hex*/ << (uint32_t)error_code << RESET_FORMAT << std::endl;
     }
     else if (statusword.ready != 1) // 电机ready
     {
@@ -654,6 +655,11 @@ float Nimotion::getCurrent()
     return current*0.01;
 }
 
+float Nimotion::getVel()
+{
+    return cur_vel * 6.0 / reduction;
+}
+
 float Nimotion::getTorque()
 {
     std::lock_guard<std::mutex> lock(mtx); // 锁定互斥锁
@@ -672,15 +678,15 @@ float Nimotion::getTorque()
             cur_angle = angle;
             mtx.unlock();
         }
-        if (fabs(angle - _angle) < 6)
-        {
+        // if (fabs(angle - _angle) < 60)
+        // {
             int32_t temp_pos = _angle * reduction * 10000.0 / 360.0;
             can_bus_->SDO_Write(nodeID, 0x60c1, 0x01, temp_pos, 4);
-        }
-        else
-        {
-            std::cout << RED_BOLD << "nodeid:" << (int)nodeID << " setAngle to max:"<< _angle<<"cur_angle:"<<cur_angle << RESET_FORMAT << std::endl;
-        }
+        // }
+        // else
+        // {
+        //     std::cout << RED_BOLD << "nodeid:" << (int)nodeID << " setAngle to max:"<< _angle<<"cur_angle:"<<cur_angle << RESET_FORMAT << std::endl;
+        // }
 
     }
     // SetAngleWithVelocityLimit(_angle, 10);

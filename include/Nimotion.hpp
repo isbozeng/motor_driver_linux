@@ -20,8 +20,8 @@
 class Nimotion : public CtrlStepMotor
 {
 public:
-    Nimotion(uint8_t _id, bool _inverse, uint8_t _reduction,
-             float _angleLimitMin, float _angleLimitMax);
+    Nimotion(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
+             float _angleLimitMin = -180.0, float _angleLimitMax = 180.0, bool ipmode = true);
     virtual ~Nimotion() = default;
     virtual void SetAngleWithVelocityLimit(float _angle, float _vel) override;
     virtual void Reboot() override;
@@ -31,8 +31,9 @@ public:
     virtual void UpdateAngle() override;
     virtual void SetAngle(float) override;
     virtual float getCurrent() override;
-    virtual float getTorque() override;    
-    int32_t getVel() { return cur_vel; }
+    virtual float getTorque() override;  
+    virtual float getVel() override;  
+    // int32_t getVel() { return cur_vel; }
     CanBase *can_bus_ = nullptr;
     uint32_t timeout = 3; // s
 
