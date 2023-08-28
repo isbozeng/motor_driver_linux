@@ -94,7 +94,7 @@ namespace servo
           // {
           if (moveCmd)
           {
-            RegWritePosEx(itr->second->id, posCmd, 0, 0);
+            RegWritePosEx(itr->second->id, posCmd, velCmd, acc);
           }
             
           

@@ -100,7 +100,7 @@ fig.add_trace(go.Scatter(x=duration, y=m3Cmd, mode='lines+markers', name='m3Cmd'
 
 fig.add_trace(go.Scatter(x=duration, y=s1Cmd, mode='lines+markers', name='s1Cmd'), row=1, col=1)
 
-fig.add_trace(go.Scatter(x=duration, y=s2Cmd, mode='lines+markers', name='s1Cmd'), row=1, col=1)
+fig.add_trace(go.Scatter(x=duration, y=s2Cmd, mode='lines+markers', name='s2Cmd'), row=1, col=1)
 
 
 # 添加第一个折线图轨迹

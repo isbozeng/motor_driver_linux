@@ -507,7 +507,7 @@ void Nimotion::recMsgCallback(CanBase::CanRxMsg msg)
         nimotion_mode = static_cast<NI_MOTION_MODE_t>(msg.Data[4]);
         last_time = std::chrono::steady_clock::now();
         isOnline = true;
-        void *data = &statusword;
+        // void *data = &statusword;
         // std::cout << GREEN_BOLD << "statusword:0b " << std::bitset<16>(*((uint16_t *)data)).to_string()
         //           << " id:" << (int)nodeID
         //           << " error 0x:" << static_cast<int32_t>(error_code)
@@ -670,18 +670,35 @@ float Nimotion::getTorque()
  {
     if (isIPenable)
     {
+        int reverse = 1;
+        if(inverseDirection && _angle < 0.0)
+        {
+            reverse = -1;
+        }
         _angle = inverseDirection ? -_angle : _angle;
         float cur_angle = 720.0;
+
         if(mtx.try_lock())
         {
-            angle = cur_pos * 360.0 / 10000.0 / reduction;
+            angle = reverse * cur_pos * 360.0 / 10000.0 / reduction;
             cur_angle = angle;
             mtx.unlock();
         }
-        // if (fabs(angle - _angle) < 60)
+        // if (fabs(angle - _angle) < 6)
         // {
+            CanBase::CanTxMsg msg;
+            msg.ExtId   = 0x00;     // not used at all
+            msg.IDE     = CanBase::CAN_ID_STD;
+            msg.RTR     = CanBase::CAN_RTR_DATA;        // data frame
+            msg.StdId   = 0x400 | nodeID;
+            msg.DLC     = 4; 
+                       
             int32_t temp_pos = _angle * reduction * 10000.0 / 360.0;
-            can_bus_->SDO_Write(nodeID, 0x60c1, 0x01, temp_pos, 4);
+            *((int32_t *)&msg.Data) = temp_pos;
+
+            // can_bus_->SDO_Write(nodeID, 0x60c1, 0x01, temp_pos, 4);
+            
+            can_bus_->Transmit(msg);
         // }
         // else
         // {

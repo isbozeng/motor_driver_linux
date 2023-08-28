@@ -1,7 +1,11 @@
 all:
 	g++ linearInterpolation.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o moveBystep.elf
 goHome:
-	g++ goHome.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o moveBystep.elf
+	g++ goHome.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o goHome.elf
+disable:
+	g++ disable.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o disabel.elf
+setHome:
+	g++ setHome.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o setHome.elf			
 moveBystep:
 	g++ moveByStep.cpp src/Nimotion.cpp src/UsbCanBus.cpp src/CanBase.cpp lib/libcontrolcan.so -Iinclude -lpthread -std=c++11 -o moveBystep.elf
 atHome:

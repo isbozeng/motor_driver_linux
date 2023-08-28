@@ -9,7 +9,6 @@ ServoMotion::ServoMotion(uint8_t _id, bool _inverse, uint8_t _reduction,
   memset(&servoInf, 0, sizeof(servo::servoStatus));
   servoDrv.id = nodeID;
   servoDrv.enableCmd = true;
-  servoDrv.accCmd = 250;  
   sm_st = servo::SMS_STS_THREAD::getInstance();
   sm_st->addServo(nodeID, &servoDrv);
 
@@ -25,14 +24,29 @@ void ServoMotion::SetAngleWithVelocityLimit(float _angle, float _vel)
   // std::cout<<"angle:"<<_angle<<" vel:"<<_vel<<std::endl;
   u16 Angle_ref = (u16)((_angle + 180) * (4096.0 / 360.0));
   u16 Vel_ref = (u16)(_vel * (50.0 / 4.392));
-  sm_st->setPosVel(nodeID, Angle_ref, Vel_ref);
+
+  if (servoDrv.mtx.try_lock())
+  {
+    servoDrv.posCmd = Angle_ref;
+    servoDrv.velCmd = Vel_ref;
+    servoDrv.accCmd = 250; 
+    // std::cout<<"angle:"<<(int)angle<<" vel:"<<(int)vel<<std::endl;
+    if (!servoDrv.moveCmd)
+    {
+      servoDrv.moveCmd = true;
+    }
+    servoDrv.mtx.unlock();
+  }  
+     
+    // sm_st->setPosVel(nodeID, Angle_ref, Vel_ref);
   state = RUNNING;
 }
 
 void ServoMotion::SetAngle(float _angle) 
 {
   // std::cout<<"angle:"<<_angle<<std::endl;
-  SetAngleWithVelocityLimit(_angle, 35);
+  SetAngleWithVelocityLimit(_angle, 0);
+
 }
 
 // 使能or解能
@@ -69,8 +83,20 @@ void ServoMotion::Reboot()
 void ServoMotion::UpdateAngle()
 {
   // lock_guard<mutex> g_lock(m_lock);
-  sm_st->getServoInfo(nodeID, servoInf);
-
+  // sm_st->getServoInfo(nodeID, servoInf);
+  if (servoDrv.mtx.try_lock())
+  {
+    servoInf.Pos_f = servoDrv.pos * 0.088 - 180.0;
+    servoInf.Speed_f = servoDrv.speed * (4.392 / 50);
+    servoInf.load = servoDrv.load;
+    servoInf.vol = servoDrv.vol;
+    servoInf.temper = servoDrv.temper;
+    servoInf.isMoving = servoDrv.isMoving;
+    servoInf.current = servoDrv.current;
+    servoInf.isEnable = servoDrv.isEnable;
+    servoInf.isOnline = servoDrv.isOnline;
+    servoDrv.mtx.unlock();
+  }
   angle = servoInf.Pos_f;
   cur_vel = servoInf.Speed_f;
 

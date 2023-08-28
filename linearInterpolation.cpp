@@ -33,14 +33,14 @@ double linearInterpolation(double start, double end, double t0, double t1)
 int main(int agrc, char *argv[])
 {
     float tar[5][2] = {
-        {60.0, 3000.0}, //m1
-        {80.0, 3000.0}, //m2
-        {30.0, 3000.0}, //m3
-        {10.0, 3000.0}, //s1
-        {20.0, 3000.0}  //s2
+        {30.0, 2000.0}, //m1
+        {40.0, 2000.0}, //m2
+        {30.0, 2000.0}, //m3
+        {35.0, 2000.0}, //s1 guanjie2
+        {-15.0, 2000.0}  //s2 guanjie3
     };
     Nimotion m4260(1, false, 20, -180.0, 180.0);
-	Nimotion m4248(2, false, 20, -180.0, 180.0);
+	Nimotion m4248(2, true, 20, -180.0, 180.0);
 	ServoMotion m1(1, false, 1, -180.0, 180.0);
 	ServoMotion m2(2, false, 1, -180.0, 180.0);
 	ServoMotion m3(3, false, 1, -180.0, 180.0);    
@@ -62,13 +62,13 @@ int main(int agrc, char *argv[])
 		// std::cout<<(int)m4260.state<<std::endl;
 		// std::cout<<(int)m4248.state<<std::endl;		
 		usleep(100000);
-	};
+	}
 
     m1.SetAngle(0);
     m2.SetAngle(0);
     m3.SetAngle(0);
-    m4260.SetAngleWithVelocityLimit(0, 50);
-    m4248.SetAngleWithVelocityLimit(0, 50);
+    // m4260.SetAngleWithVelocityLimit(0, 50);
+    // m4248.SetAngleWithVelocityLimit(0, 50);
     sleep(1);
 	while (m4260.state != Nimotion::FINISH 
 	|| m4248.state != Nimotion::FINISH
@@ -88,7 +88,7 @@ int main(int agrc, char *argv[])
 		// std::cout<<(int)m4260.state<<std::endl;
 		// std::cout<<(int)m4248.state<<std::endl;		
 		usleep(100000);
-	};
+	}
     // return 0;
 
     auto curTime = std::chrono::system_clock::now();
