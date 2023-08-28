@@ -335,8 +335,8 @@ void Nimotion::UpdateAngle()
                 {
                     msg.Data[2] = IP_MODE;
                     controlword.operationMode = 1;
-                    can_bus_->Transmit(msg);
-                    can_bus_->Transmit(msg);
+                    // can_bus_->Transmit(msg);
+                    // can_bus_->Transmit(msg);
                     isIPenable = true;
                 }               
             }
