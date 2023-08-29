@@ -1,7 +1,7 @@
 ﻿#include "servocontrol.h"
 #include <iostream>
 
-ServoMotion::ServoMotion(uint8_t _id, bool _inverse, uint8_t _reduction,
+ServoMotion::ServoMotion(uint8_t _id, bool _inverse, float _reduction,
                          float _angleLimitMin, float _angleLimitMax)
     : CtrlStepMotor(_id, _inverse, _reduction, _angleLimitMin, _angleLimitMax)
 {

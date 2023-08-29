@@ -11,7 +11,7 @@ static const std::string RESET_FORMAT = "\033[0m";
 
 // CanBase *Nimotion::can_bus_ = new UsbCanBus(0, UsbCanBus::BR1000k);
 
-Nimotion::Nimotion(uint8_t _id, bool _inverse, uint8_t _reduction,
+Nimotion::Nimotion(uint8_t _id, bool _inverse, float _reduction,
                    float _angleLimitMin, float _angleLimitMax,
                    bool ipmode)
     : CtrlStepMotor(_id, _inverse, _reduction, _angleLimitMin, _angleLimitMax),
@@ -666,7 +666,7 @@ float Nimotion::getTorque()
     return sixForce*reduction*0.001;
 }
 
- void Nimotion::SetAngle(float _angle)
+void Nimotion::SetAngle(float _angle)
  {
     if (isIPenable)
     {

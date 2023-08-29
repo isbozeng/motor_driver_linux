@@ -1,5 +1,5 @@
 all:
-	g++ linearInterpolation.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o moveBystep.elf
+	g++ linearInterpolation.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o line.elf
 goHome:
 	g++ goHome.cpp  src/*.cpp lib/*.so -Iinclude -lpthread -std=c++11 -o goHome.elf
 disable:

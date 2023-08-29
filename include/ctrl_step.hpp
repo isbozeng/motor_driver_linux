@@ -13,7 +13,7 @@ public:
 
     const uint32_t CTRL_CIRCLE_COUNT = 200 * 256;
 
-    CtrlStepMotor(uint8_t _id, bool _inverse = false, uint8_t _reduction = 1,
+    CtrlStepMotor(uint8_t _id, bool _inverse = false, float _reduction = 1.0,
                   float _angleLimitMin = -180.0, float _angleLimitMax = 180.0) : nodeID(_id),
                                                                                  inverseDirection(_inverse),
                                                                                  reduction(_reduction),
@@ -28,7 +28,7 @@ public:
     float angleLimitMax;
     float angleLimitMin;
     bool inverseDirection;
-    uint8_t reduction;
+    float reduction;
     State state = STOP; // getState
     virtual void SetAngle(float) = 0;
     virtual float getCurrent()= 0;

@@ -11,7 +11,7 @@ using namespace std;
   {
   public:
 
-    ServoMotion(uint8_t _id, bool _inverse, uint8_t _reduction,
+    ServoMotion(uint8_t _id, bool _inverse, float _reduction,
                 float _angleLimitMin, float _angleLimitMax);
     virtual ~ServoMotion(); // 有虚函数的继承，子类的析构函数也标虚函数
     virtual void SetAngle(float _angle) override;
